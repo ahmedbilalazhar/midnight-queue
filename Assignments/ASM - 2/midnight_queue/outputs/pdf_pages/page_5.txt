@@ -1,0 +1,259 @@
+23I-2581 · DS-B · The Midnight Queue
+page 5
+G. Change Request
+Status: the official change request was not supplied. The assignment says it would be posted on the course portal 48 hours before the deadline, but no text was available
+in this workspace. I have not invented a request, a changed condition or a fresh measurement. When it is available, the correct procedure is to apply it to the same
+deterministic harness and append new medians. Conclusions that depend on the unchanged triage key, C1–C6 construction and the 300 s rule would remain; any conclusion
+that depends on a changed constraint would be re-derived. This is an external dependency, not a missing experiment.
+H. Recommendation to the Platform Lead
+1. Overnight full-day batch: ship Heap Sort. Across the five total-order conditions at full size, the worst measured times are Merge Sort 20.08 s (C1); Heap Sort 9.68 s (C2);
+Hardened Quick Sort 1.39 min (C4). Heap Sort has the lowest worst case. It is in-place O(1) and Θ(n log n) in the worst case; it is unstable, but txn_id makes the triage key
+total, so stability is not needed. Merge Sort wins the two random/adversarial orders C2 (7.06 s) and C4 (5.83 s); if the platform knows the batch is always shuffled or
+reverse-ranked, ship Merge Sort instead. The recommendation would be wrong if the batch were already pre-ranked (C3), where insertion sort takes only 0.642 s.
+2. Shift queue of K=52: ship the size-K heap. The buffer does win the 100,000-record K=52 corner: 0.032 s against 0.035 s for the heap on C2 (and similarly on C1). That 4
+ms edge does not survive scale or larger K. At full size K=52 the heap takes 0.059 s against 0.079 s; at K=2,068 it takes 0.134 s against 1.24 s; at K=n/10 it takes 1.29 s
+against 2.69 min. Over the 28 measured cells the heap is at most 1.12× slower than the best method, while the buffer is up to 140.9× slower and the full sort up to 60.0×
+slower. The heap is the robust choice because it wins 25 cells and never loses by much, not because it wins every cell. The assumption is K much smaller than n and
+immutable scores after arrival. The choice would be wrong if K were always K=52 at n≈100,000, where the buffer is a few milliseconds faster, or if late corrections could
+change an old record's score, which needs an update path or periodic rebuild. Operationally the K=52 queue contains 0 fraud(s); reaching half the frauds needs K≈2,068, and
+the heap is still the appropriate structure there.
+3. Live refresh every window: ship the maintained size-K heap. Measured totals — 60-min: A 1.34 min, B 0.084 s, C 2.32 s; 10-min: A DNF, B 0.169 s, C 2.06 s. Winner:
+60-min: B (heap); 10-min: B (heap). The 10-minute re-rank is a DNF at the 300 s watchdog, not a missing measurement. It offers each new record once, never re-ranks
+history, and publishes the committed queue after every window. The asymptotic switch is at w≈n/K: with n=284,807 and K=52 that is about 5,477 windows (a window of ~52
+records). Both tested schedules are far below it, so the heap is expected to win; it would be wrong for extremely small windows, where merge's tiny window sort plus K-merge
+can beat a per-record sift, or if scores can be revised after arrival, where the heap needs an update path.
+AI-use disclosure
+I used OpenCode with a DeepSeek V4.1 Flash model to help implement the package, write and run tests, orchestrate measurements, analyse outputs and draft this report. I
+ran the code, checked the correctness tests and raw CSVs, and I can explain and modify every algorithm and every number reported here.
+Appendix: prediction log
+Each prediction was written before its round; outcomes were updated from the measured medians. Full rationales are in prediction_log.csv. W/L = predicted or actual fastest / slowest. Abbreviations: IS
+insertion, MS merge, NQ naive quick, HQ hardened quick, HS heap, SH size-K heap, BB bounded buffer, FS full sort, RR re-rank, MG merge, HB maintained heap.
+Tournament
+Pred W/L
+Actual W/L
+Outcome
+C1-1k
+HQ / IS
+HQ / IS
+both correct
+C2-1k
+HQ / IS
+MS / IS
+slowest correct
+C3-1k
+IS / NQ
+IS / NQ
+both correct
+C4-1k
+HQ / IS
+MS / NQ
+both wrong
+C5-1k
+IS / NQ
+IS / NQ
+both correct
+C6-1k
+HQ / NQ
+HQ / NQ
+both correct
+C1-10k
+HQ / IS
+HQ / IS
+both correct
+C2-10k
+HQ / IS
+HQ / IS
+both correct
+C3-10k
+IS / NQ
+IS / NQ
+both correct
+C4-10k
+HQ / IS
+HS / IS
+slowest correct
+C5-10k
+HQ / NQ
+MS / IS
+both wrong
+C6-10k
+HQ / NQ
+HQ / IS
+fastest correct
+C1-100k
+HQ / IS
+NQ / IS
+slowest correct
+C2-100k
+HQ / IS
+MS / IS
+slowest correct
+C3-100k
+IS / NQ
+IS / NQ
+both correct
+C4-100k
+HQ / IS
+MS / IS
+slowest correct
+C5-100k
+HQ / NQ
+MS / IS
+both wrong
+C6-100k
+HQ / NQ
+HQ / IS
+fastest correct
+C1-full
+HQ / IS
+HS / IS
+slowest correct
+C2-full
+HQ / IS
+MS / IS
+slowest correct
+C3-full
+IS / NQ
+IS / NQ
+both correct
+C4-full
+HQ / IS
+MS / IS
+slowest correct
+C5-full
+HQ / NQ
+HS / IS
+both wrong
+C6-full
+HQ / NQ
+HQ / IS
+fastest correct
+D/E/F row
+Pred
+Actual
+Outcome
+M5 crossover
+SH / BB
+—
+see M5
+C1-100k/K10
+SH / BB
+SH / FS
+partly/wrong
+C1-100k/K50
+SH / BB
+SH / FS
+partly/wrong
+C1-100k/K52
+SH / BB
+BB / FS
+partly/wrong
+C1-100k/K500
+SH / BB
+SH / FS
+partly/wrong
+C1-100k/K5000
+SH / BB
+SH / BB
+both correct
+C1-100k/K10000
+FS / BB
+SH / BB
+partly/wrong
+C1-100k/K2068
+SH / BB
+SH / BB
+both correct
+C2-100k/K10
+SH / BB
+SH / FS
+partly/wrong
+C2-100k/K50
+SH / BB
+SH / FS
+partly/wrong
+C2-100k/K52
+SH / BB
+BB / FS
+partly/wrong
+C2-100k/K500
+SH / BB
+SH / FS
+partly/wrong
+C2-100k/K5000
+SH / BB
+SH / BB
+both correct
+C2-100k/K10000
+FS / BB
+SH / BB
+partly/wrong
+C2-100k/K2068
+SH / BB
+SH / BB
+both correct
+C1-full/K10
+SH / BB
+BB / FS
+partly/wrong
+C1-full/K50
+SH / BB
+SH / FS
+partly/wrong
+C1-full/K52
+SH / BB
+SH / FS
+partly/wrong
+C1-full/K500
+SH / BB
+SH / FS
+partly/wrong
+C1-full/K5000
+SH / BB
+SH / BB
+both correct
+C1-full/K28480
+FS / BB
+SH / BB
+partly/wrong
+C1-full/K2068
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K10
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K50
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K52
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K500
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K5000
+SH / BB
+SH / BB
+both correct
+C2-full/K28480
+FS / BB
+SH / BB
+partly/wrong
+C2-full/K2068
+SH / BB
+SH / FS
+partly/wrong
+live/3600
+HB / RR
+HB / RR
+both correct
+live/600
+HB / RR
+HB / RR
+both correct
+Table P1. Complete prediction log: 24 C rounds (left) and 31 D/E/F rows (right). The M5 row is a crossover prediction with no single-cell outcome; its comparison is discussed under M5.

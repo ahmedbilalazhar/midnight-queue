@@ -1,0 +1,682 @@
+record_type,problem,experiment,prediction_id,algorithm,strategy,condition,n,k,width_s,window,repeat,elapsed_s,median_s,run_count,comparisons,moves,peak_extra_bytes,correct,stable,dnf,dnf_reason,extrapolated,largest_completed_n,fraud_capture_count,fraud_fraction,queue_size,seen,window_records,cumulative_s,notes
+dnf,C,full_sort,,Insertion Sort,,C4,100000,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Insertion Sort,,C6,100000,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Insertion Sort,,C2,100000,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Insertion Sort,,C1,100000,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Naive Quick Sort,,C3,100000,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Naive Quick Sort,,C4,100000,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Naive Quick Sort,,C6,100000,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Insertion Sort,,C1,284807,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Insertion Sort,,C2,284807,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Insertion Sort,,C4,284807,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Insertion Sort,,C6,284807,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Naive Quick Sort,,C3,284807,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Naive Quick Sort,,C4,284807,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+dnf,C,full_sort,,Naive Quick Sort,,C6,284807,,,,1,,,,,,,,,True,exceeded 300s watchdog,False,,,,,,,,genuine timeout attempt; no elapsed time or median is recorded. DNF attempts were run four-at-a-time because time is not a reported measurement.
+run,C,full_sort,tournament-C5-n100000,Naive Quick Sort,,C5,100000,,,,1,18.46895239999867,,,27359594,985344,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Naive Quick Sort,,C5,100000,,,,2,17.382112300008885,,,27359594,985344,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Naive Quick Sort,,C5,100000,,,,3,16.543146500000148,,,27359594,985344,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Naive Quick Sort,,C5,100000,,,,4,19.984785100008594,,,27359594,985344,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Naive Quick Sort,,C5,100000,,,,5,22.44880810000177,,,27359594,985344,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n100000,Naive Quick Sort,,C5,100000,,,,,,18.46895239999867,5,27359594,985344,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n100000,Insertion Sort,,C5,100000,,,,1,25.593791600011173,,,34433389,34433389,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Insertion Sort,,C5,100000,,,,2,24.673554299995885,,,34433389,34433389,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Insertion Sort,,C5,100000,,,,3,29.35431010001048,,,34433389,34433389,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Insertion Sort,,C5,100000,,,,4,40.16294349999225,,,34433389,34433389,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Insertion Sort,,C5,100000,,,,5,39.20061949999945,,,34433389,34433389,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n100000,Insertion Sort,,C5,100000,,,,,,29.35431010001048,5,34433389,34433389,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n284807,Naive Quick Sort,,C1,284807,,,,1,33.644601200008765,,,6601882,9212013,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Naive Quick Sort,,C1,284807,,,,2,22.438739300007,,,6601882,9212013,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Naive Quick Sort,,C1,284807,,,,3,12.49822559999302,,,6601882,9212013,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Naive Quick Sort,,C1,284807,,,,4,11.98352259999956,,,6601882,9212013,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Naive Quick Sort,,C1,284807,,,,5,10.491858199995477,,,6601882,9212013,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n284807,Naive Quick Sort,,C1,284807,,,,,,12.49822559999302,5,6601882,9212013,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n284807,Naive Quick Sort,,C2,284807,,,,1,11.855033500003628,,,6275653,9225912,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Naive Quick Sort,,C2,284807,,,,2,11.437209700001404,,,6275653,9225912,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Naive Quick Sort,,C2,284807,,,,3,9.751850200002082,,,6275653,9225912,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Naive Quick Sort,,C2,284807,,,,4,20.70761820000189,,,6275653,9225912,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Naive Quick Sort,,C2,284807,,,,5,16.79630879999604,,,6275653,9225912,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n284807,Naive Quick Sort,,C2,284807,,,,,,11.855033500003628,5,6275653,9225912,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n100000,Naive Quick Sort,,C1,100000,,,,1,2.689719000001787,,,1983589,2752011,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Naive Quick Sort,,C1,100000,,,,2,3.1115012999944156,,,1983589,2752011,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Naive Quick Sort,,C1,100000,,,,3,2.5465021999989403,,,1983589,2752011,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Naive Quick Sort,,C1,100000,,,,4,2.5200189000024693,,,1983589,2752011,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Naive Quick Sort,,C1,100000,,,,5,2.7183102999988478,,,1983589,2752011,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n100000,Naive Quick Sort,,C1,100000,,,,,,2.689719000001787,5,1983589,2752011,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n100000,Naive Quick Sort,,C2,100000,,,,1,7.314857599994866,,,2128737,3008388,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Naive Quick Sort,,C2,100000,,,,2,4.496521199995186,,,2128737,3008388,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Naive Quick Sort,,C2,100000,,,,3,6.058347800004412,,,2128737,3008388,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Naive Quick Sort,,C2,100000,,,,4,8.85594750000746,,,2128737,3008388,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Naive Quick Sort,,C2,100000,,,,5,7.859495199998491,,,2128737,3008388,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n100000,Naive Quick Sort,,C2,100000,,,,,,7.314857599994866,5,2128737,3008388,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n284807,Hardened Quick Sort,,C1,284807,,,,1,14.149328300001798,,,5986668,16040565,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Hardened Quick Sort,,C1,284807,,,,2,14.515054099989356,,,5986668,16040565,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Hardened Quick Sort,,C1,284807,,,,3,13.95442350000667,,,5986668,16040565,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Hardened Quick Sort,,C1,284807,,,,4,13.451935499993851,,,5986668,16040565,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Hardened Quick Sort,,C1,284807,,,,5,15.59198519999336,,,5986668,16040565,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n284807,Hardened Quick Sort,,C1,284807,,,,,,14.149328300001798,5,5986668,16040565,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n284807,Hardened Quick Sort,,C2,284807,,,,1,15.069001800002297,,,5994686,16067202,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Hardened Quick Sort,,C2,284807,,,,2,12.27404890001344,,,5994686,16067202,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Hardened Quick Sort,,C2,284807,,,,3,14.338372900005197,,,5994686,16067202,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Hardened Quick Sort,,C2,284807,,,,4,13.54938409999886,,,5994686,16067202,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Hardened Quick Sort,,C2,284807,,,,5,26.376971399993636,,,5994686,16067202,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n284807,Hardened Quick Sort,,C2,284807,,,,,,14.338372900005197,5,5994686,16067202,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n284807,Hardened Quick Sort,,C4,284807,,,,1,83.56647050000902,,,68726392,202283631,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Hardened Quick Sort,,C4,284807,,,,2,63.055364699990605,,,68726392,202283631,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Hardened Quick Sort,,C4,284807,,,,3,90.76450540000224,,,68726392,202283631,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Hardened Quick Sort,,C4,284807,,,,4,92.72242819999519,,,68726392,202283631,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Hardened Quick Sort,,C4,284807,,,,5,76.1646761999873,,,68726392,202283631,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n284807,Hardened Quick Sort,,C4,284807,,,,,,83.56647050000902,5,68726392,202283631,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n284807,Naive Quick Sort,,C5,284807,,,,1,121.5697732999979,,,159638283,2900496,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Naive Quick Sort,,C5,284807,,,,2,164.76624659998924,,,159638283,2900496,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Naive Quick Sort,,C5,284807,,,,3,136.35610099999758,,,159638283,2900496,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Naive Quick Sort,,C5,284807,,,,4,116.43913630000316,,,159638283,2900496,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Naive Quick Sort,,C5,284807,,,,5,109.75208700000076,,,159638283,2900496,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n284807,Naive Quick Sort,,C5,284807,,,,,,121.5697732999979,5,159638283,2900496,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n284807,Hardened Quick Sort,,C6,284807,,,,1,0.340812399997958,,,594519,929088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Hardened Quick Sort,,C6,284807,,,,2,0.3560610999993514,,,594519,929088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Hardened Quick Sort,,C6,284807,,,,3,0.7889773000060814,,,594519,929088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Hardened Quick Sort,,C6,284807,,,,4,0.5420790999924066,,,594519,929088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Hardened Quick Sort,,C6,284807,,,,5,0.540044699999271,,,594519,929088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n284807,Hardened Quick Sort,,C6,284807,,,,,,0.540044699999271,5,594519,929088,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n100000,Hardened Quick Sort,,C4,100000,,,,1,12.686736299991026,,,9796932,27964578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Hardened Quick Sort,,C4,100000,,,,2,8.272887200000696,,,9796932,27964578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Hardened Quick Sort,,C4,100000,,,,3,9.765029699992738,,,9796932,27964578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Hardened Quick Sort,,C4,100000,,,,4,9.525295799991,,,9796932,27964578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Hardened Quick Sort,,C4,100000,,,,5,9.371662499994272,,,9796932,27964578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n100000,Hardened Quick Sort,,C4,100000,,,,,,9.525295799991,5,9796932,27964578,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n284807,Hardened Quick Sort,,C3,284807,,,,1,47.93799299999955,,,45669137,132348906,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Hardened Quick Sort,,C3,284807,,,,2,48.56923870000173,,,45669137,132348906,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Hardened Quick Sort,,C3,284807,,,,3,50.71658219999517,,,45669137,132348906,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Hardened Quick Sort,,C3,284807,,,,4,47.95225649999338,,,45669137,132348906,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Hardened Quick Sort,,C3,284807,,,,5,48.22540529999242,,,45669137,132348906,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n284807,Hardened Quick Sort,,C3,284807,,,,,,48.22540529999242,5,45669137,132348906,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n100000,Hardened Quick Sort,,C1,100000,,,,1,3.536101300007431,,,1963659,5214501,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Hardened Quick Sort,,C1,100000,,,,2,4.280218300002161,,,1963659,5214501,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Hardened Quick Sort,,C1,100000,,,,3,2.6298680000036256,,,1963659,5214501,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Hardened Quick Sort,,C1,100000,,,,4,1.9441343999933451,,,1963659,5214501,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Hardened Quick Sort,,C1,100000,,,,5,3.674069100001361,,,1963659,5214501,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n100000,Hardened Quick Sort,,C1,100000,,,,,,3.536101300007431,5,1963659,5214501,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n284807,Hardened Quick Sort,,C5,284807,,,,1,19.73441580000508,,,9439159,25402806,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Hardened Quick Sort,,C5,284807,,,,2,29.959933499994804,,,9439159,25402806,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Hardened Quick Sort,,C5,284807,,,,3,20.327111999999033,,,9439159,25402806,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Hardened Quick Sort,,C5,284807,,,,4,21.33624209999107,,,9439159,25402806,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Hardened Quick Sort,,C5,284807,,,,5,29.704635299989604,,,9439159,25402806,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n284807,Hardened Quick Sort,,C5,284807,,,,,,21.33624209999107,5,9439159,25402806,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n100000,Hardened Quick Sort,,C2,100000,,,,1,11.597666100002243,,,1937351,5139792,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Hardened Quick Sort,,C2,100000,,,,2,7.078762300006929,,,1937351,5139792,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Hardened Quick Sort,,C2,100000,,,,3,7.425789900007658,,,1937351,5139792,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Hardened Quick Sort,,C2,100000,,,,4,5.717424400005257,,,1937351,5139792,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Hardened Quick Sort,,C2,100000,,,,5,4.5514014000073075,,,1937351,5139792,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n100000,Hardened Quick Sort,,C2,100000,,,,,,7.078762300006929,5,1937351,5139792,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n100000,Hardened Quick Sort,,C5,100000,,,,1,3.0873538000014378,,,3104744,8293050,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Hardened Quick Sort,,C5,100000,,,,2,3.9662173999968218,,,3104744,8293050,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Hardened Quick Sort,,C5,100000,,,,3,3.2729464000003645,,,3104744,8293050,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Hardened Quick Sort,,C5,100000,,,,4,3.2053291000047466,,,3104744,8293050,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Hardened Quick Sort,,C5,100000,,,,5,2.764594299995224,,,3104744,8293050,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n100000,Hardened Quick Sort,,C5,100000,,,,,,3.2053291000047466,5,3104744,8293050,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n100000,Hardened Quick Sort,,C6,100000,,,,1,0.2525993000017479,,,191926,275718,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Hardened Quick Sort,,C6,100000,,,,2,0.15225899999495596,,,191926,275718,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Hardened Quick Sort,,C6,100000,,,,3,0.17153059999691322,,,191926,275718,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Hardened Quick Sort,,C6,100000,,,,4,0.17725059999793302,,,191926,275718,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Hardened Quick Sort,,C6,100000,,,,5,0.13702979999652598,,,191926,275718,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n100000,Hardened Quick Sort,,C6,100000,,,,,,0.17153059999691322,5,191926,275718,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n100000,Hardened Quick Sort,,C3,100000,,,,1,11.051029900001595,,,9796931,27814578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Hardened Quick Sort,,C3,100000,,,,2,12.188447099993937,,,9796931,27814578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Hardened Quick Sort,,C3,100000,,,,3,10.6882048999978,,,9796931,27814578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Hardened Quick Sort,,C3,100000,,,,4,17.60615369999141,,,9796931,27814578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Hardened Quick Sort,,C3,100000,,,,5,17.70908449999115,,,9796931,27814578,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n100000,Hardened Quick Sort,,C3,100000,,,,,,12.188447099993937,5,9796931,27814578,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n10000,Insertion Sort,,C2,10000,,,,1,35.33533909999824,,,24747873,24747882,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Insertion Sort,,C2,10000,,,,2,21.278480100008892,,,24747873,24747882,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Insertion Sort,,C2,10000,,,,3,18.387788799998816,,,24747873,24747882,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Insertion Sort,,C2,10000,,,,4,18.47494290000759,,,24747873,24747882,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Insertion Sort,,C2,10000,,,,5,21.03615109999373,,,24747873,24747882,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n10000,Insertion Sort,,C2,10000,,,,,,21.03615109999373,5,24747873,24747882,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n10000,Insertion Sort,,C6,10000,,,,1,13.997773199997027,,,17346294,17346297,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Insertion Sort,,C6,10000,,,,2,11.134138300010818,,,17346294,17346297,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Insertion Sort,,C6,10000,,,,3,12.247035299995332,,,17346294,17346297,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Insertion Sort,,C6,10000,,,,4,11.7149422000075,,,17346294,17346297,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Insertion Sort,,C6,10000,,,,5,11.755044999998063,,,17346294,17346297,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n10000,Insertion Sort,,C6,10000,,,,,,11.755044999998063,5,17346294,17346297,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n10000,Insertion Sort,,C4,10000,,,,1,35.696347599994624,,,49995000,50004999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Insertion Sort,,C4,10000,,,,2,33.61273110000184,,,49995000,50004999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Insertion Sort,,C4,10000,,,,3,40.54482539999299,,,49995000,50004999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Insertion Sort,,C4,10000,,,,4,37.4892070999922,,,49995000,50004999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Insertion Sort,,C4,10000,,,,5,30.063080899999477,,,49995000,50004999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n10000,Insertion Sort,,C4,10000,,,,,,35.696347599994624,5,49995000,50004999,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n10000,Insertion Sort,,C1,10000,,,,1,36.83596959999704,,,24987904,24987914,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Insertion Sort,,C1,10000,,,,2,41.15064589999383,,,24987904,24987914,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Insertion Sort,,C1,10000,,,,3,46.0800789000059,,,24987904,24987914,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Insertion Sort,,C1,10000,,,,4,50.01756649999879,,,24987904,24987914,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Insertion Sort,,C1,10000,,,,5,56.18461319999187,,,24987904,24987914,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n10000,Insertion Sort,,C1,10000,,,,,,46.0800789000059,5,24987904,24987914,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n284807,Heap Sort,,C1,284807,,,,1,8.984715500002494,,,9443022,14699337,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Heap Sort,,C1,284807,,,,2,10.393446499991114,,,9443022,14699337,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Heap Sort,,C1,284807,,,,3,7.822480400005588,,,9443022,14699337,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Heap Sort,,C1,284807,,,,4,8.328744500002358,,,9443022,14699337,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Heap Sort,,C1,284807,,,,5,8.711356400002842,,,9443022,14699337,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n284807,Heap Sort,,C1,284807,,,,,,8.711356400002842,5,9443022,14699337,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n284807,Merge Sort,,C2,284807,,,,1,7.823282800003653,,,4804357,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Merge Sort,,C2,284807,,,,2,6.255061400006525,,,4804357,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Merge Sort,,C2,284807,,,,3,6.57964009999705,,,4804357,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Merge Sort,,C2,284807,,,,4,7.064237700004014,,,4804357,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Merge Sort,,C2,284807,,,,5,8.803190499995253,,,4804357,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n284807,Merge Sort,,C2,284807,,,,,,7.064237700004014,5,4804357,10343704,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n284807,Merge Sort,,C1,284807,,,,1,20.082643000001553,,,4792310,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Merge Sort,,C1,284807,,,,2,22.04547850000381,,,4792310,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Merge Sort,,C1,284807,,,,3,16.8733218999987,,,4792310,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Merge Sort,,C1,284807,,,,4,14.581369699997595,,,4792310,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n284807,Merge Sort,,C1,284807,,,,5,24.69984120001027,,,4792310,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n284807,Merge Sort,,C1,284807,,,,,,20.082643000001553,5,4792310,10343704,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n284807,Heap Sort,,C2,284807,,,,1,10.01488660000905,,,9448618,14730414,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Heap Sort,,C2,284807,,,,2,9.680583999986993,,,9448618,14730414,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Heap Sort,,C2,284807,,,,3,11.515928599998006,,,9448618,14730414,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Heap Sort,,C2,284807,,,,4,8.413774900007411,,,9448618,14730414,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n284807,Heap Sort,,C2,284807,,,,5,7.790602000008221,,,9448618,14730414,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n284807,Heap Sort,,C2,284807,,,,,,9.680583999986993,5,9448618,14730414,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n284807,Heap Sort,,C3,284807,,,,1,9.455085900000995,,,9704825,15337668,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Heap Sort,,C3,284807,,,,2,6.950486799993087,,,9704825,15337668,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Heap Sort,,C3,284807,,,,3,6.697541600005934,,,9704825,15337668,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Heap Sort,,C3,284807,,,,4,9.664901399999508,,,9704825,15337668,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Heap Sort,,C3,284807,,,,5,7.754361600003904,,,9704825,15337668,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n284807,Heap Sort,,C3,284807,,,,,,7.754361600003904,5,9704825,15337668,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n284807,Merge Sort,,C3,284807,,,,1,15.40945720000309,,,2541548,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Merge Sort,,C3,284807,,,,2,9.2899097000045,,,2541548,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Merge Sort,,C3,284807,,,,3,10.125850600001286,,,2541548,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Merge Sort,,C3,284807,,,,4,11.588524899998447,,,2541548,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Merge Sort,,C3,284807,,,,5,12.962873199998285,,,2541548,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n284807,Merge Sort,,C3,284807,,,,,,11.588524899998447,5,2541548,10343704,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n284807,Merge Sort,,C4,284807,,,,1,6.659154799999669,,,2630304,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Merge Sort,,C4,284807,,,,2,5.10409150000487,,,2630304,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Merge Sort,,C4,284807,,,,3,5.832723499988788,,,2630304,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Merge Sort,,C4,284807,,,,4,5.742021300000488,,,2630304,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Merge Sort,,C4,284807,,,,5,5.861882600001991,,,2630304,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n284807,Merge Sort,,C4,284807,,,,,,5.832723499988788,5,2630304,10343704,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n284807,Heap Sort,,C4,284807,,,,1,8.00138839999272,,,9210463,14105817,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Heap Sort,,C4,284807,,,,2,8.89971830000286,,,9210463,14105817,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Heap Sort,,C4,284807,,,,3,7.511745700001484,,,9210463,14105817,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Heap Sort,,C4,284807,,,,4,7.0635448999964865,,,9210463,14105817,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n284807,Heap Sort,,C4,284807,,,,5,7.06755950000661,,,9210463,14105817,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n284807,Heap Sort,,C4,284807,,,,,,7.511745700001484,5,9210463,14105817,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n284807,Heap Sort,,C5,284807,,,,1,9.068102300007013,,,9703523,15333408,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Heap Sort,,C5,284807,,,,2,7.56879150000168,,,9703523,15333408,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Heap Sort,,C5,284807,,,,3,7.631011099991156,,,9703523,15333408,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Heap Sort,,C5,284807,,,,4,9.8959285000019,,,9703523,15333408,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Heap Sort,,C5,284807,,,,5,7.3320720000047,,,9703523,15333408,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n284807,Heap Sort,,C5,284807,,,,,,7.631011099991156,5,9703523,15333408,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n284807,Merge Sort,,C6,284807,,,,1,7.420315700001083,,,4545070,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Merge Sort,,C6,284807,,,,2,5.174296099998173,,,4545070,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Merge Sort,,C6,284807,,,,3,6.455204700003378,,,4545070,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Merge Sort,,C6,284807,,,,4,6.776613999987603,,,4545070,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Merge Sort,,C6,284807,,,,5,6.4304414999933215,,,4545070,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n284807,Merge Sort,,C6,284807,,,,,,6.455204700003378,5,4545070,10343704,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n10000,Insertion Sort,,C5,10000,,,,1,1.0598023000056855,,,335987,335987,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Insertion Sort,,C5,10000,,,,2,0.4782755000051111,,,335987,335987,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Insertion Sort,,C5,10000,,,,3,0.7375305999885313,,,335987,335987,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Insertion Sort,,C5,10000,,,,4,1.5183568999927957,,,335987,335987,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Insertion Sort,,C5,10000,,,,5,1.0174878000107128,,,335987,335987,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n10000,Insertion Sort,,C5,10000,,,,,,1.0174878000107128,5,335987,335987,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n10000,Naive Quick Sort,,C5,10000,,,,1,1.4405938999989303,,,1298016,70080,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Naive Quick Sort,,C5,10000,,,,2,0.9699429999891436,,,1298016,70080,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Naive Quick Sort,,C5,10000,,,,3,0.8913233000057517,,,1298016,70080,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Naive Quick Sort,,C5,10000,,,,4,0.9687647000100696,,,1298016,70080,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Naive Quick Sort,,C5,10000,,,,5,0.9061900000087917,,,1298016,70080,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n10000,Naive Quick Sort,,C5,10000,,,,,,0.9687647000100696,5,1298016,70080,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n10000,Naive Quick Sort,,C1,10000,,,,1,0.19533279999450315,,,153092,201021,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Naive Quick Sort,,C1,10000,,,,2,0.28925070000695996,,,153092,201021,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Naive Quick Sort,,C1,10000,,,,3,0.34223029999702703,,,153092,201021,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Naive Quick Sort,,C1,10000,,,,4,0.41222909999487456,,,153092,201021,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Naive Quick Sort,,C1,10000,,,,5,0.23409840000385884,,,153092,201021,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n10000,Naive Quick Sort,,C1,10000,,,,,,0.28925070000695996,5,153092,201021,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n10000,Naive Quick Sort,,C2,10000,,,,1,0.3617203000030713,,,161894,250809,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Naive Quick Sort,,C2,10000,,,,2,0.31036639999365434,,,161894,250809,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Naive Quick Sort,,C2,10000,,,,3,0.5696892999985721,,,161894,250809,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Naive Quick Sort,,C2,10000,,,,4,0.44440300000132993,,,161894,250809,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Naive Quick Sort,,C2,10000,,,,5,0.3496636999916518,,,161894,250809,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n10000,Naive Quick Sort,,C2,10000,,,,,,0.3617203000030713,5,161894,250809,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n284807,Heap Sort,,C6,284807,,,,1,6.612197299997206,,,7389529,11178285,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Heap Sort,,C6,284807,,,,2,4.897933800006285,,,7389529,11178285,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Heap Sort,,C6,284807,,,,3,5.8525306999945315,,,7389529,11178285,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Heap Sort,,C6,284807,,,,4,6.4842483999964315,,,7389529,11178285,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n284807,Heap Sort,,C6,284807,,,,5,7.906809100008104,,,7389529,11178285,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n284807,Heap Sort,,C6,284807,,,,,,6.4842483999964315,5,7389529,11178285,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n284807,Merge Sort,,C5,284807,,,,1,12.892781600006856,,,4008540,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Merge Sort,,C5,284807,,,,2,12.827124899995397,,,4008540,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Merge Sort,,C5,284807,,,,3,15.03699520000373,,,4008540,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Merge Sort,,C5,284807,,,,4,16.588409800009686,,,4008540,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n284807,Merge Sort,,C5,284807,,,,5,20.93612800000119,,,4008540,10343704,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n284807,Merge Sort,,C5,284807,,,,,,15.03699520000373,5,4008540,10343704,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n284807,Insertion Sort,,C3,284807,,,,1,0.602684199999203,,,284806,284806,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Insertion Sort,,C3,284807,,,,2,1.5050621000118554,,,284806,284806,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Insertion Sort,,C3,284807,,,,3,1.41187880000507,,,284806,284806,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Insertion Sort,,C3,284807,,,,4,0.5570834000100149,,,284806,284806,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n284807,Insertion Sort,,C3,284807,,,,5,0.6416433999984292,,,284806,284806,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n284807,Insertion Sort,,C3,284807,,,,,,0.6416433999984292,5,284806,284806,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n10000,Naive Quick Sort,,C6,10000,,,,1,15.391660900000716,,,16023019,33393,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Naive Quick Sort,,C6,10000,,,,2,9.706825400004163,,,16023019,33393,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Naive Quick Sort,,C6,10000,,,,3,8.714474499996868,,,16023019,33393,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Naive Quick Sort,,C6,10000,,,,4,8.57418759999564,,,16023019,33393,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Naive Quick Sort,,C6,10000,,,,5,8.291018099989742,,,16023019,33393,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n10000,Naive Quick Sort,,C6,10000,,,,,,8.714474499996868,5,16023019,33393,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n10000,Hardened Quick Sort,,C4,10000,,,,1,0.6874998999992386,,,352096,930030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Hardened Quick Sort,,C4,10000,,,,2,0.49631630000658333,,,352096,930030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Hardened Quick Sort,,C4,10000,,,,3,0.5642797000036808,,,352096,930030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Hardened Quick Sort,,C4,10000,,,,4,0.5476206000021193,,,352096,930030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Hardened Quick Sort,,C4,10000,,,,5,0.6806854999886127,,,352096,930030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n10000,Hardened Quick Sort,,C4,10000,,,,,,0.5642797000036808,5,352096,930030,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n100000,Merge Sort,,C1,100000,,,,1,3.798866099998122,,,1532537,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Merge Sort,,C1,100000,,,,2,3.544006800002535,,,1532537,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Merge Sort,,C1,100000,,,,3,3.0469123999937437,,,1532537,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Merge Sort,,C1,100000,,,,4,3.348482100002002,,,1532537,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Merge Sort,,C1,100000,,,,5,3.141669599994202,,,1532537,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n100000,Merge Sort,,C1,100000,,,,,,3.348482100002002,5,1532537,3337856,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n100000,Heap Sort,,C1,100000,,,,1,4.022082700001192,,,3019581,4717287,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Heap Sort,,C1,100000,,,,2,4.65062480000779,,,3019581,4717287,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Heap Sort,,C1,100000,,,,3,4.234238400007598,,,3019581,4717287,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Heap Sort,,C1,100000,,,,4,3.6874903999996604,,,3019581,4717287,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n100000,Heap Sort,,C1,100000,,,,5,3.587429000006523,,,3019581,4717287,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n100000,Heap Sort,,C1,100000,,,,,,4.022082700001192,5,3019581,4717287,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n100000,Merge Sort,,C2,100000,,,,1,1.9798736999946414,,,1536496,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Merge Sort,,C2,100000,,,,2,1.7272662000032142,,,1536496,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Merge Sort,,C2,100000,,,,3,2.550645800001803,,,1536496,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Merge Sort,,C2,100000,,,,4,2.092399300003308,,,1536496,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Merge Sort,,C2,100000,,,,5,1.7668630999978632,,,1536496,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n100000,Merge Sort,,C2,100000,,,,,,1.9798736999946414,5,1536496,3337856,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n10000,Naive Quick Sort,,C4,10000,,,,1,35.7647874999966,,,49995000,15000,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Naive Quick Sort,,C4,10000,,,,2,22.583000400001765,,,49995000,15000,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Naive Quick Sort,,C4,10000,,,,3,22.329103999989456,,,49995000,15000,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Naive Quick Sort,,C4,10000,,,,4,33.57553439999174,,,49995000,15000,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Naive Quick Sort,,C4,10000,,,,5,22.650671199997305,,,49995000,15000,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n10000,Naive Quick Sort,,C4,10000,,,,,,22.650671199997305,5,49995000,15000,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n100000,Heap Sort,,C2,100000,,,,1,5.174999099996057,,,3019924,4725342,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Heap Sort,,C2,100000,,,,2,4.639861399991787,,,3019924,4725342,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Heap Sort,,C2,100000,,,,3,3.878714599995874,,,3019924,4725342,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Heap Sort,,C2,100000,,,,4,4.13146209999104,,,3019924,4725342,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n100000,Heap Sort,,C2,100000,,,,5,4.03939970000647,,,3019924,4725342,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n100000,Heap Sort,,C2,100000,,,,,,4.13146209999104,5,3019924,4725342,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n100000,Merge Sort,,C3,100000,,,,1,1.8197562999994261,,,815024,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Merge Sort,,C3,100000,,,,2,1.8553890000039246,,,815024,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Merge Sort,,C3,100000,,,,3,3.313360799991642,,,815024,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Merge Sort,,C3,100000,,,,4,2.229139299990493,,,815024,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Merge Sort,,C3,100000,,,,5,2.723710599995684,,,815024,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n100000,Merge Sort,,C3,100000,,,,,,2.229139299990493,5,815024,3337856,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n100000,Heap Sort,,C3,100000,,,,1,2.1221007999993162,,,3112517,4952562,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Heap Sort,,C3,100000,,,,2,1.6955629000003682,,,3112517,4952562,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Heap Sort,,C3,100000,,,,3,2.2802062000118895,,,3112517,4952562,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Heap Sort,,C3,100000,,,,4,2.710403499993845,,,3112517,4952562,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Heap Sort,,C3,100000,,,,5,2.451669700007187,,,3112517,4952562,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n100000,Heap Sort,,C3,100000,,,,,,2.2802062000118895,5,3112517,4952562,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n100000,Merge Sort,,C4,100000,,,,1,1.8023087000037776,,,853904,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Merge Sort,,C4,100000,,,,2,1.7577334999950835,,,853904,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Merge Sort,,C4,100000,,,,3,2.343499000009615,,,853904,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Merge Sort,,C4,100000,,,,4,1.856547799994587,,,853904,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Merge Sort,,C4,100000,,,,5,1.3106932000082452,,,853904,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n100000,Merge Sort,,C4,100000,,,,,,1.8023087000037776,5,853904,3337856,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n10000,Naive Quick Sort,,C3,10000,,,,1,42.12242559999868,,,49995000,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Naive Quick Sort,,C3,10000,,,,2,26.64917350000178,,,49995000,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Naive Quick Sort,,C3,10000,,,,3,36.138053200003924,,,49995000,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Naive Quick Sort,,C3,10000,,,,4,25.883132400005707,,,49995000,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Naive Quick Sort,,C3,10000,,,,5,37.071950999990804,,,49995000,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n10000,Naive Quick Sort,,C3,10000,,,,,,36.138053200003924,5,49995000,0,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n100000,Merge Sort,,C5,100000,,,,1,1.9241678999969736,,,1262011,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Merge Sort,,C5,100000,,,,2,1.549448300007498,,,1262011,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Merge Sort,,C5,100000,,,,3,1.848720100009814,,,1262011,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Merge Sort,,C5,100000,,,,4,1.5763463000039337,,,1262011,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Merge Sort,,C5,100000,,,,5,1.364183800003957,,,1262011,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n100000,Merge Sort,,C5,100000,,,,,,1.5763463000039337,5,1262011,3337856,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n100000,Heap Sort,,C5,100000,,,,1,2.2648581999965245,,,3111259,4948992,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Heap Sort,,C5,100000,,,,2,2.0858212000021012,,,3111259,4948992,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Heap Sort,,C5,100000,,,,3,2.270074999993085,,,3111259,4948992,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Heap Sort,,C5,100000,,,,4,1.9532860000035726,,,3111259,4948992,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n100000,Heap Sort,,C5,100000,,,,5,1.9458849000075134,,,3111259,4948992,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n100000,Heap Sort,,C5,100000,,,,,,2.0858212000021012,5,3111259,4948992,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n100000,Merge Sort,,C6,100000,,,,1,1.6206181000015931,,,1454814,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Merge Sort,,C6,100000,,,,2,1.4552877000096487,,,1454814,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Merge Sort,,C6,100000,,,,3,1.1166731999983313,,,1454814,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Merge Sort,,C6,100000,,,,4,1.123394800000824,,,1454814,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Merge Sort,,C6,100000,,,,5,0.9838397999992594,,,1454814,3337856,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n100000,Merge Sort,,C6,100000,,,,,,1.123394800000824,5,1454814,3337856,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n100000,Insertion Sort,,C3,100000,,,,1,0.0728734999865992,,,99999,99999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Insertion Sort,,C3,100000,,,,2,0.13333430000056978,,,99999,99999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Insertion Sort,,C3,100000,,,,3,0.1606915000011213,,,99999,99999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Insertion Sort,,C3,100000,,,,4,0.09772109999903478,,,99999,99999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n100000,Insertion Sort,,C3,100000,,,,5,0.07385840000642929,,,99999,99999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n100000,Insertion Sort,,C3,100000,,,,,,0.09772109999903478,5,99999,99999,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n10000,Hardened Quick Sort,,C1,10000,,,,1,0.23216309999406803,,,152157,389019,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Hardened Quick Sort,,C1,10000,,,,2,0.13804439999512397,,,152157,389019,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Hardened Quick Sort,,C1,10000,,,,3,0.12884469999698922,,,152157,389019,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Hardened Quick Sort,,C1,10000,,,,4,0.10644639999372885,,,152157,389019,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Hardened Quick Sort,,C1,10000,,,,5,0.12209040000743698,,,152157,389019,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n10000,Hardened Quick Sort,,C1,10000,,,,,,0.12884469999698922,5,152157,389019,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n10000,Hardened Quick Sort,,C2,10000,,,,1,0.19143789999361616,,,157397,404403,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Hardened Quick Sort,,C2,10000,,,,2,0.13606129999971017,,,157397,404403,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Hardened Quick Sort,,C2,10000,,,,3,0.12044750001223292,,,157397,404403,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Hardened Quick Sort,,C2,10000,,,,4,0.12199449999025092,,,157397,404403,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Hardened Quick Sort,,C2,10000,,,,5,0.09464460000162944,,,157397,404403,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n10000,Hardened Quick Sort,,C2,10000,,,,,,0.12199449999025092,5,157397,404403,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n100000,Heap Sort,,C4,100000,,,,1,5.359318200004054,,,2926640,4492302,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Heap Sort,,C4,100000,,,,2,4.889180099999066,,,2926640,4492302,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Heap Sort,,C4,100000,,,,3,3.8911037999932887,,,2926640,4492302,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Heap Sort,,C4,100000,,,,4,4.466440800009877,,,2926640,4492302,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n100000,Heap Sort,,C4,100000,,,,5,7.092206500004977,,,2926640,4492302,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n100000,Heap Sort,,C4,100000,,,,,,4.889180099999066,5,2926640,4492302,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n10000,Hardened Quick Sort,,C5,10000,,,,1,0.18620999999984633,,,228455,577068,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Hardened Quick Sort,,C5,10000,,,,2,0.1709508000058122,,,228455,577068,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Hardened Quick Sort,,C5,10000,,,,3,0.23569669999415055,,,228455,577068,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Hardened Quick Sort,,C5,10000,,,,4,0.31047620000026654,,,228455,577068,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Hardened Quick Sort,,C5,10000,,,,5,0.26069229999848176,,,228455,577068,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n10000,Hardened Quick Sort,,C5,10000,,,,,,0.23569669999415055,5,228455,577068,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n10000,Hardened Quick Sort,,C3,10000,,,,1,0.8554820999997901,,,352095,915030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Hardened Quick Sort,,C3,10000,,,,2,1.2920163000089815,,,352095,915030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Hardened Quick Sort,,C3,10000,,,,3,0.9634564000007231,,,352095,915030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Hardened Quick Sort,,C3,10000,,,,4,1.0005444999987958,,,352095,915030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Hardened Quick Sort,,C3,10000,,,,5,1.1850531999953091,,,352095,915030,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n10000,Hardened Quick Sort,,C3,10000,,,,,,1.0005444999987958,5,352095,915030,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n10000,Hardened Quick Sort,,C6,10000,,,,1,0.011512700002640486,,,17512,22482,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Hardened Quick Sort,,C6,10000,,,,2,0.007333100002142601,,,17512,22482,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Hardened Quick Sort,,C6,10000,,,,3,0.014539199997670949,,,17512,22482,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Hardened Quick Sort,,C6,10000,,,,4,0.013326399988727644,,,17512,22482,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Hardened Quick Sort,,C6,10000,,,,5,0.011527900001965463,,,17512,22482,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n10000,Hardened Quick Sort,,C6,10000,,,,,,0.011527900001965463,5,17512,22482,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n1000,Naive Quick Sort,,C1,1000,,,,1,0.007203999994089827,,,10823,13545,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Naive Quick Sort,,C1,1000,,,,2,0.007810099996277131,,,10823,13545,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Naive Quick Sort,,C1,1000,,,,3,0.009434100007638335,,,10823,13545,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Naive Quick Sort,,C1,1000,,,,4,0.010044099995866418,,,10823,13545,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Naive Quick Sort,,C1,1000,,,,5,0.014197099997545592,,,10823,13545,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n1000,Naive Quick Sort,,C1,1000,,,,,,0.009434100007638335,5,10823,13545,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n1000,Naive Quick Sort,,C2,1000,,,,1,0.041342800002894364,,,10208,12315,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Naive Quick Sort,,C2,1000,,,,2,0.006134900002507493,,,10208,12315,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Naive Quick Sort,,C2,1000,,,,3,0.007462900000973605,,,10208,12315,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Naive Quick Sort,,C2,1000,,,,4,0.02126039999711793,,,10208,12315,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Naive Quick Sort,,C2,1000,,,,5,0.09238139999797568,,,10208,12315,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n1000,Naive Quick Sort,,C2,1000,,,,,,0.02126039999711793,5,10208,12315,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n1000,Hardened Quick Sort,,C4,1000,,,,1,0.01805179999792017,,,14585,32964,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Hardened Quick Sort,,C4,1000,,,,2,0.05024700000649318,,,14585,32964,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Hardened Quick Sort,,C4,1000,,,,3,0.011693899999954738,,,14585,32964,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Hardened Quick Sort,,C4,1000,,,,4,0.009615400005714037,,,14585,32964,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Hardened Quick Sort,,C4,1000,,,,5,0.012412500000209548,,,14585,32964,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n1000,Hardened Quick Sort,,C4,1000,,,,,,0.012412500000209548,5,14585,32964,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n10000,Merge Sort,,C1,10000,,,,1,0.1447747999918647,,,120058,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Merge Sort,,C1,10000,,,,2,0.17111570000997745,,,120058,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Merge Sort,,C1,10000,,,,3,0.1266990000003716,,,120058,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Merge Sort,,C1,10000,,,,4,0.12377739998919424,,,120058,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Merge Sort,,C1,10000,,,,5,0.24154240000643767,,,120058,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n10000,Merge Sort,,C1,10000,,,,,,0.1447747999918647,5,120058,267232,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n10000,Heap Sort,,C1,10000,,,,1,0.19986249999783468,,,235360,371709,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Heap Sort,,C1,10000,,,,2,0.20969699999841396,,,235360,371709,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Heap Sort,,C1,10000,,,,3,0.1672028000029968,,,235360,371709,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Heap Sort,,C1,10000,,,,4,0.20033910000347532,,,235360,371709,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n10000,Heap Sort,,C1,10000,,,,5,0.26145490001363214,,,235360,371709,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n10000,Heap Sort,,C1,10000,,,,,,0.20033910000347532,5,235360,371709,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n10000,Heap Sort,,C2,10000,,,,1,0.19671109999762848,,,235296,372711,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Heap Sort,,C2,10000,,,,2,0.2869133000058355,,,235296,372711,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Heap Sort,,C2,10000,,,,3,0.17179060001217294,,,235296,372711,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Heap Sort,,C2,10000,,,,4,0.21331559999089222,,,235296,372711,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Heap Sort,,C2,10000,,,,5,0.19411229999968782,,,235296,372711,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n10000,Heap Sort,,C2,10000,,,,,,0.19671109999762848,5,235296,372711,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n10000,Merge Sort,,C3,10000,,,,1,0.17838659998960793,,,64608,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Merge Sort,,C3,10000,,,,2,0.1776281999918865,,,64608,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Merge Sort,,C3,10000,,,,3,0.14350030000787228,,,64608,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Merge Sort,,C3,10000,,,,4,0.1216193000000203,,,64608,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Merge Sort,,C3,10000,,,,5,0.07916110000223853,,,64608,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n10000,Merge Sort,,C3,10000,,,,,,0.14350030000787228,5,64608,267232,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n10000,Heap Sort,,C3,10000,,,,1,0.24798339999688324,,,244460,395868,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Heap Sort,,C3,10000,,,,2,0.17028440001013223,,,244460,395868,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Heap Sort,,C3,10000,,,,3,0.15815250000741798,,,244460,395868,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Heap Sort,,C3,10000,,,,4,0.15841119999822695,,,244460,395868,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Heap Sort,,C3,10000,,,,5,0.17267139999603387,,,244460,395868,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n10000,Heap Sort,,C3,10000,,,,,,0.17028440001013223,5,244460,395868,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n10000,Merge Sort,,C2,10000,,,,1,0.5904699000093387,,,120467,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Merge Sort,,C2,10000,,,,2,0.6323994999984279,,,120467,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Merge Sort,,C2,10000,,,,3,0.5122775999916485,,,120467,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Merge Sort,,C2,10000,,,,4,0.6236343000055058,,,120467,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n10000,Merge Sort,,C2,10000,,,,5,0.5275870999903418,,,120467,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n10000,Merge Sort,,C2,10000,,,,,,0.5904699000093387,5,120467,267232,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n10000,Heap Sort,,C4,10000,,,,1,0.13084199999866541,,,226682,350088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Heap Sort,,C4,10000,,,,2,0.11942800000542775,,,226682,350088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Heap Sort,,C4,10000,,,,3,0.1483410999935586,,,226682,350088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Heap Sort,,C4,10000,,,,4,0.15986800000246149,,,226682,350088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Heap Sort,,C4,10000,,,,5,0.21043490000010934,,,226682,350088,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n10000,Heap Sort,,C4,10000,,,,,,0.1483410999935586,5,226682,350088,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n10000,Merge Sort,,C5,10000,,,,1,0.10843900000327267,,,91567,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Merge Sort,,C5,10000,,,,2,0.10049179999623448,,,91567,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Merge Sort,,C5,10000,,,,3,0.09909180000249762,,,91567,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Merge Sort,,C5,10000,,,,4,0.10259619999851566,,,91567,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Merge Sort,,C5,10000,,,,5,0.12492199998814613,,,91567,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n10000,Merge Sort,,C5,10000,,,,,,0.10259619999851566,5,91567,267232,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n10000,Merge Sort,,C4,10000,,,,1,0.29795279999962077,,,69008,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Merge Sort,,C4,10000,,,,2,0.4197583999921335,,,69008,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Merge Sort,,C4,10000,,,,3,0.3940479000011692,,,69008,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Merge Sort,,C4,10000,,,,4,0.24005429999670014,,,69008,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n10000,Merge Sort,,C4,10000,,,,5,0.4469589000073029,,,69008,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n10000,Merge Sort,,C4,10000,,,,,,0.3940479000011692,5,69008,267232,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n10000,Heap Sort,,C5,10000,,,,1,0.21438140000100248,,,244363,394926,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Heap Sort,,C5,10000,,,,2,0.18346579998615198,,,244363,394926,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Heap Sort,,C5,10000,,,,3,0.17163070000242442,,,244363,394926,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Heap Sort,,C5,10000,,,,4,0.20007399999303743,,,244363,394926,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n10000,Heap Sort,,C5,10000,,,,5,0.23544859999674372,,,244363,394926,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n10000,Heap Sort,,C5,10000,,,,,,0.20007399999303743,5,244363,394926,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n10000,Heap Sort,,C6,10000,,,,1,0.11608669999986887,,,188494,286467,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Heap Sort,,C6,10000,,,,2,0.09876589999475982,,,188494,286467,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Heap Sort,,C6,10000,,,,3,0.12469749999581836,,,188494,286467,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Heap Sort,,C6,10000,,,,4,0.18163940000522416,,,188494,286467,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Heap Sort,,C6,10000,,,,5,0.15265559998806566,,,188494,286467,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n10000,Heap Sort,,C6,10000,,,,,,0.12469749999581836,5,188494,286467,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n10000,Insertion Sort,,C3,10000,,,,1,0.007886099992902018,,,9999,9999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Insertion Sort,,C3,10000,,,,2,0.007984300013049506,,,9999,9999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Insertion Sort,,C3,10000,,,,3,0.004702400008682162,,,9999,9999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Insertion Sort,,C3,10000,,,,4,0.006815100001404062,,,9999,9999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n10000,Insertion Sort,,C3,10000,,,,5,0.0047950000007404014,,,9999,9999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n10000,Insertion Sort,,C3,10000,,,,,,0.006815100001404062,5,9999,9999,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n1000,Hardened Quick Sort,,C1,1000,,,,1,0.011350400003721006,,,11269,27219,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Hardened Quick Sort,,C1,1000,,,,2,0.008522799995262176,,,11269,27219,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Hardened Quick Sort,,C1,1000,,,,3,0.007068899998557754,,,11269,27219,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Hardened Quick Sort,,C1,1000,,,,4,0.006077000012737699,,,11269,27219,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Hardened Quick Sort,,C1,1000,,,,5,0.007480800006305799,,,11269,27219,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n1000,Hardened Quick Sort,,C1,1000,,,,,,0.007480800006305799,5,11269,27219,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n1000,Hardened Quick Sort,,C2,1000,,,,1,0.006437799995183013,,,11466,27729,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Hardened Quick Sort,,C2,1000,,,,2,0.04052670000237413,,,11466,27729,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Hardened Quick Sort,,C2,1000,,,,3,0.03640189999714494,,,11466,27729,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Hardened Quick Sort,,C2,1000,,,,4,0.03475990000879392,,,11466,27729,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Hardened Quick Sort,,C2,1000,,,,5,0.020250100002158433,,,11466,27729,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n1000,Hardened Quick Sort,,C2,1000,,,,,,0.03475990000879392,5,11466,27729,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n1000,Hardened Quick Sort,,C3,1000,,,,1,0.00841710000531748,,,14584,31464,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Hardened Quick Sort,,C3,1000,,,,2,0.0135803000011947,,,14584,31464,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Hardened Quick Sort,,C3,1000,,,,3,0.009692499996162951,,,14584,31464,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Hardened Quick Sort,,C3,1000,,,,4,0.008290500001749024,,,14584,31464,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Hardened Quick Sort,,C3,1000,,,,5,0.008374599987291731,,,14584,31464,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n1000,Hardened Quick Sort,,C3,1000,,,,,,0.00841710000531748,5,14584,31464,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n1000,Hardened Quick Sort,,C5,1000,,,,1,0.0230262999975821,,,16562,39465,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Hardened Quick Sort,,C5,1000,,,,2,0.012956299993675202,,,16562,39465,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Hardened Quick Sort,,C5,1000,,,,3,0.014135400007944554,,,16562,39465,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Hardened Quick Sort,,C5,1000,,,,4,0.011506399998324923,,,16562,39465,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Hardened Quick Sort,,C5,1000,,,,5,0.014271699998062104,,,16562,39465,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n1000,Hardened Quick Sort,,C5,1000,,,,,,0.014135400007944554,5,16562,39465,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n1000,Hardened Quick Sort,,C6,1000,,,,1,0.001301299998885952,,,1847,2484,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Hardened Quick Sort,,C6,1000,,,,2,0.0015477999986615032,,,1847,2484,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Hardened Quick Sort,,C6,1000,,,,3,0.007265299995196983,,,1847,2484,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Hardened Quick Sort,,C6,1000,,,,4,0.0014263999910326675,,,1847,2484,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Hardened Quick Sort,,C6,1000,,,,5,0.0014481000107480213,,,1847,2484,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n1000,Hardened Quick Sort,,C6,1000,,,,,,0.0014481000107480213,5,1847,2484,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n10000,Merge Sort,,C6,10000,,,,1,0.4989113999909023,,,114219,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Merge Sort,,C6,10000,,,,2,0.5876136000006227,,,114219,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Merge Sort,,C6,10000,,,,3,0.3435488999966765,,,114219,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Merge Sort,,C6,10000,,,,4,0.3617038000083994,,,114219,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n10000,Merge Sort,,C6,10000,,,,5,0.5314638999989256,,,114219,267232,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n10000,Merge Sort,,C6,10000,,,,,,0.4989113999909023,5,114219,267232,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n1000,Insertion Sort,,C2,1000,,,,1,0.10765180000453256,,,247996,248004,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Insertion Sort,,C2,1000,,,,2,0.1039396999985911,,,247996,248004,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Insertion Sort,,C2,1000,,,,3,0.10282919999735896,,,247996,248004,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Insertion Sort,,C2,1000,,,,4,0.1250028999929782,,,247996,248004,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Insertion Sort,,C2,1000,,,,5,0.12396730000909884,,,247996,248004,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n1000,Insertion Sort,,C2,1000,,,,,,0.10765180000453256,5,247996,248004,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n1000,Insertion Sort,,C1,1000,,,,1,0.5388617000135127,,,253400,253408,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Insertion Sort,,C1,1000,,,,2,0.3842170999996597,,,253400,253408,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Insertion Sort,,C1,1000,,,,3,0.37812989999656565,,,253400,253408,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Insertion Sort,,C1,1000,,,,4,0.49707920000946615,,,253400,253408,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Insertion Sort,,C1,1000,,,,5,0.7060614000074565,,,253400,253408,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n1000,Insertion Sort,,C1,1000,,,,,,0.49707920000946615,5,253400,253408,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n1000,Insertion Sort,,C4,1000,,,,1,0.23125989999971353,,,499500,500499,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Insertion Sort,,C4,1000,,,,2,0.29459599999245256,,,499500,500499,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Insertion Sort,,C4,1000,,,,3,0.27766980000888,,,499500,500499,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Insertion Sort,,C4,1000,,,,4,0.3041693999985,,,499500,500499,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Insertion Sort,,C4,1000,,,,5,0.2808822999941185,,,499500,500499,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n1000,Insertion Sort,,C4,1000,,,,,,0.2808822999941185,5,499500,500499,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n1000,Insertion Sort,,C5,1000,,,,1,0.01986249999026768,,,4006,4006,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Insertion Sort,,C5,1000,,,,2,0.0016172000032383949,,,4006,4006,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Insertion Sort,,C5,1000,,,,3,0.0016276000096695498,,,4006,4006,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Insertion Sort,,C5,1000,,,,4,0.03523750000749715,,,4006,4006,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Insertion Sort,,C5,1000,,,,5,0.0016382000030716881,,,4006,4006,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n1000,Insertion Sort,,C5,1000,,,,,,0.0016382000030716881,5,4006,4006,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n1000,Insertion Sort,,C6,1000,,,,1,0.07662219999474473,,,179060,179064,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Insertion Sort,,C6,1000,,,,2,0.07696990000840742,,,179060,179064,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Insertion Sort,,C6,1000,,,,3,0.07749779999721795,,,179060,179064,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Insertion Sort,,C6,1000,,,,4,0.07445559999905527,,,179060,179064,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Insertion Sort,,C6,1000,,,,5,0.09547630000452045,,,179060,179064,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n1000,Insertion Sort,,C6,1000,,,,,,0.07696990000840742,5,179060,179064,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n1000,Naive Quick Sort,,C5,1000,,,,1,0.0633623999892734,,,148574,3261,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Naive Quick Sort,,C5,1000,,,,2,0.0659756999957608,,,148574,3261,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Naive Quick Sort,,C5,1000,,,,3,0.0757651000021724,,,148574,3261,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Naive Quick Sort,,C5,1000,,,,4,0.07466070000373293,,,148574,3261,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Naive Quick Sort,,C5,1000,,,,5,0.09496380000200588,,,148574,3261,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n1000,Naive Quick Sort,,C5,1000,,,,,,0.07466070000373293,5,148574,3261,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n100000,Heap Sort,,C6,100000,,,,1,3.027797000002465,,,2431719,3684921,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Heap Sort,,C6,100000,,,,2,4.571268599989708,,,2431719,3684921,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Heap Sort,,C6,100000,,,,3,5.272746200003894,,,2431719,3684921,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Heap Sort,,C6,100000,,,,4,5.457923800000572,,,2431719,3684921,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n100000,Heap Sort,,C6,100000,,,,5,4.122843500008457,,,2431719,3684921,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n100000,Heap Sort,,C6,100000,,,,,,4.571268599989708,5,2431719,3684921,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n1000,Naive Quick Sort,,C4,1000,,,,1,0.19490740000037476,,,499500,1500,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Naive Quick Sort,,C4,1000,,,,2,0.22509310000168625,,,499500,1500,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Naive Quick Sort,,C4,1000,,,,3,0.4840312000014819,,,499500,1500,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Naive Quick Sort,,C4,1000,,,,4,0.3463211000052979,,,499500,1500,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Naive Quick Sort,,C4,1000,,,,5,0.28332980000413954,,,499500,1500,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n1000,Naive Quick Sort,,C4,1000,,,,,,0.28332980000413954,5,499500,1500,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n1000,Naive Quick Sort,,C3,1000,,,,1,0.25355490000220016,,,499500,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Naive Quick Sort,,C3,1000,,,,2,0.20465719999629073,,,499500,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Naive Quick Sort,,C3,1000,,,,3,0.5034423999895807,,,499500,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Naive Quick Sort,,C3,1000,,,,4,0.4100220999971498,,,499500,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Naive Quick Sort,,C3,1000,,,,5,0.2934614999976475,,,499500,0,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n1000,Naive Quick Sort,,C3,1000,,,,,,0.2934614999976475,5,499500,0,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n1000,Merge Sort,,C1,1000,,,,1,0.011925200000405312,,,8682,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Merge Sort,,C1,1000,,,,2,0.013284799992106855,,,8682,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Merge Sort,,C1,1000,,,,3,0.011341300007188693,,,8682,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Merge Sort,,C1,1000,,,,4,0.01111490000039339,,,8682,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Merge Sort,,C1,1000,,,,5,0.014945600007195026,,,8682,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n1000,Merge Sort,,C1,1000,,,,,,0.011925200000405312,5,8682,19952,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C1-n1000,Heap Sort,,C1,1000,,,,1,0.010698500002035871,,,16848,27165,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Heap Sort,,C1,1000,,,,2,0.0246257999970112,,,16848,27165,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Heap Sort,,C1,1000,,,,3,0.011195400002179667,,,16848,27165,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Heap Sort,,C1,1000,,,,4,0.017298699996899813,,,16848,27165,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C1-n1000,Heap Sort,,C1,1000,,,,5,0.018134499987354502,,,16848,27165,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C1-n1000,Heap Sort,,C1,1000,,,,,,0.017298699996899813,5,16848,27165,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n1000,Merge Sort,,C2,1000,,,,1,0.012881800008472055,,,8705,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Merge Sort,,C2,1000,,,,2,0.012899199995445088,,,8705,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Merge Sort,,C2,1000,,,,3,0.01468870000098832,,,8705,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Merge Sort,,C2,1000,,,,4,0.01300769999215845,,,8705,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Merge Sort,,C2,1000,,,,5,0.010494800008018501,,,8705,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n1000,Merge Sort,,C2,1000,,,,,,0.012899199995445088,5,8705,19952,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n1000,Merge Sort,,C3,1000,,,,1,0.01270910000312142,,,4932,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Merge Sort,,C3,1000,,,,2,0.012741400001686998,,,4932,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Merge Sort,,C3,1000,,,,3,0.012266500008990988,,,4932,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Merge Sort,,C3,1000,,,,4,0.0161664000042947,,,4932,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Merge Sort,,C3,1000,,,,5,0.013721399998757988,,,4932,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n1000,Merge Sort,,C3,1000,,,,,,0.012741400001686998,5,4932,19952,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n1000,Heap Sort,,C3,1000,,,,1,0.009409399994183332,,,17583,29124,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Heap Sort,,C3,1000,,,,2,0.011759199987864122,,,17583,29124,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Heap Sort,,C3,1000,,,,3,0.011121400006231852,,,17583,29124,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Heap Sort,,C3,1000,,,,4,0.00963709999632556,,,17583,29124,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Heap Sort,,C3,1000,,,,5,0.01086310000391677,,,17583,29124,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n1000,Heap Sort,,C3,1000,,,,,,0.01086310000391677,5,17583,29124,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n1000,Merge Sort,,C4,1000,,,,1,0.010436099997605197,,,5044,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Merge Sort,,C4,1000,,,,2,0.011322199992719106,,,5044,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Merge Sort,,C4,1000,,,,3,0.013493500009644777,,,5044,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Merge Sort,,C4,1000,,,,4,0.008668700000271201,,,5044,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Merge Sort,,C4,1000,,,,5,0.011277099998551421,,,5044,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n1000,Merge Sort,,C4,1000,,,,,,0.011277099998551421,5,5044,19952,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C2-n1000,Heap Sort,,C2,1000,,,,1,0.1043323999911081,,,16883,27267,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Heap Sort,,C2,1000,,,,2,0.04718480000155978,,,16883,27267,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Heap Sort,,C2,1000,,,,3,0.04410519999510143,,,16883,27267,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Heap Sort,,C2,1000,,,,4,0.055060800004866906,,,16883,27267,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C2-n1000,Heap Sort,,C2,1000,,,,5,0.04494780000823084,,,16883,27267,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C2-n1000,Heap Sort,,C2,1000,,,,,,0.04718480000155978,5,16883,27267,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n1000,Naive Quick Sort,,C6,1000,,,,1,0.5210501999972621,,,158620,3252,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Naive Quick Sort,,C6,1000,,,,2,0.2516291999927489,,,158620,3252,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Naive Quick Sort,,C6,1000,,,,3,0.17973970000457484,,,158620,3252,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Naive Quick Sort,,C6,1000,,,,4,0.2860833000013372,,,158620,3252,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Naive Quick Sort,,C6,1000,,,,5,0.3539771999930963,,,158620,3252,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n1000,Naive Quick Sort,,C6,1000,,,,,,0.2860833000013372,5,158620,3252,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n1000,Merge Sort,,C5,1000,,,,1,0.01083729999663774,,,6122,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Merge Sort,,C5,1000,,,,2,0.007190700009232387,,,6122,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Merge Sort,,C5,1000,,,,3,0.011385299992980435,,,6122,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Merge Sort,,C5,1000,,,,4,0.007222999993246049,,,6122,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Merge Sort,,C5,1000,,,,5,0.009091200001421385,,,6122,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n1000,Merge Sort,,C5,1000,,,,,,0.009091200001421385,5,6122,19952,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C4-n1000,Heap Sort,,C4,1000,,,,1,0.013322400001925416,,,15965,24948,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Heap Sort,,C4,1000,,,,2,0.053621700004441664,,,15965,24948,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Heap Sort,,C4,1000,,,,3,0.031958099993062206,,,15965,24948,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Heap Sort,,C4,1000,,,,4,0.030252099997596815,,,15965,24948,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C4-n1000,Heap Sort,,C4,1000,,,,5,0.02856959999189712,,,15965,24948,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C4-n1000,Heap Sort,,C4,1000,,,,,,0.030252099997596815,5,15965,24948,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n1000,Merge Sort,,C6,1000,,,,1,0.008706399996299297,,,8314,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Merge Sort,,C6,1000,,,,2,0.01086080000095535,,,8314,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Merge Sort,,C6,1000,,,,3,0.010281800001394004,,,8314,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Merge Sort,,C6,1000,,,,4,0.007740500004729256,,,8314,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Merge Sort,,C6,1000,,,,5,0.007202499997220002,,,8314,19952,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n1000,Merge Sort,,C6,1000,,,,,,0.008706399996299297,5,8314,19952,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C3-n1000,Insertion Sort,,C3,1000,,,,1,0.0008343000081367791,,,999,999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Insertion Sort,,C3,1000,,,,2,0.0008863999973982573,,,999,999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Insertion Sort,,C3,1000,,,,3,0.0008746999956201762,,,999,999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Insertion Sort,,C3,1000,,,,4,0.0005062999989604577,,,999,999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C3-n1000,Insertion Sort,,C3,1000,,,,5,0.0004939000064041466,,,999,999,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C3-n1000,Insertion Sort,,C3,1000,,,,,,0.0008343000081367791,5,999,999,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C5-n1000,Heap Sort,,C5,1000,,,,1,0.011269099995843135,,,17563,29055,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Heap Sort,,C5,1000,,,,2,0.009082400007173419,,,17563,29055,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Heap Sort,,C5,1000,,,,3,0.008968199996161275,,,17563,29055,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Heap Sort,,C5,1000,,,,4,0.017303400003584102,,,17563,29055,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C5-n1000,Heap Sort,,C5,1000,,,,5,0.00991559999238234,,,17563,29055,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C5-n1000,Heap Sort,,C5,1000,,,,,,0.00991559999238234,5,17563,29055,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+run,C,full_sort,tournament-C6-n1000,Heap Sort,,C6,1000,,,,1,0.011326899999403395,,,13724,20985,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Heap Sort,,C6,1000,,,,2,0.038263199996436015,,,13724,20985,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Heap Sort,,C6,1000,,,,3,0.012082100001862273,,,13724,20985,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Heap Sort,,C6,1000,,,,4,0.0697055999917211,,,13724,20985,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+run,C,full_sort,tournament-C6-n1000,Heap Sort,,C6,1000,,,,5,0.006575299994437955,,,13724,20985,,True,unstable,False,,,,,,,,,,pinned worker; fresh copy outside timer
+median,C,full_sort,tournament-C6-n1000,Heap Sort,,C6,1000,,,,,,0.012082100001862273,5,13724,20985,,True,unstable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer"
+excluded_run,C,full_sort,tournament-C5-n284807,Insertion Sort,,C5,284807,,,,1,349.8198747999995,,,273239352,273239352,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer; excluded from official results: cell contains runs over 300 s; historical values retained for audit
+excluded_run,C,full_sort,tournament-C5-n284807,Insertion Sort,,C5,284807,,,,2,281.43522040000244,,,273239352,273239352,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer; excluded from official results: cell contains runs over 300 s; historical values retained for audit
+excluded_run,C,full_sort,tournament-C5-n284807,Insertion Sort,,C5,284807,,,,3,497.86159660000703,,,273239352,273239352,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer; excluded from official results: cell contains runs over 300 s; historical values retained for audit
+excluded_run,C,full_sort,tournament-C5-n284807,Insertion Sort,,C5,284807,,,,4,270.30806540000776,,,273239352,273239352,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer; excluded from official results: cell contains runs over 300 s; historical values retained for audit
+excluded_run,C,full_sort,tournament-C5-n284807,Insertion Sort,,C5,284807,,,,5,113.24098570000206,,,273239352,273239352,,True,stable,False,,,,,,,,,,pinned worker; fresh copy outside timer; excluded from official results: cell contains runs over 300 s; historical values retained for audit
+excluded_median,C,full_sort,tournament-C5-n284807,Insertion Sort,,C5,284807,,,,,,281.43522040000244,5,273239352,273239352,,True,stable,False,,,,,,,,,,"median of five completed runs; one cell per pinned logical CPU, fresh input copy outside timer; excluded from official results: cell contains runs over 300 s; historical values retained for audit"
+memory,C,full_sort,,Merge Sort,,C1,10000,,,,,,,,120058,267232,80912,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Hardened Quick Sort,,C1,10000,,,,,,,,152157,389019,64,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Heap Sort,,C1,10000,,,,,,,,235360,371709,0,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Insertion Sort,,C1,10000,,,,,,,,24987904,24987914,0,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Naive Quick Sort,,C1,10000,,,,,,,,153092,201021,64,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Merge Sort,,C2,10000,,,,,,,,120467,267232,80912,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Hardened Quick Sort,,C2,10000,,,,,,,,157397,404403,64,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Heap Sort,,C2,10000,,,,,,,,235296,372711,0,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Insertion Sort,,C2,10000,,,,,,,,24747873,24747882,0,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Naive Quick Sort,,C2,10000,,,,,,,,161894,250809,64,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Merge Sort,,C3,10000,,,,,,,,64608,267232,80912,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Hardened Quick Sort,,C3,10000,,,,,,,,352095,915030,128,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Heap Sort,,C3,10000,,,,,,,,244460,395868,0,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Insertion Sort,,C3,10000,,,,,,,,9999,9999,0,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Naive Quick Sort,,C3,10000,,,,,,,,49995000,0,32,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Merge Sort,,C4,10000,,,,,,,,69008,267232,80912,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Hardened Quick Sort,,C4,10000,,,,,,,,352096,930030,128,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Heap Sort,,C4,10000,,,,,,,,226682,350088,0,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Insertion Sort,,C4,10000,,,,,,,,49995000,50004999,0,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Naive Quick Sort,,C4,10000,,,,,,,,49995000,15000,32,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Merge Sort,,C5,10000,,,,,,,,91567,267232,80912,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Hardened Quick Sort,,C5,10000,,,,,,,,228455,577068,64,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Heap Sort,,C5,10000,,,,,,,,244363,394926,0,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Insertion Sort,,C5,10000,,,,,,,,335987,335987,0,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Naive Quick Sort,,C5,10000,,,,,,,,1298016,70080,64,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Merge Sort,,C6,10000,,,,,,,,114219,267232,80912,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Hardened Quick Sort,,C6,10000,,,,,,,,17512,22482,32,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Heap Sort,,C6,10000,,,,,,,,188494,286467,0,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Insertion Sort,,C6,10000,,,,,,,,17346294,17346297,0,True,stable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+memory,C,full_sort,,Naive Quick Sort,,C6,10000,,,,,,,,16023019,33393,32,True,unstable,,,,,,,,,,,"tracemalloc; n=10,000 representative slice"
+dnf,C,full_sort,tournament-C5-n284807,Insertion Sort,,C5,284807,,,,,,,,,,,,,True,historical completed run exceeded 300 s; reclassified under assignment rule,,,,,,,,,Not a new watchdog attempt. Historical parallel runner lacked a per-run watchdog; original observations remain as excluded rows and in outputs/audit/.

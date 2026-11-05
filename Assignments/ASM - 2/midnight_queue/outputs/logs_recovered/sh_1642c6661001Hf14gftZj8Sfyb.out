@@ -1,0 +1,30 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting kagglehub
+  Downloading kagglehub-1.0.3-py3-none-any.whl.metadata (40 kB)
+Collecting certifi>=2026.10.19 (from kagglehub)
+  Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Collecting kagglesdk<1.0,>=0.1.38 (from kagglehub)
+  Downloading kagglesdk-0.1.38-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: packaging in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from kagglehub) (26.0)
+Requirement already satisfied: pyyaml in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from kagglehub) (6.0.3)
+Requirement already satisfied: requests in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from kagglehub) (2.33.0)
+Requirement already satisfied: tqdm in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from kagglehub) (4.67.3)
+Requirement already satisfied: protobuf in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from kagglesdk<1.0,>=0.1.38->kagglehub) (5.29.6)
+Requirement already satisfied: charset_normalizer<4,>=2 in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from requests->kagglehub) (3.4.6)
+Requirement already satisfied: idna<4,>=2.5 in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from requests->kagglehub) (3.11)
+Requirement already satisfied: urllib3<3,>=1.26 in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from requests->kagglehub) (2.6.3)
+Requirement already satisfied: colorama in C:\Users\hp\AppData\Roaming\Python\Python314\site-packages (from tqdm->kagglehub) (0.4.6)
+Downloading kagglehub-1.0.3-py3-none-any.whl (73 kB)
+Downloading kagglesdk-0.1.38-py3-none-any.whl (290 kB)
+Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+Installing collected packages: certifi, kagglesdk, kagglehub
+  Attempting uninstall: certifi
+    Found existing installation: certifi 2026.2.25
+    Uninstalling certifi-2026.2.25:
+      Successfully uninstalled certifi-2026.2.25
+  Attempting uninstall: kagglesdk
+    Found existing installation: kagglesdk 0.1.21
+    Uninstalling kagglesdk-0.1.21:
+      Successfully uninstalled kagglesdk-0.1.21
+
+Successfully installed certifi-2026.10.19 kagglehub-1.0.3 kagglesdk-0.1.38

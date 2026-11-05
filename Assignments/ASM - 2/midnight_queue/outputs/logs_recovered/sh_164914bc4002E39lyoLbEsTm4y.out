@@ -1,0 +1,10 @@
+Get-Content : Cannot find path 
+'C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_164720ea10010pkGxfy33G4JwE.out' 
+because it does not exist.
+At line:1 char:1
++ Get-Content 'C:\Users\hp\.local\share\opencode\shell\c65c149503f2062b ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\hp\.lo...Gxfy33G4JwE.out:String) [Get-Content], ItemNotFoundEx 
+   ception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+ 

@@ -1,0 +1,31 @@
+n=1000, conditions built from 1000 records
+C1 Insertion Sort        OK     0.2260s cmp=   253400 moves=   253408
+C1 Merge Sort            OK     0.0157s cmp=     8682 moves=    19952
+C1 Naive Quick Sort      OK     0.0141s cmp=    10823 moves=    13545
+C1 Hardened Quick Sort   OK     0.0144s cmp=    11269 moves=    27219
+C1 Heap Sort             OK     0.0177s cmp=    16848 moves=    27165
+C2 Insertion Sort        OK     0.2525s cmp=   247996 moves=   248004
+C2 Merge Sort            OK     0.0148s cmp=     8705 moves=    19952
+C2 Naive Quick Sort      OK     0.0099s cmp=    10208 moves=    12315
+C2 Hardened Quick Sort   OK     0.0178s cmp=    11466 moves=    27729
+C2 Heap Sort             OK     0.0301s cmp=    16883 moves=    27267
+C3 Insertion Sort        OK     0.0022s cmp=      999 moves=      999
+C3 Merge Sort            OK     0.0242s cmp=     4932 moves=    19952
+C3 Naive Quick Sort      OK     0.7241s cmp=   499500 moves=        0
+C3 Hardened Quick Sort   OK     0.0318s cmp=    14584 moves=    31464
+C3 Heap Sort             OK     0.0313s cmp=    17583 moves=    29124
+C4 Insertion Sort        OK     0.7609s cmp=   499500 moves=   500499
+C4 Merge Sort            OK     0.0147s cmp=     5044 moves=    19952
+C4 Naive Quick Sort      OK     0.4923s cmp=   499500 moves=     1500
+C4 Hardened Quick Sort   OK     0.0121s cmp=    14585 moves=    32964
+C4 Heap Sort             OK     0.0152s cmp=    15965 moves=    24948
+C5 Insertion Sort        OK     0.0047s cmp=     4006 moves=     4006
+C5 Merge Sort            OK     0.0106s cmp=     6122 moves=    19952
+C5 Naive Quick Sort      OK     0.1228s cmp=   148574 moves=     3261
+C5 Hardened Quick Sort   OK     0.0207s cmp=    16562 moves=    39465
+C5 Heap Sort             OK     0.0195s cmp=    17563 moves=    29055
+C6 Insertion Sort        OK     0.1430s cmp=   179060 moves=   179064
+C6 Merge Sort            OK     0.0135s cmp=     8314 moves=    19952
+C6 Naive Quick Sort      OK     0.1416s cmp=   158620 moves=     3252
+C6 Hardened Quick Sort   OK     0.0018s cmp=     1847 moves=     2484
+C6 Heap Sort             OK     0.0120s cmp=    13724 moves=    20985

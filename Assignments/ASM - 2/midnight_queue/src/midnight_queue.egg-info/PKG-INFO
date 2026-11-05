@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: midnight-queue
+Version: 1.0.0
+Summary: The Midnight Queue: ranking suspicious transactions at scale
+Requires-Python: >=3.11
+Requires-Dist: numpy>=1.26
+Requires-Dist: pandas>=2.1
+Requires-Dist: matplotlib>=3.8
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: reportlab>=4; extra == "dev"
+Requires-Dist: pypdf>=5; extra == "dev"
+Requires-Dist: pymupdf>=1.24; extra == "dev"
+Requires-Dist: Pillow>=10; extra == "dev"
+Requires-Dist: psutil>=5.9; extra == "dev"
+Requires-Dist: nbformat>=5; extra == "dev"
+Requires-Dist: nbconvert>=7; extra == "dev"
+Requires-Dist: jupyter>=1; extra == "dev"
+Provides-Extra: data
+Requires-Dist: kagglehub>=0.3; extra == "data"

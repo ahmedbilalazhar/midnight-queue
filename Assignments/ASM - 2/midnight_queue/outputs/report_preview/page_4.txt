@@ -1,0 +1,100 @@
+F. The Mathematical Case
+M1 — Insertion Sort. If I is the inversion count, every shift removes one inversion: moves = I+n−1, comparisons = I+n−1−z, with 0 ≤z ≤n−1.
+Thus T(n, I) = Θ(n + I). Best: I = 0, Θ(n); random distinct keys: E[I] = n(n −1)/4, Θ(n2); reverse: I = n(n −1)/2, Θ(n2). C5 inversion counts
+at the four sizes: 3,007; 325,988; 34,333,390; 272,954,546. Moving only 1% of records does not guarantee linear work.
+M2 — Merge Sort. Iterating T(n) = 2T(n/2) + cn gives T(n) = 2jT(n/2j) + jcn. At j = log2 n, this is nT(1) + cn log2 n = Θ(n log n). Master’s
+theorem: a = b = 2, f(n) = Θ(nlogb a) = Θ(n); case 2 confirms Θ(n log n).
+M3 — Quick Sort. (a) Iteration of T(n) = T(n −1) + cn yields T(1) + c ∑n
+j=2 j = Θ(n2). (b) The balanced recursion tree has log2 n levels of
+Θ(n) work, hence Θ(n log n). (c) For T(n) = T(n/10) + T(9n/10) + n, each complete level conserves total size n. The first ⌊log10 n⌋levels give
+Ω(n log n); depth is at most ⌈log10/9 n⌉, giving O(n log n). Together these prove the tight bound Θ(n log n).
+M4 — Heap Sort. A height-h node costs O(h) to sift, and there are at most ⌈n/2h+1⌉such nodes. Bottom-up build costs O(n ∑
+h≥0 h/2h+1) = O(n);
+visiting the internal nodes gives Ω(n), so build is Θ(n). Each of n−1 extractions costs O(log n); total worst-case time is Θ(n log n), with O(1) auxiliary
+space.
+M5 — Top-K. For 2 ≤K ≤n, full sort and prefix costs Θ(n log n). For the heap, bottom-up build is O(K), scanning is O(n + A log K) for A
+accepted replacements, and ordered publication is O(K log K); worst case O(n log K + K log K). The buffer costs O(K log K + n + A(K + log K)):
+rejected records need one comparison, accepted records need binary search and explicit shifting. Worst case O(nK); for a random permutation of
+distinct keys, record i > K enters with probability K/i, so E[A] = K(Hn −HK), where Hj is the j-th harmonic number. An idealised comparison
+equates (n + K) log2 K = n log2 n; actual crossover depends on constants, arrival order and acceptance rate, and is not established beyond the
+measured grid. The prediction that full sort overtakes near K=10,000 at n=100,000 was wrong on C2: heap 0.498 s, full sort 2.89 s. At full size and
+K=n/10=28,480: heap 1.29 s, full sort 8.94 s. These are measured points, not a universal crossover.
+n
+Band groups m_i
+Group formula
+Exact model
+Measured
+1,000
+84, 371, 397, 107, 24, 8, 5, 4
+156.7k
+158.6k
+158.6k
+10,000
+719, 3809, 3964, 1094, 225, 98, 59, 32
+16.00M
+16.02M
+16.02M
+100,000
+7399,37639,39769,11246,2152,995,488,312
+1.59B
+not simulated
+DNF
+284,807
+21156,107410,113116,32084,6006,2797,1376,862
+12.93B
+not simulated
+DNF
+Table F1 (M6). The groups are shown in band order. Group formula Σ m_i(m_i-1)/2; the exact element model is cheap only to 10k.
+M6 — Naive Quick Sort on C6. A one-band subarray of size m loses one pivot each time, so it costs ∑m−1
+j=1 j =
+(m
+2
+)
+comparisons. Hence
+C(S) = ∑
+i
+(mi
+2
+)
++ X(S), where X counts cross-band comparisons and depends on the actual band sequence. The exact model applies the
+descending-band Lomuto swaps and recurrence C(S) = |S| −1 + C(Lp(S)) + C(Rp(S)), with C(S) = 0 for |S| < 2. Counts alone do not determine
+X. At n=1,000 and 10,000, exact model = measured = 158,620 and 16,023,019. The former ascending-partition model was incorrect. The within-band
+terms at 100k and full size are 1.59B and 12.93B; both measured cells are DNFs. Three-way partitioning processes equal bands together.
+M7 — Live feed. For w equal-size windows and K ≥2, the worst-case costs are TA = ∑w
+j=1 Θ((jn/w) log(jn/w)) = Θ(nw log n); TB =
+O(n log K + wK log K), including every ordered heap publication; and TC = O(n log(n/w) + wK). Comparing the selection/sorting terms gives the
+rough threshold w ≈n/K: many small windows favour merge, fewer large windows favour the heap. This threshold ignores constants and publication
+terms, so it is a guide rather than a measured crossover. At n = 284,807, K = 52, it suggests about 5,477 windows; the tested 48 and 288 windows
+both favour the heap in the recorded data.
+M8 — Space. Insertion and Heap Sort: O(1); Merge Sort: O(n); both Quick Sort variants: O(log n) explicit stack because the smaller side is
+processed first; size-K heap and bounded buffer: O(K). Live re-rank: O(n); live heap: O(K); live window merge: O(n/w + K), for equal-size
+windows. These are algorithmic auxiliary-space bounds; retained measurement logs are separate.
+H. Recommendation to the Platform Lead
+1. Overnight batch: ship Merge Sort. Lowest worst completed time across C1–C5 at full size wins. Worst medians: Hardened Quick Sort: 31.13 s;
+Heap Sort: 15.84 s; Merge Sort: 11.29 s. Hardened Quick Sort now has an in-place heap fallback after twice the binary-log depth, guaranteeing O(n
+log n) worst-case time and O(log n) stack. The choice assumes the unknown next batch resembles the tested conditions; it is wrong for an already
+ranked batch, where insertion sort takes 0.382 s.
+2. Shift queue: ship Size-K Heap. Across the 28 measured cells it minimises worst slowdown relative to the winner: Bounded Insertion Buffer:
+max regret 140.88x; Full Sort (Hardened Quick Sort): max regret 186.16x; Size-K Heap: max regret 1.12x. The recommendation assumes K is small
+relative to n and scores do not change after arrival. It can be wrong near full capacity, or for a fixed small corner where another method is a few
+milliseconds faster. Changing scores require an update/rebuild mechanism. The operational K=52 queue still contains no frauds; the half-capture
+capacity must be considered separately.
+3. Live refresh: ship maintained size-K heap. Algorithm-only totals: 60 min: rerank 2.84 min, heap 0.284 s, merge 6.36 s; 10 min: rerank DNF,
+heap 0.538 s, merge 9.61 s. A maintained heap touches new records once and avoids re-ranking history. This assumes immutable scores and
+windows large enough to amortise publication. Very small windows or K near n can favour window merge. The w≈n/K comparison is a rough guide,
+not a measured universal crossover.
+Bonus: Analyst console
+The local analyst console launches with python scripts/run_console.py. Choose any of the five full sorts or either Top-K selector, set K, input size
+and condition, then inspect every queued transaction by paginated risk band, Amount and Time. Each run displays algorithm-only time, comparisons
+and moves, verifies the ordered queue, and supports cancelling its isolated worker. Single demonstration measurements are logged separately from
+five-run medians. It uses the same algorithms and scoring as the report.
+AI-use disclosure
+The original project records OpenCode with DeepSeek V4.1 Flash assistance for implementation, tests, experiment orchestration, analysis and
+drafting. OpenAI Codex revised visualisations, notebook presentation, compliance checks and the editable LaTeX report; then hardened quicksort,
+corrected the C6 model and timing scopes, expanded tests, reran affected experiments, and added the analyst console and viva practice materials.
+Historical measurements remain archived, including excluded over-limit C5 insertion runs. The student must verify the submission and be able to
+explain and modify it in the viva.
+23I-2581 ꞏDS-B
+/
+THE MIDNIGHT QUEUE
+4 / 5

@@ -1,0 +1,17 @@
+{
+  "reason": "Assignment ground rule 5: any single run above 300 seconds is DNF.",
+  "changed_cells": [
+    {
+      "algorithm": "Insertion Sort",
+      "condition": "C5",
+      "n": 284807,
+      "observed_over_limit_seconds": [
+        349.8198747999995,
+        497.86159660000703
+      ]
+    }
+  ],
+  "original_tournament_sha256": "81cbc30ff65bbe2f4a3c97e5f06b7f749fe602b6564286a66127fb3b3cb7895f",
+  "values_preserved": true,
+  "new_benchmark_measurement": false
+}

@@ -1,0 +1,108 @@
+
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_16433dca00017IvDyI13jJzGAx.o
+       ut
+Line : C1 Insertion Sort        OK     0.2260s cmp=   253400 moves=   253408
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_16439c977001dBp26VLUygpvfY.o
+       ut
+Line :   Insertion Sort: rep 1 0.2100s cmp=253,400 moves=253,408 correct=True
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1643c0003001X45aGGK8EuEW7j.o
+       ut
+Line : tournament-C1-n1000 Hardened Quick Sort    Insertion Sort Hardened Quick Sort   Insertion Sort    both correct
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1643c2a0b001TC2UOI370yy59V.o
+       ut
+Line :   Insertion Sort: rep 1 29.9590s cmp=24,987,904 moves=24,987,914 correct=True
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1643f4837001Js9C4p0lYVRa0J.o
+       ut
+Line :   Insertion Sort: rep 1 29.9590s cmp=24,987,904 moves=24,987,914 correct=True
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_16468b207001fOmzsrhz4NyVGO.o
+       ut
+Line : Tournament finished in 605.7s; results -> C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 
+       2\midnight_queue\outputs\raw\tournament.csv
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_164720ea10010pkGxfy33G4JwE.o
+       ut
+Line :   Insertion Sort: rep 1 0.1386s cmp=284,806 moves=284,806 correct=True
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1648f4e04001MM07yhkgk8j51k.o
+       ut
+Line : tournament.csv      0 10/22/2026 9:59:51 PM
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1648f84ee001fRWHyEjn1wFhIf.o
+       ut
+Line : C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\outputs\raw\tournament.csv         
+        0 1...
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1648f84ef001JtQHqa5JFsF6Wv.o
+       ut
+Line : C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\outputs\raw\tournament.csv         
+       0 10...
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1648f84ef002N5zfXnFFeXyoNA.o
+       ut
+Line :                   Assignments\ASM - 2\midnight_queue\outputs\cache\C1_n100000.pkl" --algorithm "Insertion Sort"
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1648fb50c001EiZjJAB4WlzFT1.o
+       ut
+Line : tournament-C1-n1000,C,C_C1_n1000,C1,1000,,,Hardened Quick Sort,Insertion Sort,"C1 is in Time order but 
+       unrelated to the triage key, so it behaves like a random permutation for ranking. Insertion sort is quadratic; 
+       custom quick/merge/heap sorts are n log n.",2026-10-22T15:27:52+00:00,Hardened Quick Sort,Insertion Sort,both 
+       correct,
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1649004120011V5w1NJn5bkkdb.o
+       ut
+Line : parts with tournament.csv:
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_1649053db001ea25njNB8Ls7HQ.o
+       ut
+Line : {"time":{"created":1792688511803,"streamed":1792688516699,"completed":1792688518117},"agent":"build","model":{"i
+       d":"deepseek-v4.1-flash-free","providerID":"opencode","variant":"max"},"content":[{"type":"reasoning","text":"op
+       encode.db is 1.14 GB; modified at 9:59:54 ? right before tournament.csv mtime 9:59:51. Interesting. Maybe the 
+       DB contains tool outputs including the full CSV.\n\nLet me query the SQLite DB. We can use Python sqlite3. Need 
+       schema. Copy DB? 1.1GB, but query read-only. Use Python.\n\nAlso, note: user asked \"Do not stop after 
+       presenting a plan\" ? continue.\n\nThe loss: perhaps caused by run_tournament.py's `_read_existing` returning 
+       empty? No. Hmm, maybe the assistant ran `Set-Content` to reset? The mtime 9:59:51 coincides with DB checkpoint 
+       9:59:54. This might be the server restart/compaction: session state saved, but why file truncate? Maybe 
+       opencode's shell tool ran a command right before compaction that opened the CSV? Unknown.\n\nLet's inspect 
+       OpenCode DB schema and find messages/tool outputs mentioning \"tournament.csv\" or median values. Use `sqlite3` 
+       Python module. DB possibly locked; use immutable URI copy? We'll use read-only.\n\nFirst schema.","native":{"rea
+       soningField":"reasoning_content"},"time":{"created":1792688514039,"completed":1792688516681}},{"type":"text","te
+       xt":"The CSV was truncated just before the session snapshot. I'm checking OpenCode's stored tool output for a 
+       recoverable copy while the DNF workers run."},{"type":"tool","id":"call_00_dipk18xvuhrfd2s70gctba3u","name":"she
+       ll","executed":false,"state":{"status":"completed","input":{"command":"@'\nimport sqlite3\np=r\"C:\\Users\\hp\\.
+       local\\share\\opencode\\opencode.db\"\ncon=sqlite3.connect(f\"file:{p}?mode=ro\",uri=True)\nfor row in 
+       con.execute(\"select name, sql from sqlite_master where type='table'\"):\n    print(row[0])\n    
+       print(row[1][:500])\n'@ | python -","workdir":"C:\\Users\\hp\\Desktop\\University\\3. Algo\\2. Assignments\\ASM 
+       - 2\\midnight_queue","timeout":60000},"content":[{"type":"text","text":"__drizzle_migrations\r\nCREATE TABLE 
+       \"__drizzle_migrations\" (\r\n\t\t\t\tid INTEGER PRIMARY KEY,\r\n\t\t\t\thash text NOT 
+       NULL,\r\n\t\t\t\tcreated_at numeric,\r\n\t\t\t\tname text,\r\n\t\t\t\tapplied_at 
+       TEXT\r\n\t\t\t)\r\nproject\r\nCREATE TABLE `project` (\r\n\t`id` text PRIMARY KEY,\r\n\t`worktree` text NOT 
+       NULL,\r\n\t`vcs` text,\r\n\t`name` text,\r\n\t`icon_url` text,\r\n\t`icon_color` text,\r\n\t`time_created` 
+       integer NOT NULL,\r\n\t`time_updated` integer NOT NULL,\r\n\t`time_initialized` integer,\r\n\t`sandboxes` text 
+       NOT NULL\r\n, `commands` text, `icon_url_override` text, `time_active` integer DEFAULT 0 NOT NULL, 
+       `time_archived` integer)\r\nmessage\r\nCREATE TABLE `message` (\r\n\t`id` text PRIMARY KEY,\r\n\t`session_id` 
+       text NOT NULL,\r\n\t`time_created` integer NOT NULL,\r\n\t`time_updated` integer NOT NULL,\r\n\t`data` text NOT 
+       NULL,\r\n\tCONSTRAINT `fk_message_session_id_session_id_fk` FOREIGN KEY (`session_id`) REFERENCES 
+       `session`(`id`) ON DELETE CASCADE\r\n)\r\npart\r\nCREATE TABLE `part` (\r\n\t`id` text PRIMARY 
+       KEY,\r\n\t`message_id` text NOT NULL,\r\n\t`session_id` text NOT NULL,\r\n\t`time_created` integer NOT 
+       NULL,\r\n\t`time_updated` integer NOT NULL,\r\n\t`data` text NOT NULL,\r\n\tCONSTRAINT 
+       `fk_part_message_id_message_id_fk` FOREIGN KEY (`message_id`) REFERENCES `message`(`id`) ON DELETE 
+       CASCADE\r\n)\r\nsession\r\nCREATE TABLE `session` (\r\n\t`id` text PRIMARY KEY,\r\n\t`project_id` text NOT 
+       NULL,\r\n\t`parent_id` text,\r\n\t`slug` text NOT NULL,\r\n\t`directory` text NOT NULL,\r\n\t`title` text NOT 
+       NULL,\r\n\t`version` text NOT NULL,\r\n\t`share_url` text,\r\n\t`summary_additions` 
+       integer,\r\n\t`summary_deletions` integer,\r\n\t`summary_files` integer,\r\n\t`summary_diffs` 
+       text,\r\n\t`revert` text,\r\n\t`permission` text,\r\n\t`time_created` integer NOT NULL,\r\n\t`time_updated` 
+       integer NOT NULL,\r\n\t`time_compacting` integer,\r\n\t`time_archived` integer, `workspace_id` 
+       t\r\ntodo\r\nCREATE TABLE `todo` 
+
+Path : C:\Users\hp\.local\share\opencode\shell\c65c149503f2062bb20998081fcc842ec8309432\sh_16490dbc1001De9NxNxg6Svjki.o
+       ut
+Line : Line : C1 Insertion Sort        OK     0.2260s cmp=   253400 moves=   253408
+
+
+

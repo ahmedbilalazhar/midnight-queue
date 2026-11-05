@@ -1,0 +1,18 @@
+Loading and validating the full dataset...
+Loaded 284,807 rows / 492 frauds; sha256=76274b691b16a6c4...
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\scripts\prepare.py", line 117, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\scripts\prepare.py", line 59, in main
+    assert is_sorted(condition.records, TriageOrder(cid == "C6"))
+                                        ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\src\midnight_queue\records.py", line 62, in __init__
+    self.mode = OrderMode(mode)
+                ~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\enum.py", line 707, in __call__
+    return cls.__new__(cls, value)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Python314\Lib\enum.py", line 1192, in __new__
+    raise ve_exc
+ValueError: False is not a valid OrderMode

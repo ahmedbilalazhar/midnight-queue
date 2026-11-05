@@ -1,0 +1,27 @@
+{
+  "tournament_cells": 120,
+  "completed_medians": 105,
+  "genuine_tournament_dnfs": 15,
+  "topk_required_grid": "complete",
+  "live_schedules": 2,
+  "prediction_rows": 55,
+  "executed_code_cells": 28,
+  "figures": 15,
+  "figure_formats": [
+    "PNG",
+    "PDF",
+    "SVG"
+  ],
+  "report_pages": 5,
+  "automated_tests": 91,
+  "bonus_console": "implemented and tested; demonstrate live; credit conditional on A-H completion",
+  "viva": "study materials prepared; live performance remains unassessed",
+  "part_g": "reserved for the demo; omitted from report at the user's request",
+  "results_sha256": "9cbcc2190308245c70202bc63d72da1c9ac2fb02b3fda2142d2edb0b277070f3",
+  "limitations": [
+    "C6 band-only ties conflict with the total-order equality requirement; interpretation is disclosed.",
+    "Historical DNF evidence for unchanged quadratic contenders is retained.",
+    "Unchanged Top-K heap/buffer loops retain earlier measurements; revised full sort is freshly measured at every K.",
+    "Concurrent tournament times include scheduling/cache contention and must not be compared directly with serial D/E times."
+  ]
+}

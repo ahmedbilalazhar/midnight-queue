@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-23T06:09:47.374197+00:00",
+  "source_hashes": {
+    "conditions.py": "a3dadf63d3b328dbf9bbf1108913457fa593222bec1eb4ae0b5a557accb4e116",
+    "config.py": "e6f80fe0aef1b7ed4b6d8c18f09f990ebf9171ec4e69ba743349eb22ce7c597b",
+    "data.py": "7a85dc33e64fbf9ee2f49c3b41a11d0fbea7716477b777113f7da512d58b8212",
+    "deadline.py": "02b30135a3045aae27a2e78b9cd20b9ed167c094bf99f9a6adc567312299e953",
+    "environment.py": "31e7ba05683210bed038fd5c97b007d9dc12100c2e4a49943bdde1d731cb0b39",
+    "livefeed.py": "9c40ad74e558344c7955a798f913fe702059e26a9e8e8be8defb5f92d6f08761",
+    "predictions.py": "f26c3dd47acef271a943a2483a761fcb4c23b36141dfd288d0010ad0a8fd53a5",
+    "profiling.py": "c34e73bcc3737f0028f1a044d334a011f55f9be5ad7b2b9089d5a0a6cb738a85",
+    "records.py": "7f9780b7eab0669ee948e65ffe262673a9ebb625da1492bacda1606bb80d066f",
+    "reference.py": "392c30334cea332fea80f6e3301fba0b7406a50c4ac828a3f70f26790466bbc1",
+    "results.py": "97201808e9167d08f2301145ce26f131818dd43e7bea5745f6a31fcc0c2a8e96",
+    "sorting.py": "5d8bc06b938fe7716d6af80634683e921699fc11573151401d8239294f4a84a5",
+    "topk.py": "3a16fbd60d8375ceab0f436862791d47a3c4e25dc9cf981aee48cb56cb887ec5",
+    "__init__.py": "d7d90338223b898387a267f67e26cf55055f11c758b3b8281cd3c36a33b687b7"
+  },
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "system": "Windows",
+    "release": "11",
+    "machine": "AMD64",
+    "cpu": "Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz",
+    "physical_cores": 4,
+    "logical_cpus": 8,
+    "max_cpu_mhz": 2304.0,
+    "memory_total_bytes": 34122080256,
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "C:\\Python314\\python.exe",
+    "numpy": "2.4.3",
+    "pandas": "3.0.1",
+    "project_root": "C:\\Users\\hp\\Desktop\\University\\3. Algo\\2. Assignments\\ASM - 2\\midnight_queue"
+  },
+  "seed": 232581,
+  "protocol": "five repetitions; isolated timed workers; exclusive requested CPU slots per C cell",
+  "inherited_dnfs": "Only historical DNF cells for unchanged Insertion/Naive Quick Sort.",
+  "worker_source_hashes": {
+    "bench_worker.py": "0586b2d24fe4a9c7e8a49504871a6235f2acabfd7de11764f19fe1bffd8c415c",
+    "livefeed_worker.py": "59c6503108612086213ac45cf51c1abc03552e4de8cb317f4bbc754a8da49b60",
+    "topk_worker.py": "9adc4a61dfd00ba2e2bae76c76284f1f83ebce14a15836a9138ba74ac9522731"
+  },
+  "standby_interruption": {
+    "date": "2026-10-23",
+    "entered_local": "11:23:24 +05:00",
+    "exited_local": "11:38:17 +05:00",
+    "affected_full_size_cells": [
+      "Heap Sort/C3",
+      "Hardened Quick Sort/C3",
+      "Merge Sort/C4",
+      "Naive Quick Sort/C5"
+    ],
+    "treatment": "Interrupted attempts excluded; completed repetitions retained; only missing repetitions remeasured. Power events in outputs/audit/standby_interruption/power_events.json."
+  },
+  "additional_standby_rechecks": {
+    "power_log": "outputs/audit/standby_interruption/power_events.json",
+    "topk": "Full Sort/C2/n284807/K52, four complete repeats retained",
+    "live": "60-minute rerank and 10-minute heap rechecked; 10-minute rerank DNF occurred after 18:31 under awake guard and is retained",
+    "temporary_idle_sleep_guard": "SetThreadExecutionState during measurement, released on exit; power plan unchanged"
+  }
+}

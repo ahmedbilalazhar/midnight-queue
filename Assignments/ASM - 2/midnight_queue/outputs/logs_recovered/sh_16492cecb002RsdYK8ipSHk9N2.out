@@ -1,0 +1,155 @@
+===== sh_1647c2f15001Vprc6m1JKPLOJZ.out 563
+rm -f Q1
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror -o Q1 Q1.cpp
+rm -f Q2
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror -o Q2 Q2.cpp
+rm -f Q3
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror -pthread -o Q3 Q3.cpp
+rm -f Q4 Q4_worker
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror -o Q4_worker Q4_worker.cpp
+===== sh_1647ca14c001JPuFNylpAOVo9l.out 54
+Q1 PASS
+Q2 PASS
+Q3 PASS
+Q4 PASS
+Q5 PASS
+Q5_PIPES PASS
+===== sh_1647daa0d0012hVC3lK768nu9S.out 1007
+CASE 1 MODE srtf Q None
+JOB LINES ['P10 9 7 0', 'P39 1 3 3', 'P30 12 1 1', 'P15 5 2 2', 'P5 6 9 1', 'P7 12 1 0', 'P4 8 9 2', 'P37 6 8 5']
+--- GOT ---
+=== ALGORITHM: SRTF ===
+Gantt: [0-1:IDLE] [1-4:P39] [4-5:IDLE] [5-7:P15] [7-12:P37] [12-13:P7] [13-14:P30] [14-17:P37] [17-24:P10] [24-33:P5] [33-42:P4]
+PID AT BT PR CT TAT WT RT
+P4 8 9 2 42 34 25 25
+P5 6 9 1 33 27 18 18
+===== sh_1647e271c0018e2Gaw1SmG42Zs.out 1089
+rm -f Q2
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror -o Q2 Q2.cpp
+Q2 PASS
+CASE 1 MODE srtf Q None
+JOB LINES ['P10 9 7 0', 'P39 1 3 3', 'P30 12 1 1', 'P15 5 2 2', 'P5 6 9 1', 'P7 12 1 0', 'P4 8 9 2', 'P37 6 8 5']
+--- GOT ---
+=== ALGORITHM: SRTF ===
+Gantt: [0-1:IDLE] [1-4:P39] [4-5:IDLE] [5-7:P15] [7-12:P37] [12-13:P7] [13-14:P30] [14-17:P37] [17-24:P10] [24-33:P5] [33-42:P4]
+===== sh_1647e75460011F5h69FPMxzVg1.out 13
+Q2 DIFF PASS
+===== sh_1647ed29d001n9mgd6y87vya89.out 8372
+===== PAGE 12 =====
+Operating Systems ƒ?" Semester 05 Assignment No.01
+Q4. BUILD-DISPATCH: Round-Robin Worker Scheduler
+Difficulty:HardMarks:50
+Topics:fork(),execv(), pipes, message framing, Round Robin,waitpid()
+Scenario
+A build service receives jobs with arrival times and CPU-work requirements. Each job is
+represented by a real worker process. A single parent scheduler grants work to one worker at
+===== sh_1647f179a001luPTettlW4ITAD.out 419
+crash\\ : The module 'crash' could not be loaded. For more information, run 'Import-Module crash'.
+At line:1 char:68
++ ... -lc "cd '/home/hp/OS Lab/ASM-1' && grep -n \"status\\|crash\\|fake\\| ...
++                                                           ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (crash\\:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+ 
+===== sh_1647fc860001D0Kpb832UIaZky.out 13
+Q4 DIFF PASS
+===== sh_16480049a001oYkVufG9LVUriH.out 9310
+#!/usr/bin/env python3
+"""Independent acceptance tests for Q3's readers-writers registry."""
+from __future__ import annotations
+
+import os
+import re
+import subprocess
+import sys
+===== sh_164801538001gM3lriqk3NgsdB.out 9779
+            writer_sum += operation.delta
+            active_writer = None
+
+    if active_readers or active_writer is not None:
+        fail("operations remain active after the final event")
+
+    if mode in ("wp", "fair"):
+        request_order = sorted(
+===== sh_16480bc680010gU73A8c1MG2Bf.out 929
+-rw-r--r-- 11277 ./23i-2581_Q1/Q1.cpp
+-rw-r--r-- 158 ./23i-2581_Q1/Makefile
+-rw-r--r-- 158 ./23i-2581_Q2/Makefile
+-rw-r--r-- 167 ./23i-2581_Q3/Makefile
+-rw-r--r-- 19519 ./23i-2581_Q3/Q3.cpp
+-rw-r--r-- 20423 ./23i-2581_Q4/Q4.cpp
+-rw-r--r-- 20652 ./23i-2581_Q2/Q2.cpp
+-rw-r--r-- 24921 ./23i-2581_Q5/Q5_pipes.cpp
+===== sh_16480d962001P80fPhLiD0CBee.out 54
+Q1 PASS
+Q2 PASS
+Q3 PASS
+Q4 PASS
+Q5 PASS
+Q5_PIPES PASS
+===== sh_164815f0a001dl3k6UDNQY6RPi.out 184
+rm -f Q4 Q4_worker
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror -o Q4_worker Q4_worker.cpp
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror -o Q4 Q4.cpp
+Q4 PASS
+Q4 DIFF PASS
+===== sh_16481a4280017w9P2Uu5jUl6dT.out 550
+check\ tests/q2_test.py | head -60 && sed -n '1,320p' BSCY_23i-2581_AhmedBilal/23i-2581_Q2/Q2_check.sh : The module 
+'check' could not be loaded. For more information, run 'Import-Module check'.
+At line:1 char:70
++ ... "Q2_check\\|check\" tests/q2_test.py | head -60 && sed -n '1,320p' BS ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (check\ tests/q2..._Q2/Q2_check.sh:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoLoadModule
+ 
+===== sh_16481fddf001OPtxCg0oYerqZY.out 0
+===== sh_16482fe98001mVUCnEqoa7n0Tf.out 289
+./23I-2581-Ahmed Bilal- Lab Task 8.docx
+./ASM-1/OS_Assignment_01.pdf
+./Lab Task 5/23I-2581-Lab Task 5.pdf
+./Lab Task 6/23I-2581-Ahmed Bilal- Lab Task 6.docx
+./Lab Task 6/~$I-2581-Ahmed Bilal- Lab Task 6.docx
+./Lab Task 7/23I-2581-Ahmed Bilal- Lab Task 7.docx
+./Lab Task 8/Lab Manual 8.pdf
+===== sh_16483563c001SM1SMfDoTMZmCb.out 609
+==== 23I-2581-Ahmed Bilal- Lab Task 8.docx
+OS Lab Lab Task - 8 Ahmed Bilal Azhar 23i-2581 Instructor Submitted on M am Hira Task 1 S
+==== Lab Task 7/23I-2581-Ahmed Bilal- Lab Task 7.docx
+OS Lab Lab Task - 7 Ahmed Bilal Azhar 23i-2581 Instructor Submitted on M am Hira October 2, 2026 Task 1 Task 2 Task 3
+==== Lab Task 6/23I-2581-Ahmed Bilal- Lab Task 6.docx
+OS Lab Lab Task - 6 Ahmed Bilal Azhar 23i-2581 Instructor Submitted on M am Hira October 2, 2026 Task 1 Task 2 Task 3 Additon Division Task 4 Even/Odd Factorial Prime Task 5
+ERR Lab Task 6/~$I-2581-Ahmed Bilal- Lab Task 6.docx File is not a zip file
+===== sh_1648375a0001gCUpvxpzdsBJLI.out 141
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+NameError: name 'os' is not defined. Did you forget to import 'os'?
+===== sh_164838ee6001S3WV98WLDn21by.out 208
+23I-2581-Ahmed Bilal- Lab Task 8.docx word/header1.xml PAGE 2
+Lab Task 7/23I-2581-Ahmed Bilal- Lab Task 7.docx word/header1.xml PAGE 2
+Lab Task 6/23I-2581-Ahmed Bilal- Lab Task 6.docx word/header1.xml PAGE 2
+===== sh_16483b134001x6Q7244g4vCpxo.out 206
+./ASM-1/tests/q2_test.py
+./ASM-1/tests/q5_pipes_test.py
+./ASM-1/tests/q3_test.py
+./ASM-1/tests/q1_test.py
+./ASM-1/tests/q2_diff.py
+./ASM-1/tests/q4_diff.py
+./ASM-1/tests/q4_test.py
+./ASM-1/tests/q5_test.py
+===== sh_16483ccab001hR7GYQMl6AoTRR.out 1897
+Operating Systems ƒ?" Semester 05 Assignment No.01
+5. Question Subdirectories.Place all source files (.sh, .cpp, and .h) and the relevant
+Makefile inside the respective question subdirectory, for example24i-xxxx_Q1. Not
+following the naming convention will result in a mark deduction of 20%.
+6. ZIP Submission.Compress the complete assignment directory into one.zip file for
+submission.
+7. Programming Practices.Use well-indented code, meaningful variable names, and
+clear comments. Check return values for system calls that can fail and follow the required
+===== sh_16483f0190017PFFHtb1ZsVTYl.out 43
+/home/hp/OS Lab/ASM-1/OS_Assignment_01.pdf
+===== sh_16484459600181enWg5k6HRjeN.out 47
+/home/hp/OS Lab/ASM-1/BSCY_23i-2581_AhmedBilal
+===== sh_164846fa800108Fw5xEvf2fzFn.out 8
+Q2 PASS
+===== sh_1648492b6001AhfxYhN0XhlH91.out 11
+CHECK PASS

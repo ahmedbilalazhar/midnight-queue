@@ -1,0 +1,35 @@
+
+=== C1 n=10,000 ===
+  Merge Sort: rep 1 0.1755s cmp=120,058 moves=267,232 correct=True
+  Merge Sort: rep 2 0.2202s cmp=120,058 moves=267,232 correct=True
+  Merge Sort: rep 3 0.2471s cmp=120,058 moves=267,232 correct=True
+  Merge Sort: rep 4 0.2727s cmp=120,058 moves=267,232 correct=True
+  Merge Sort: rep 5 0.2996s cmp=120,058 moves=267,232 correct=True
+  Hardened Quick Sort: rep 1 0.1827s cmp=152,157 moves=389,019 correct=True
+  Hardened Quick Sort: rep 2 0.3062s cmp=152,157 moves=389,019 correct=True
+  Hardened Quick Sort: rep 3 0.1975s cmp=152,157 moves=389,019 correct=True
+  Hardened Quick Sort: rep 4 0.1502s cmp=152,157 moves=389,019 correct=True
+  Hardened Quick Sort: rep 5 0.1789s cmp=152,157 moves=389,019 correct=True
+  Heap Sort: rep 1 0.2923s cmp=235,360 moves=371,709 correct=True
+  Heap Sort: rep 2 0.3430s cmp=235,360 moves=371,709 correct=True
+  Heap Sort: rep 3 0.1804s cmp=235,360 moves=371,709 correct=True
+  Heap Sort: rep 4 0.2713s cmp=235,360 moves=371,709 correct=True
+  Heap Sort: rep 5 0.2301s cmp=235,360 moves=371,709 correct=True
+  Insertion Sort: rep 1 29.9590s cmp=24,987,904 moves=24,987,914 correct=True
+  Insertion Sort: rep 2 28.8927s cmp=24,987,904 moves=24,987,914 correct=True
+  Insertion Sort: rep 3 30.6488s cmp=24,987,904 moves=24,987,914 correct=True
+  Insertion Sort: rep 4 28.8267s cmp=24,987,904 moves=24,987,914 correct=True
+  Insertion Sort: rep 5 29.8534s cmp=24,987,904 moves=24,987,914 correct=True
+  Naive Quick Sort: rep 1 0.3277s cmp=153,092 moves=201,021 correct=True
+  Naive Quick Sort: rep 2 0.3882s cmp=153,092 moves=201,021 correct=True
+  Naive Quick Sort: rep 3 0.1886s cmp=153,092 moves=201,021 correct=True
+  Naive Quick Sort: rep 4 0.1340s cmp=153,092 moves=201,021 correct=True
+  Naive Quick Sort: rep 5 0.1798s cmp=153,092 moves=201,021 correct=True
+
+=== C2 n=10,000 ===
+  Merge Sort: rep 1 0.2121s cmp=120,467 moves=267,232 correct=True
+  Merge Sort: rep 2 0.1915s cmp=120,467 moves=267,232 correct=True
+  Merge Sort: rep 3 0.1868s cmp=120,467 moves=267,232 correct=True
+  Merge Sort: rep 4 0.3002s cmp=120,467 moves=267,232 correct=True
+  Merge Sort: rep 5 0.1617s cmp=120,467 moves=267,232 correct=True
+  Hardened Quick Sort: rep 1 0.2200s cmp=157,397 moves=404,403 correct=True

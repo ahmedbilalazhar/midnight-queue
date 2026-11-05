@@ -1,0 +1,78 @@
+load_s 11.285
+{
+  "rows": 284807,
+  "fraud_count": 492,
+  "band_counts": {
+    "0": 0,
+    "1": 0,
+    "2": 21156,
+    "3": 107410,
+    "4": 113116,
+    "5": 32084,
+    "6": 6006,
+    "7": 2797,
+    "8": 1376,
+    "9": 862
+  },
+  "distinct_amounts": 32767,
+  "top10_amount_share": 0.16291032172664296,
+  "top10_amounts": [
+    {
+      "amount": 1.0,
+      "count": 13688
+    },
+    {
+      "amount": 1.98,
+      "count": 6044
+    },
+    {
+      "amount": 0.89,
+      "count": 4872
+    },
+    {
+      "amount": 9.99,
+      "count": 4747
+    },
+    {
+      "amount": 15.0,
+      "count": 3280
+    },
+    {
+      "amount": 0.76,
+      "count": 2998
+    },
+    {
+      "amount": 10.0,
+      "count": 2950
+    },
+    {
+      "amount": 1.29,
+      "count": 2892
+    },
+    {
+      "amount": 1.79,
+      "count": 2623
+    },
+    {
+      "amount": 0.99,
+      "count": 2304
+    }
+  ],
+  "fraud_by_band": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 13,
+    "4": 30,
+    "5": 23,
+    "6": 56,
+    "7": 97,
+    "8": 112,
+    "9": 161
+  },
+  "sha256": "76274b691b16a6c49d3f159c883398e03ccd6d1ee12d9d8ee38f4b4b98551a89",
+  "source_path": "C:\\Users\\hp\\Desktop\\University\\3. Algo\\2. Assignments\\ASM - 2\\midnight_queue\\data\\creditcard.csv",
+  "expected_rows": 284807,
+  "expected_frauds": 492
+}
+K 52 seed 232581 stem 23I-2581-A2-DS-B

@@ -1,0 +1,170 @@
+23I-2581 · DS-B · The Midnight Queue
+page 2
+C. The Full Ranking Tournament
+Five full-sort contenders × six conditions × four sizes (120 cells; 14 genuine DNF cells). Every timed cell is five repetitions in its own worker, and four cells ran concurrently,
+one per physical core; the fresh input copy is outside the timer. Absolute times therefore include four-way cache/memory contention, so compare cells within this table rather
+than with the single-process D/E tables. The figure uses C2 for growth and n=10,000 for the condition comparison. The shared legend applies to all six panels.
+Fig. C1. (a) Median time vs n on C2, log–log (s vs transactions); (b) median time at n=10,000 by condition, log scale (s); (c) comparisons and (d) moves vs n on C2, log scale (counts); (e) time/(n log2 n) and (f) time/n² on C2.
+Missing points are DNF.
+What happened at n=10,000 (fastest / slowest): C1: Hardened Quick Sort / Insertion Sort; C2: Hardened Quick Sort / Insertion Sort; C3: Insertion Sort / Naive Quick Sort;
+C4: Heap Sort / Insertion Sort; C5: Merge Sort / Insertion Sort; C6: Hardened Quick Sort / Insertion Sort. Insertion Sort is linear on pre-ranked C3 but quadratic on C4; the
+reverse and duplicate-heavy cases separate n log n from quadratic behaviour. On C5, 1% displacement already creates 34,333,390 inversions at n=100,000.
+A clash worth stating. At n=10,000 insertion sort on C4 performs 49,995,000 comparisons versus 24,987,904 on C1, exactly the inversion prediction, yet its C1 median is
+46.08s against 35.70s on C4. The five C1 runs drift from 36.84s to 56.18s under sustained load; this is thermal/scheduling noise, not an algorithmic reversal. Counts are the
+stable evidence; times are reported exactly as measured.
+Contender
+C1
+C2
+C3
+C4
+C5
+C6
+Insertion Sort
+46.08 s
+21.04 s
+0.007 s
+35.70 s
+1.02 s
+11.76 s
+Merge Sort
+0.145 s
+0.590 s
+0.144 s
+0.394 s
+0.103 s
+0.499 s
+Naive Quick Sort
+0.289 s
+0.362 s
+36.14 s
+22.65 s
+0.969 s
+8.71 s
+Hardened Quick Sort
+0.129 s
+0.122 s
+1.00 s
+0.564 s
+0.236 s
+0.012 s
+Heap Sort
+0.200 s
+0.197 s
+0.170 s
+0.148 s
+0.200 s
+0.125 s
+Contender
+C1
+C2
+C3
+C4
+C5
+C6
+Insertion Sort
+24.99M/24.99M24.75M/24.75M
+10.0k/10.0k49.99M/50.00M336.0k/336.0k17.35M/17.35M
+Merge Sort
+120.1k/267.2k120.5k/267.2k 64.6k/267.2k 69.0k/267.2k 91.6k/267.2k114.2k/267.2k
+Naive Quick Sort
+153.1k/201.0k161.9k/250.8k
+49.99M/0 49.99M/15.0k 1.30M/70.1k 16.02M/33.4k
+Hardened Quick Sort
+152.2k/389.0k157.4k/404.4k352.1k/915.0k352.1k/930.0k228.5k/577.1k
+17.5k/22.5k
+Heap Sort
+235.4k/371.7k235.3k/372.7k244.5k/395.9k226.7k/350.1k244.4k/394.9k188.5k/286.5k
+Table C1 (left). Median time (s) at n=10,000; DNF is a genuine 300 s timeout. Table C2 (right). Key comparisons / element moves for the same cells. Counts are deterministic across repetitions.
+Contender
+C1
+C2
+C3
+C4
+C5
+C6
+Stable
+Space
+Insertion Sort
+0.0 KiB
+0.0 KiB
+0.0 KiB
+0.0 KiB
+0.0 KiB
+0.0 KiB yes
+O(1)
+Merge Sort
+79.0 KiB
+79.0 KiB
+79.0 KiB
+79.0 KiB
+79.0 KiB
+79.0 KiB yes
+O(n)
+Naive Quick Sort
+0.1 KiB
+0.1 KiB
+0.0 KiB
+0.0 KiB
+0.1 KiB
+0.0 KiB no
+O(log n)*
+Hardened Quick Sort
+0.1 KiB
+0.1 KiB
+0.1 KiB
+0.1 KiB
+0.1 KiB
+0.0 KiB no
+O(log n)
+Heap Sort
+0.0 KiB
+0.0 KiB
+0.0 KiB
+0.0 KiB
+0.0 KiB
+0.0 KiB no
+O(1)
+Table C3. tracemalloc peak extra memory at n=10,000 (MiB/KiB), maximum semantics are per cell; stability and asymptotic space. *The iterative naive quick sort processes the smaller side first, so its explicit stack is O(log n)
+in practice even on bad splits.
+Cell
+Largest completed
+t at completed
+Projection 100k
+Projection full
+Insertion / C1
+10,000
+46.08 s
+76.80 min
+622.96 min
+Insertion / C2
+10,000
+21.04 s
+35.06 min
+284.39 min
+Insertion / C4
+10,000
+35.70 s
+59.49 min
+482.59 min
+Insertion / C6
+10,000
+11.76 s
+19.59 min
+158.92 min
+Naive Quick / C3
+10,000
+36.14 s
+60.23 min
+488.56 min
+Naive Quick / C4
+10,000
+22.65 s
+37.75 min
+306.22 min
+Naive Quick / C6
+10,000
+8.71 s
+14.52 min
+117.81 min
+Table C4. DNF audit. Each cell's largest completed size and an explicit n² projection from that median; projections are not measurements. The projections are far beyond 300 s, so a median cannot exist under the rule. Largest
+completed sizes: insertion C1/C2/C4/C6 = 10,000; naive C3/C4/C6 = 10,000. Full results and all five repetitions are in results.csv.

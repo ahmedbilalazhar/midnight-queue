@@ -1,0 +1,158 @@
+﻿[
+    {
+        "TimeCreated":  "\/Date(1792762048422)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Input Mouse."
+    },
+    {
+        "TimeCreated":  "\/Date(1792762047208)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Sleep, Hibernate, or Shutdown."
+    },
+    {
+        "TimeCreated":  "\/Date(1792756534849)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Sleep, Hibernate, or Shutdown."
+    },
+    {
+        "TimeCreated":  "\/Date(1792742861815)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792742861810)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792742805802)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792742805799)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792742419133)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Idle Timeout."
+    },
+    {
+        "TimeCreated":  "\/Date(1792742211361)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792739224335)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792739224333)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792739217314)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792739217311)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792739213548)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Screen Off Request."
+    },
+    {
+        "TimeCreated":  "\/Date(1792739181446)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Input Touchpad."
+    },
+    {
+        "TimeCreated":  "\/Date(1792738885185)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Idle Timeout."
+    },
+    {
+        "TimeCreated":  "\/Date(1792738582911)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792738552508)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792738552505)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792738538659)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792738109051)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Input Touchpad."
+    },
+    {
+        "TimeCreated":  "\/Date(1792738102898)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Idle Timeout."
+    },
+    {
+        "TimeCreated":  "\/Date(1792737497545)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Lid."
+    },
+    {
+        "TimeCreated":  "\/Date(1792736618884)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792736618881)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  507,
+        "Message":  "The system is exiting Modern Standby \r\n\r\nReason: Austerity Battery Drain Budget Exceeded."
+    },
+    {
+        "TimeCreated":  "\/Date(1792736604156)\/",
+        "ProviderName":  "Microsoft-Windows-Kernel-Power",
+        "Id":  506,
+        "Message":  "The system is entering Modern Standby \r\n\r\nReason: Lid."
+    }
+]

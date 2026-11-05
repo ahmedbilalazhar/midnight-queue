@@ -1,0 +1,6 @@
+cpu 4 8
+freq scpufreq(current=1803.0, min=0.0, max=2304.0)
+mem_gb 34.12
+platform Windows-11-10.0.26200-SP0
+processor Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+python 3.14.0

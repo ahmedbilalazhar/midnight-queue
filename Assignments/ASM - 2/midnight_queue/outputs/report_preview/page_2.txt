@@ -1,0 +1,304 @@
+C. The Full Ranking Tournament
+Five contenders x six conditions x four sizes: 105 valid medians and 15 DNFs cover all 120 cells. Current completed cells were remeasured with five isolated
+repetitions, fresh copies outside the timer, and up to four concurrent cells using exclusive requested logical-CPU slots. Algorithm-only deadlines exclude
+preparation and verification. Historical DNF evidence for unchanged quadratic contenders is retained and identified in the raw notes. The shared legend
+applies to all six panels.
+103
+104
+105
+Input size n (transactions; log scale)
+10−2
+10−1
+100
+101
+Median time (s; log scale)
+(a) C2 · execution time
+C1
+Arrival
+C2
+Shuffle
+C3
+Ranked
+C4
+Reverse
+C5
+1% moved
+C6
+Band only
+Input condition
+10−2
+10−1
+100
+101
+102
+Median time (s; log scale)
+(b) Conditions · n = 10,000
+103
+104
+105
+Input size n (transactions; log scale)
+104
+105
+106
+107
+Key comparisons (count; log scale)
+(c) C2 · key comparisons
+103
+104
+105
+Input size n (transactions; log scale)
+104
+105
+106
+107
+Element moves (count; log scale)
+(d) C2 · element moves
+103
+104
+105
+Input size n (transactions; log scale)
+10−6
+10−5
+10−4
+Time / (n log₂ n) (s; log scale)
+(e) C2 · time / (n log₂ n)
+103
+104
+105
+Input size n (transactions; log scale)
+10−10
+10−9
+10−8
+10−7
+Time / n² (s / transaction²; log scale)
+(f) C2 · time / n²
+Insertion Sort
+Merge Sort
+Naive Quick Sort
+Hardened Quick Sort
+Heap Sort
+Fig. C1. (a) Median time vs n on C2, log–log (s vs transactions); (b) median time at n=10,000 by condition, log scale (s); (c) comparisons and (d) moves vs n on C2, log scale (counts); (e) time/(n
+log2 n) and (f) time/n2 on C2. Missing points are DNF. The shared legend below the figure applies to all six panels.
+What happened at n=10,000 (fastest / slowest): C1: Merge Sort / Insertion Sort; C2: Naive Quick Sort / Insertion Sort; C3: Insertion Sort / Naive Quick Sort;
+C4: Merge Sort / Naive Quick Sort; C5: Insertion Sort / Naive Quick Sort; C6: Hardened Quick Sort / Insertion Sort. Insertion Sort is linear on pre-ranked C3
+but quadratic on C4; the reverse and duplicate-heavy cases separate n log n from quadratic behaviour. On C5, 1% displacement already creates 34,333,390
+inversions at n=100,000.
+Theory versus measurement. At 10k, insertion C1/C4 makes 24,987,904/49,995,000 comparisons, with medians 22.36 s/48.98 s; counts match the inversion
+model. Clash: Heap/C1 falls from 12.71 s at 100k to 9.72 s at full size while comparisons rise 3.02M to 9.44M. Power/scheduling was uncontrolled; growth
+conclusions use counts, and recommendations use these observed medians.
+Contender
+C1
+C2
+C3
+C4
+C5
+C6
+Insertion Sort
+22.36 s
+23.30 s
+0.008 s
+48.98 s
+0.229 s
+17.01 s
+Merge Sort
+0.251 s
+0.465 s
+0.209 s
+0.206 s
+0.348 s
+0.403 s
+Naive Quick Sort
+0.257 s
+0.149 s
+50.55 s
+49.37 s
+1.71 s
+16.67 s
+Hardened Quick Sort
+0.323 s
+0.277 s
+0.902 s
+0.677 s
+0.607 s
+0.027 s
+Heap Sort
+0.296 s
+0.550 s
+0.339 s
+0.386 s
+0.469 s
+0.195 s
+C1
+C2
+C3
+C4
+C5
+C6
+24.99M /
+24.99M
+24.75M /
+24.75M
+10.0k /
+10.0k
+49.99M /
+50.00M
+336.0k /
+336.0k
+17.35M /
+17.35M
+120.1k /
+267.2k
+120.5k /
+267.2k
+64.6k /
+267.2k
+69.0k /
+267.2k
+91.6k /
+267.2k
+114.2k /
+267.2k
+153.1k /
+201.0k
+161.9k /
+250.8k
+49.99M /
+0
+49.99M /
+15.0k
+1.30M /
+70.1k
+16.02M /
+33.4k
+152.2k /
+389.0k
+157.4k /
+404.4k
+323.3k /
+754.4k
+323.3k /
+769.4k
+233.9k /
+582.6k
+17.5k /
+22.5k
+235.4k /
+371.7k
+235.3k /
+372.7k
+244.5k /
+395.9k
+226.7k /
+350.1k
+244.4k /
+394.9k
+188.5k /
+286.5k
+Table C1 (left). Median time (s) at n=10,000; DNF is a genuine 300 s timeout. Table C2 (right). Key comparisons / element moves for the same cells, in the same row order. Counts are deterministic
+across repetitions.
+Contender
+C1
+C2
+C3
+C4
+C5
+C6
+Stable
+Space
+Insertion Sort
+0 B
+0 B
+0 B
+0 B
+0 B
+0 B
+yes
+O(1)
+Merge Sort
+79.0 KiB
+79.0 KiB
+79.0 KiB
+79.0 KiB
+79.0 KiB
+79.0 KiB
+yes
+O(n)
+Naive Quick Sort
+64 B
+64 B
+32 B
+32 B
+64 B
+32 B
+no
+O(log n)*
+Hardened Quick Sort
+64 B
+64 B
+392 B
+392 B
+392 B
+32 B
+no
+O(log n)
+Heap Sort
+0 B
+0 B
+0 B
+0 B
+0 B
+0 B
+no
+O(1)
+Table C3. tracemalloc peak extra memory at n=10,000 (KiB or B), peak values are per cell; stability and asymptotic space. *The iterative naive quick sort processes the smaller side first, so its
+explicit stack is O(log n) in practice even on bad splits.
+Cell
+Largest completed
+t at completed
+Projection 100k
+Projection full
+Insertion / C1
+10,000
+22.36 s
+37.27 min
+302.30 min
+Insertion / C2
+10,000
+23.30 s
+38.83 min
+315.01 min
+Insertion / C4
+10,000
+48.98 s
+81.63 min
+662.11 min
+Insertion / C5
+100,000
+29.31 s
+29.31 s
+3.96 min
+Insertion / C6
+10,000
+17.01 s
+28.35 min
+229.98 min
+Naive Quick / C3
+10,000
+50.55 s
+84.25 min
+683.42 min
+Naive Quick / C4
+10,000
+49.37 s
+82.29 min
+667.51 min
+Naive Quick / C6
+10,000
+16.67 s
+27.78 min
+225.32 min
+Table C4. Largest completed sizes and explicit quadratic projections from their measured medians. Projections are not observations; DNFs have no median. All raw repetitions are in results.csv.
+23I-2581 ꞏDS-B
+/
+THE MIDNIGHT QUEUE
+2 / 5

@@ -1,0 +1,54 @@
+23I-2581 · DS-B · The Midnight Queue
+page 4
+F. The Mathematical Case
+M1 — Insertion Sort. Let I be the number of inversions. Every inversion moves the key one slot left, so moves are I+(n−1). Comparisons are I+(n−1)−z, where z≤n−1 is the
+number of keys that reach the left end without a failing comparison; hence C=Θ(n+I). Best I=0 → Θ(n); average I=n(n−1)/4 and worst I=n(n−1)/2 → Θ(n²). On C5, I = 3,007,
+325,988, 34,333,390 and 272,954,546 for n=1k, 10k, 100k and full. The 1% displacement does not keep I linear.
+M2 — Merge Sort. T(n)=2T(n/2)+Θ(n). Iteration: level j has 2^j nodes of size n/2^j and costs c n until subproblems are constant, over log2 n levels → Θ(n log n). Master
+theorem: a=2, b=2, f(n)=Θ(n)=Θ(n^{log_b a}), case 2 → Θ(n log n).
+M3 — Quick Sort. (a) Worst: T(n)=T(n−1)+Θ(n). Iterating gives c[n+(n−1)+…+1]=Θ(n²). (b) Best: T(n)=2T(n/2)+Θ(n); the recursion tree has n per level and log2 n levels →
+Θ(n log n). (c) 1:9 split: T(n)=T(n/10)+T(9n/10)+n. The slow branch has depth log_{10/9}n; each level costs at most n before the leaves, so T(n)=Θ(n log n). A 1:9 split is
+unbalanced but not degenerate.
+M4 — Heap Sort. A node of height h has at most ceil(n/2^{h+1}) nodes at that height and sifts in O(h). Build-heap is Σ_h O(nh/2^h)=O(n). Each of n−1 extractions sifts O(log
+n), so total Θ(n log n); the heap is in place.
+M5 — Top-K. (a) Full sort then prefix: Θ(n log n), independent of K. (b) Size-K heap: Θ(n log K) offers plus Θ(K log K) final publication, space Θ(K). (c) Bounded buffer: worst
+O(nK); if A records are accepted, O(n+A(log K+K)). For a random stream A≈K ln(n/K), so shifting—not binary search—is the bottleneck when K grows. The asymptotic
+heap/full-sort crossover is K=Θ(n), not K=Θ(n/10). At n=100,000 C2 the heap beats the full sort at every measured K from 10 to 10,000; at K=10,000 it takes 0.498 s against
+1.20 s for the full sort. At full size and K=n/10=28,480 it takes 1.29 s against 3.56 s. The log predicted a crossover near K=10,000; that prediction was wrong. For K=αn, heap
+and full sort break even when α log2 n+(1+α)log2 α=0; at α=0.1 this needs n≈2^36.5≈10^11, far beyond this dataset, so full sort becomes competitive only when K is close to
+n. The measured grid is in results.csv.
+n
+Band groups m_i
+Group formula
+Exact model
+Measured
+1,000
+84, 371, 397, 107, 24, 8, 5, 4
+156.7k
+158.7k
+158.6k
+10,000
+719, 3809, 3964, 1094, 225, 98, 59, 32
+16.00M
+16.01M
+16.02M
+100,000
+7399, 37639, 39769, 11246, 2152, 995, 488, 312
+1.59B
+not simulated
+DNF
+284,807
+21156, 107410, 113116, 32084, 6006, 2797, 1376, 862
+12.93B
+not simulated
+DNF
+Table F1 (M6). The groups are shown in band order. Group formula Σ m_i(m_i−1)/2; the exact element model is cheap only to 10k.
+M6 — Naive Quick Sort on C6. Lomuto sends every equal band left and leaves the pivot at the right end of its equal block. A one-band subarray of size m therefore costs
+(m−1)+(m−2)+…+1 = m(m−1)/2 comparisons; cross-band partitions add O(nd). With the actual groups this predicts 16.00M at 10k, 1.59B at 100k and 12.93B at full size. The
+measured 10k count is 16,023,019, only 0.17% above the group formula (the element-level model gives 16,012,977, +0.11%); at 1k the formula is 156,718 versus 158,620
+measured (+1.2%). The 100k/full cells are DNF, as predicted. Three-way partitioning puts all equals in one pass, which is why the hardened variant survives.
+M7 — Live feed. (a) Re-rank: Σ_{j=1}^w Θ((jn/w) log(jn/w)) = Θ(nw log n). (b) Heap: Θ(n log K + wK log K). (c) Window merge: Θ(n log(n/w) + wK). Comparing (b) and (c), the
+dominant terms give n log(n/w)≈n log K, hence w≈n/K: fewer, larger windows favor merge, while many small windows favor the heap. Re-rank carries an extra factor w and is
+dominated by the heap for every w≥1 when K<n.
+M8 — Space. Insertion O(1); Merge O(n); Quick O(log n) stack with smaller-side-first; Heap O(1); size-K heap O(K); bounded buffer O(K); live re-rank O(n); live heap O(K);
+live merge O(n/w + K).

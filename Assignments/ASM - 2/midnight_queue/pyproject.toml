@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "midnight-queue"
+version = "1.0.0"
+description = "The Midnight Queue: ranking suspicious transactions at scale"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "reportlab>=4",
+  "pypdf>=5",
+  "pymupdf>=1.24",
+  "Pillow>=10",
+  "psutil>=5.9",
+  "nbformat>=5",
+  "nbconvert>=7",
+  "jupyter>=1",
+]
+data = ["kagglehub>=0.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+  "slow: tests that use the real dataset",
+  "performance: algorithm timing/smoke tests",
+]

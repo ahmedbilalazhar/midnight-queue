@@ -1,0 +1,235 @@
+23I-2581 · DS-B · The Midnight Queue
+page 5
+Appendix: prediction log
+Each prediction was written before its round; outcomes were updated from the measured medians. Full rationales are in prediction_log.csv. W/L = predicted or actual fastest / slowest. Abbreviations: IS
+insertion, MS merge, NQ naive quick, HQ hardened quick, HS heap, SH size-K heap, BB bounded buffer, FS full sort, RR re-rank, MG merge, HB maintained heap.
+Tournament
+Pred W/L
+Actual W/L
+Outcome
+C1-1k
+HQ / IS
+HQ / IS
+both correct
+C2-1k
+HQ / IS
+MS / IS
+slowest correct
+C3-1k
+IS / NQ
+IS / NQ
+both correct
+C4-1k
+HQ / IS
+MS / NQ
+both wrong
+C5-1k
+IS / NQ
+IS / NQ
+both correct
+C6-1k
+HQ / NQ
+HQ / NQ
+both correct
+C1-10k
+HQ / IS
+HQ / IS
+both correct
+C2-10k
+HQ / IS
+HQ / IS
+both correct
+C3-10k
+IS / NQ
+IS / NQ
+both correct
+C4-10k
+HQ / IS
+HS / IS
+slowest correct
+C5-10k
+HQ / NQ
+MS / IS
+both wrong
+C6-10k
+HQ / NQ
+HQ / IS
+fastest correct
+C1-100k
+HQ / IS
+NQ / IS
+slowest correct
+C2-100k
+HQ / IS
+MS / IS
+slowest correct
+C3-100k
+IS / NQ
+IS / NQ
+both correct
+C4-100k
+HQ / IS
+MS / IS
+slowest correct
+C5-100k
+HQ / NQ
+MS / IS
+both wrong
+C6-100k
+HQ / NQ
+HQ / IS
+fastest correct
+C1-full
+HQ / IS
+HS / IS
+slowest correct
+C2-full
+HQ / IS
+MS / IS
+slowest correct
+C3-full
+IS / NQ
+IS / NQ
+both correct
+C4-full
+HQ / IS
+MS / IS
+slowest correct
+C5-full
+HQ / NQ
+HS / IS
+both wrong
+C6-full
+HQ / NQ
+HQ / IS
+fastest correct
+D/E/F row
+Pred
+Actual
+Outcome
+M5 crossover
+SH / BB
+—
+see M5
+C1-100k/K10
+SH / BB
+SH / FS
+partly/wrong
+C1-100k/K50
+SH / BB
+SH / FS
+partly/wrong
+C1-100k/K52
+SH / BB
+BB / FS
+partly/wrong
+C1-100k/K500
+SH / BB
+SH / FS
+partly/wrong
+C1-100k/K5000
+SH / BB
+SH / BB
+both correct
+C1-100k/K10000
+FS / BB
+SH / BB
+partly/wrong
+C1-100k/K2068
+SH / BB
+SH / BB
+both correct
+C2-100k/K10
+SH / BB
+SH / FS
+partly/wrong
+C2-100k/K50
+SH / BB
+SH / FS
+partly/wrong
+C2-100k/K52
+SH / BB
+BB / FS
+partly/wrong
+C2-100k/K500
+SH / BB
+SH / FS
+partly/wrong
+C2-100k/K5000
+SH / BB
+SH / BB
+both correct
+C2-100k/K10000
+FS / BB
+SH / BB
+partly/wrong
+C2-100k/K2068
+SH / BB
+SH / BB
+both correct
+C1-full/K10
+SH / BB
+BB / FS
+partly/wrong
+C1-full/K50
+SH / BB
+SH / FS
+partly/wrong
+C1-full/K52
+SH / BB
+SH / FS
+partly/wrong
+C1-full/K500
+SH / BB
+SH / FS
+partly/wrong
+C1-full/K5000
+SH / BB
+SH / BB
+both correct
+C1-full/K28480
+FS / BB
+SH / BB
+partly/wrong
+C1-full/K2068
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K10
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K50
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K52
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K500
+SH / BB
+SH / FS
+partly/wrong
+C2-full/K5000
+SH / BB
+SH / BB
+both correct
+C2-full/K28480
+FS / BB
+SH / BB
+partly/wrong
+C2-full/K2068
+SH / BB
+SH / FS
+partly/wrong
+live/3600
+HB / RR
+HB / RR
+both correct
+live/600
+HB / RR
+HB / RR
+both correct
+Table P1. Complete prediction log: 24 C rounds (left) and 31 D/E/F rows (right). The M5 row is a crossover prediction with no single-cell outcome; its comparison is discussed under M5. In the live/600 row, A is a DNF and is
+ranked slowest, not timed.

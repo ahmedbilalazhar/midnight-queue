@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07090a"><title>The Midnight Queue | Analyst console</title>
+<link rel="stylesheet" href="/style.css"><script src="/ui.js" defer></script><script src="/app.js" defer></script>
+</head><body>
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+<symbol id="layers" viewBox="0 0 24 24"><path d="m3 7 9-5 9 5-9 5zM3 12l9 5 9-5M3 17l9 5 9-5"/></symbol>
+<symbol id="chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-5 4 3 6-9"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="m12 2 8 3v6c0 5-8 11-8 11S4 16 4 11V5zM8 11l3 3 5-6"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+<symbol id="export" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M4 14v6h16v-6"/></symbol>
+<symbol id="sliders" viewBox="0 0 24 24"><path d="M3 6h5m5 0h8M3 12h11m5 0h2M3 18h3m5 0h10"/><circle cx="10.5" cy="6" r="2.5"/><circle cx="16.5" cy="12" r="2.5"/><circle cx="8.5" cy="18" r="2.5"/></symbol>
+<symbol id="activity" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+<symbol id="info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v1"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4 10-10"/></symbol>
+<symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+<symbol id="chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+<symbol id="bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></symbol>
+<symbol id="sound-on" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.4 8.6a5 5 0 0 1 0 6.8M19 6a8.5 8.5 0 0 1 0 12"/></symbol>
+<symbol id="sound-off" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="m16 9 5 6m0-6-5 6"/></symbol>
+<symbol id="soundscape" viewBox="0 0 24 24"><path d="M3 10v4m4-7v10m4-13v16m4-12v8m4-11v14m3-9v4"/></symbol>
+<symbol id="voice" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"/></symbol>
+<symbol id="database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+</defs></svg>
+<div class="dashboard-shell">
+<header class="topbar">
+ <a href="#overview" class="brand" aria-label="Midnight Queue overview">
+  <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true"><path fill="#7fd8ca" d="m18 2 16 9v14l-16 9L2 25V11z"/><path fill="#376c6b" d="m2 11 16 9v14L2 25z"/><path fill="#c7f4eb" d="m18 2 16 9-16 9L2 11z"/><path fill="#0b2426" d="m18 10 8 5v8l-8 5-8-5v-8z"/><path fill="none" stroke="#7fd8ca" stroke-width="1.4" d="m22 14 3 2v4l-3 2"/></svg>
+  <span>Midnight<span class="brand-light">Queue</span></span>
+ </a>
+ <button class="context-chip" id="dataset-info" title="Dataset and method">ULB creditcard <span class="caret">⌄</span></button>
+ <span class="local-chip"><i></i>Local analysis</span>
+ <nav class="main-nav" aria-label="Workspace">
+  <button class="nav-tab active" data-view="overview" aria-label="Overview" aria-pressed="true"><svg><use href="#grid"/></svg><span>Overview</span></button>
+  <button class="nav-tab" data-view="queue" aria-label="Queue workspace" aria-pressed="false"><svg><use href="#layers"/></svg><span>Queue workspace</span></button>
+  <button class="nav-tab" data-view="evidence" aria-label="Benchmark evidence" aria-pressed="false"><svg><use href="#chart"/></svg><span>Benchmark evidence</span></button>
+ </nav>
+ <div class="topbar-right">
+  <span class="source-status"><i></i>Evaluation only</span>
+  <button class="icon-button" id="focus-search" aria-label="Search the transaction queue" title="Search queue"><svg><use href="#search"/></svg></button>
+  <button class="icon-button" id="history-button" aria-label="Show run activity" title="Run activity"><svg><use href="#bell"/></svg></button>
+  <button class="icon-button sound-toggle" id="sound-toggle" aria-label="Mute interface sounds (M)" aria-pressed="true" title="Mute interface sounds (M)"><svg class="snd-on"><use href="#sound-on"/></svg><svg class="snd-off"><use href="#sound-off"/></svg></button>
+  <button class="icon-button voice-toggle" id="voice-toggle" aria-label="Mute cinematic voice (V)" aria-pressed="true" title="Mute cinematic voice (V)"><svg><use href="#voice"/></svg></button>
+  <button class="icon-button ambience-toggle" id="ambience-toggle" aria-label="Enable ambient soundscape" aria-pressed="false" title="Enable ambient soundscape"><svg><use href="#soundscape"/></svg></button>
+  <label class="ambience-volume"><span class="sr-only">Ambient soundscape volume</span><input id="ambience-volume" type="range" min="0" max="100" value="32" aria-label="Ambient soundscape volume" title="Ambient soundscape volume"></label>
+  <button class="avatar" id="about-button" aria-label="About this project" title="23I-2581 · DS-B">DS</button>
+ </div>
+</header>
+<div class="workspace-heading">
+ <div><h1 id="workspace-title" tabindex="-1">Transaction intelligence</h1><span class="workspace-subtitle" id="workspace-subtitle">Ranking suspicious transactions with custom sorts and Top-K selection</span></div>
+ <div class="heading-actions"><span class="status-chip" id="state-badge"><i></i>Ready</span><button class="soft-button" id="configure"><svg><use href="#sliders"/></svg>Queue controls</button><button class="outline-button" id="export-queue" disabled><svg><use href="#export"/></svg>Export queue</button></div>
+</div>
+<main id="workspace" data-view="overview">
+ <div class="overview-grid">
+
+  <section class="kpi-strip" aria-label="Current queue measurements">
+   <article class="kpi-card gold">
+    <div class="kpi-top"><svg><use href="#layers"/></svg><span class="corner-arrow">↗</span></div>
+    <div id="capacity" class="dot-value kpi-value">52</div>
+    <div class="kpi-copy"><div class="metric-label">Queue capacity <span>K</span></div><small id="input-context">1,000 records · C1</small></div>
+   </article>
+   <article class="kpi-card teal">
+    <div class="kpi-top"><svg><use href="#clock"/></svg><span class="metric-unit">seconds</span></div>
+    <div id="elapsed" class="dot-value kpi-value">—</div>
+    <div class="kpi-copy"><div class="metric-label">Algorithm time</div><small>Loading and verification excluded</small></div>
+   </article>
+   <article class="kpi-card violet-card">
+    <div class="kpi-top"><svg><use href="#activity"/></svg><span class="corner-arrow">↗</span></div>
+    <div id="comparisons" class="dot-value kpi-value">—</div>
+    <div class="kpi-copy"><div class="metric-label">Key comparisons</div><small>Element moves <strong id="moves">—</strong></small></div>
+   </article>
+   <article class="kpi-card slate">
+    <div class="kpi-top"><svg><use href="#shield"/></svg><span class="tag teal-tag" id="verification-kpi">Not built</span></div>
+    <div id="queue-kpi" class="dot-value kpi-value">0</div>
+    <div class="kpi-copy"><div class="metric-label">Verified queue</div><small><strong id="fraud-kpi">492</strong> fraud labels in the full file</small></div>
+   </article>
+  </section>
+
+  <section class="panel posture-panel">
+   <div class="panel-title"><div><h2>Ranking posture</h2><p>Full-file risk distribution</p></div><span class="tag violet">Dataset profile</span></div>
+   <div class="posture-readout"><span class="dot-value" id="posture-bands">8/8</span><span class="posture-readout-label">risk bands populated</span><span class="posture-fraud"><i class="legend-dot purple"></i><strong id="posture-fraud">492</strong> fraud labels</span></div>
+   <svg id="landscape-chart" viewBox="0 0 800 250" role="img" aria-label="Wireframe projection of the observed log risk-band counts"></svg>
+   <div class="landscape-caption"><span><i class="legend-dot purple"></i>Band counts, log scale</span><span>Risk = Σ z² · band = ⌊log₂ risk⌋</span></div>
+  </section>
+
+  <section class="panel flow-panel">
+   <div class="panel-title"><div><h2>Queue rank flow <span class="tag red-tag" id="flow-badge">Profile</span></h2><p id="flow-description">Observed band volumes across the full file</p></div>
+    <div class="segmented" aria-label="Chart display"><button class="selected" id="flow-mode" aria-pressed="true">Rank flow</button><button id="profile-mode" aria-pressed="false">Band profile</button></div>
+   </div>
+   <div class="flow-chart-container"><svg id="flow-chart" viewBox="0 0 620 280" role="img" aria-label="Observed band profile; build a queue to see its ranking flow"></svg>
+    <div class="flow-callout" id="flow-callout"><svg><use href="#shield"/></svg><div><span class="muted-label" id="callout-label">Fraud-labelled records</span><strong id="fraud-total">—</strong><small id="callout-note">Class is used for evaluation only</small></div></div>
+   </div>
+   <div class="chart-footer"><span><i class="legend-dot purple"></i><span id="flow-legend-high">Band counts</span></span><span id="flow-legend-low" hidden><i class="legend-dot mint"></i>Bands 0–5</span><span id="flow-note">Build a queue to trace individual records</span></div>
+  </section>
+
+  <section class="panel insights-panel">
+   <div class="panel-title"><div><h2>Measured insights &amp; recommendations</h2><p>Derived from saved five-run medians</p></div><button class="icon-button" id="open-evidence" title="Open benchmark evidence" aria-label="Open benchmark evidence"><svg><use href="#arrow"/></svg></button></div>
+   <article class="insight"><div><h3 id="batch-choice">Overnight batch</h3><span class="tag violet">Batch</span></div><p id="batch-insight">Loading recorded full-size evidence.</p></article>
+   <article class="insight"><div><h3>Small queues favour the heap</h3><span class="tag teal-tag">Top-K</span></div><p id="heap-insight">Comparing recorded queue-production costs.</p></article>
+   <article class="insight"><div><h3>Live refresh: maintained heap</h3><span class="tag gold-tag">Live feed</span></div><p id="live-insight">Loading both window schedules.</p></article>
+   <article class="capture-insight">
+    <div class="capture-visual"><svg id="capture-gauge" viewBox="0 0 170 170" role="img" aria-label="Half of fraud labels captured at the recorded capacity"></svg></div>
+    <div class="capture-copy"><span class="muted-label">Half-capture queue</span><strong class="capture-capacity" id="half-capacity">—</strong><p id="capture-insight">Under the assignment's fixed scoring rule.</p></div>
+   </article>
+   <div class="insight-note"><svg><use href="#info"/></svg><span>Recommendations use saved five-run medians. Interactive runs are measured separately.</span></div>
+  </section>
+
+  <section class="panel bars-panel">
+   <div class="panel-title"><div><h2 id="bars-title">Fraud concentration by risk band</h2><p id="bars-description">Where the 492 fraud labels sit</p></div>
+    <div class="segmented small" aria-label="Bar chart series"><button class="selected" id="bars-fraud" aria-pressed="true">Fraud labels</button><button id="bars-queue" aria-pressed="false" disabled>Queue bands</button></div>
+   </div>
+   <div class="bars-chart-wrap"><svg id="bars-chart" viewBox="0 0 560 290" role="img" aria-label="Fraud labels by risk band"></svg></div>
+   <div class="bars-stats"><div><span id="bar-total-label">Total labels</span><strong id="bar-total">—</strong></div><div><span>Peak band</span><strong id="bar-top">—</strong></div><div><span id="bar-half-label">Half-capture K</span><strong id="bar-half">—</strong></div></div>
+  </section>
+
+  <section class="panel watch-panel">
+   <div class="panel-title"><div><h2>Algorithm watch</h2><p id="watch-subtitle">Fastest saved medians · n = 10,000 · C2</p></div><button class="icon-button" id="open-evidence-watch" title="Open benchmark evidence" aria-label="Open benchmark evidence"><svg><use href="#arrow"/></svg></button></div>
+   <div class="watch-list" id="watch-list"><p class="panel-loading">Loading saved measurements…</p></div>
+   <p class="watch-note">Median of five verified runs. Bar length shows relative speed.</p>
+  </section>
+
+  <section class="panel queue-panel" id="queue-panel" aria-label="Queue results">
+   <div class="panel-title queue-panel-heading"><div><h2 id="queue-title">Suspicious transaction queue <span id="size" class="count-tag">0</span></h2><p id="run-context">Choose an algorithm to build an independently verified queue</p></div><span class="tag" id="verification">Not built</span></div>
+   <form id="settings" class="queue-settings">
+    <div class="field algorithm-field"><label for="algorithm">Algorithm</label><select id="algorithm" required></select></div>
+    <div class="field"><label for="n">Input records</label><select id="n"><option value="1000">1,000</option><option value="10000">10,000</option><option value="100000">100,000</option><option value="284807">284,807 · full file</option></select></div>
+    <div class="field"><label for="condition">Input condition</label><select id="condition"><option value="C1">C1 · Arrival order</option><option value="C2">C2 · Seeded shuffle</option><option value="C3">C3 · Already ranked</option><option value="C4">C4 · Reverse ranked</option><option value="C5">C5 · 1% displaced</option></select></div>
+    <div class="field k-field"><label for="k">Queue capacity K</label><input id="k" type="number" min="1" max="1000" value="52" step="1" required></div>
+    <div class="run-actions"><button id="run" class="soft-button" type="submit" disabled>Build queue</button><button id="cancel" class="outline-button" type="button" disabled>Cancel run</button></div>
+   </form>
+   <p id="status" class="run-status" role="status" aria-live="polite">Loading available algorithms…</p>
+   <div class="queue-toolbar"><label class="search-field"><svg><use href="#search"/></svg><input id="queue-search" type="search" placeholder="Search transaction ID" aria-label="Search transaction ID"></label><select id="band-filter" aria-label="Filter queue by risk band"><option value="">All bands</option><option>9</option><option>8</option><option>7</option><option>6</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option><option>0</option></select><div class="pager"><span id="range">No queue built</span><button id="previous" class="icon-button previous" disabled title="Previous page" aria-label="Previous"><svg><use href="#chevron"/></svg></button><span id="page">0 / 0</span><button id="next" class="icon-button" disabled title="Next page" aria-label="Next"><svg><use href="#chevron"/></svg></button></div></div>
+   <div class="table-wrap"><table><thead><tr><th scope="col">Rank</th><th scope="col">Transaction ID</th><th scope="col">Risk band</th><th scope="col">Amount</th><th scope="col">Time (s)</th><th scope="col">Risk score</th><th scope="col"><span class="sr-only">Inspect</span></th></tr></thead><tbody id="rows"><tr><td colspan="7"><div class="empty"><svg><use href="#layers"/></svg><strong>Your next queue starts here</strong><span>Choose an algorithm and K, then build the queue.</span></div></td></tr></tbody></table></div>
+   <div class="queue-footnote"><span><i class="legend-dot mint"></i>Band ↓ · Amount ↓ · Time ↑ · Transaction ID ↑</span><span>Class never influences ranking</span></div>
+  </section>
+
+  <section class="panel timeline-panel">
+   <div class="panel-title"><div><h2>Run timeline</h2><p>Verified demonstrations, newest first</p></div><span class="tag teal-tag">Session + saved</span></div>
+   <ol class="run-timeline" id="timeline-list"><li class="timeline-empty">Loading recorded runs…</li></ol>
+   <p class="timeline-note" id="timeline-note">Every entry is a completed, reference-checked queue build.</p>
+  </section>
+
+ </div>
+
+ <section class="evidence-view panel" id="evidence-panel" aria-label="Recorded benchmark evidence" hidden>
+  <div class="panel-title"><div><h2>Full ranking tournament</h2><p>Recorded medians of five verified runs · algorithm-only time</p></div><div class="evidence-filters"><label for="evidence-n" class="sr-only">Benchmark input size</label><select id="evidence-n"><option value="1000">n = 1,000</option><option value="10000" selected>n = 10,000</option><option value="100000">n = 100,000</option><option value="284807">n = 284,807</option></select><label for="evidence-condition" class="sr-only">Benchmark condition</label><select id="evidence-condition"><option>C1</option><option selected>C2</option><option>C3</option><option>C4</option><option>C5</option><option>C6</option></select></div></div>
+  <div class="evidence-summary" aria-label="Selected benchmark summary"><div><span>Fastest median</span><strong id="evidence-fastest">—</strong></div><div><span>Measured cells</span><strong id="evidence-cells">—</strong></div><div><span>DNF cells</span><strong id="evidence-dnf">—</strong></div><div><span>Time axis</span><strong>Logarithmic</strong></div></div>
+  <div class="benchmark-content"><svg id="benchmark-chart" viewBox="0 0 900 300" role="img" aria-label="Recorded algorithm times on a logarithmic scale"></svg><div class="table-wrap"><table><thead><tr><th>Contender</th><th>Median time</th><th>Comparisons</th><th>Moves</th></tr></thead><tbody id="benchmark-rows"></tbody></table></div></div>
+  <p class="evidence-note" id="evidence-note">Loading saved benchmark evidence.</p>
+ </section>
+</main>
+<footer><span><i class="footer-dot"></i>Local dataset · Full-file scoring before sampling</span><span>23I-2581 <span class="footer-divider">/</span> DS-B <span class="footer-divider">/</span> Seed 232581 <span class="footer-divider">/</span> K = 52</span></footer>
+</div>
+<aside class="system-dialogue" id="system-dialogue" aria-label="System dialogue subtitles" hidden>
+ <div class="dialogue-signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+ <div class="dialogue-copy"><div class="dialogue-label"><span>Midnight / Command</span><span id="dialogue-phase">Standing by</span></div><p id="dialogue-line"></p></div>
+ <button class="icon-button dialogue-dismiss" id="dialogue-dismiss" aria-label="Skip dialogue" title="Skip dialogue"><svg><use href="#close"/></svg></button>
+</aside>
+<dialog id="detail-dialog"><div class="dialog-heading"><h2 id="dialog-title">Project information</h2><button id="close-dialog" class="icon-button" aria-label="Close details"><svg><use href="#close"/></svg></button></div><div id="dialog-content"></div></dialog>
+</body></html>

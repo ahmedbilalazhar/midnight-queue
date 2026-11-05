@@ -1,0 +1,10 @@
+Loading and validating the full dataset...
+Loaded 284,807 rows / 492 frauds; sha256=76274b691b16a6c4...
+Traceback (most recent call last):
+  File "C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\scripts\prepare.py", line 117, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\scripts\prepare.py", line 59, in main
+    assert is_sorted(condition.records, TriageOrder("triage"))
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,522 @@
+record_type,problem,experiment,prediction_id,algorithm,strategy,condition,n,k,width_s,window,repeat,elapsed_s,median_s,run_count,comparisons,moves,peak_extra_bytes,correct,stable,dnf,dnf_reason,extrapolated,largest_completed_n,fraud_capture_count,fraud_fraction,queue_size,seen,window_records,cumulative_s,notes
+run,D,topk,,Size-K Heap,,C1,100000,10,,,1,0.04653979999420699,,,100492,776,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10,,,2,0.03280980000272393,,,100492,776,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10,,,3,0.02274119999492541,,,100492,776,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10,,,4,0.020547300009639002,,,100492,776,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10,,,5,0.021281499997712672,,,100492,776,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,100000,10,,,,,0.02274119999492541,5,100492,776,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10,,,1,0.027257299996563233,,,100356,610,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10,,,2,0.027878599998075515,,,100356,610,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10,,,3,0.0205565999931423,,,100356,610,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10,,,4,0.02544930001022294,,,100356,610,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10,,,5,0.022345000004861504,,,100356,610,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,100000,10,,,,,0.02544930001022294,5,100356,610,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,50,,,1,0.027508099999977276,,,103563,5410,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,50,,,2,0.04891559999668971,,,103563,5410,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,50,,,3,0.0218524000083562,,,103563,5410,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,50,,,4,0.031505399994784966,,,103563,5410,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,50,,,5,0.02627539999957662,,,103563,5410,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,100000,50,,,,,0.027508099999977276,5,103563,5410,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,50,,,1,0.04618950000440236,,,102289,10271,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,50,,,2,0.03261460000067018,,,102289,10271,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,50,,,3,0.04108569999516476,,,102289,10271,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,50,,,4,0.033469300004071556,,,102289,10271,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,50,,,5,0.028741500005708076,,,102289,10271,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,100000,50,,,,,0.033469300004071556,5,102289,10271,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,52,,,1,0.02824230000260286,,,103751,5696,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,52,,,2,0.022701199995935895,,,103751,5696,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,52,,,3,0.034215399995446205,,,103751,5696,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,52,,,4,0.026712099992437288,,,103751,5696,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,52,,,5,0.022895399990375154,,,103751,5696,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,100000,52,,,,,0.026712099992437288,5,103751,5696,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,52,,,1,0.030587999994168058,,,102398,10996,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,52,,,2,0.02808319999894593,,,102398,10996,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,52,,,3,0.023370700000668876,,,102398,10996,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,52,,,4,0.023119699995731935,,,102398,10996,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,52,,,5,0.025255100001231767,,,102398,10996,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,100000,52,,,,,0.025255100001231767,5,102398,10996,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,500,,,1,0.04944620000605937,,,148232,73411,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,500,,,2,0.04618099999788683,,,148232,73411,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,500,,,3,0.04701109998859465,,,148232,73411,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,500,,,4,0.05354389999411069,,,148232,73411,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,500,,,5,0.05228530000022147,,,148232,73411,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,100000,500,,,,,0.04944620000605937,5,148232,73411,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,500,,,1,0.12012989999493584,,,127895,718115,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,500,,,2,0.10530560000916012,,,127895,718115,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,500,,,3,0.14485999998578336,,,127895,718115,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,500,,,4,0.11828670000249986,,,127895,718115,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,500,,,5,0.10666069999570027,,,127895,718115,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,100000,500,,,,,0.11828670000249986,5,127895,718115,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,5000,,,1,0.26902370000607334,,,496482,607941,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,5000,,,2,0.19901569999638014,,,496482,607941,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,5000,,,3,0.32904539999435656,,,496482,607941,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,5000,,,4,0.3078689999965718,,,496482,607941,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,5000,,,5,0.3256924000015715,,,496482,607941,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,100000,5000,,,,,0.3078689999965718,5,496482,607941,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,5000,,,1,4.681568100000732,,,318488,32654292,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,5000,,,2,4.995555099987541,,,318488,32654292,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,5000,,,3,4.886392200001865,,,318488,32654292,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,5000,,,4,4.473959800001467,,,318488,32654292,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,5000,,,5,5.916580999997677,,,318488,32654292,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,100000,5000,,,,,4.886392200001865,5,318488,32654292,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10000,,,1,0.4508150000037858,,,851518,1161881,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10000,,,2,0.4611783000000287,,,851518,1161881,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10000,,,3,0.4443468999961624,,,851518,1161881,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10000,,,4,0.40355649999401066,,,851518,1161881,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,10000,,,5,0.38655239999934565,,,851518,1161881,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,100000,10000,,,,,0.4443468999961624,5,851518,1161881,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10000,,,1,17.143840999997337,,,506077,110526238,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10000,,,2,20.031242800003383,,,506077,110526238,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10000,,,3,17.17474069999298,,,506077,110526238,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10000,,,4,22.01279120000254,,,506077,110526238,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,10000,,,5,21.079328199994052,,,506077,110526238,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,100000,10000,,,,,20.031242800003383,5,506077,110526238,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,2068,,,1,0.165355000004638,,,278559,272797,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,2068,,,2,0.18471479999425355,,,278559,272797,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,2068,,,3,0.1398613000055775,,,278559,272797,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,2068,,,4,0.11716870000236668,,,278559,272797,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,100000,2068,,,5,0.1342774999939138,,,278559,272797,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,100000,2068,,,,,0.1398613000055775,5,278559,272797,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,2068,,,1,1.7364211999956751,,,199595,7785295,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,2068,,,2,1.4851421999919694,,,199595,7785295,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,2068,,,3,1.3398569999990286,,,199595,7785295,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,2068,,,4,1.5216871000011452,,,199595,7785295,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,100000,2068,,,5,1.3277028000011342,,,199595,7785295,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,100000,2068,,,,,1.4851421999919694,5,199595,7785295,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10,,,1,0.025997399992775172,,,100468,741,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10,,,2,0.022445899987360463,,,100468,741,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10,,,3,0.023382200000924058,,,100468,741,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10,,,4,0.03068609999900218,,,100468,741,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10,,,5,0.02898470000945963,,,100468,741,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,100000,10,,,,,0.025997399992775172,5,100468,741,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10,,,1,0.05085210000106599,,,100341,627,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10,,,2,0.03249620000133291,,,100341,627,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10,,,3,0.029190499990363605,,,100341,627,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10,,,4,0.02480650000507012,,,100341,627,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10,,,5,0.02164710000215564,,,100341,627,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,100000,10,,,,,0.029190499990363605,5,100341,627,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,50,,,1,0.022509799993713386,,,103600,5493,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,50,,,2,0.02681690000463277,,,103600,5493,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,50,,,3,0.032144299999345094,,,103600,5493,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,50,,,4,0.038531999991391785,,,103600,5493,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,50,,,5,0.03540700000303332,,,103600,5493,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,100000,50,,,,,0.032144299999345094,5,103600,5493,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,50,,,1,0.04277870000805706,,,102261,10150,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,50,,,2,0.04509489999327343,,,102261,10150,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,50,,,3,0.06277469999622554,,,102261,10150,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,50,,,4,0.03314769999997225,,,102261,10150,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,50,,,5,0.03905259999737609,,,102261,10150,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,100000,50,,,,,0.04277870000805706,5,102261,10150,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,52,,,1,0.035976400002255104,,,103724,5659,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,52,,,2,0.03753339999821037,,,103724,5659,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,52,,,3,0.023502399999415502,,,103724,5659,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,52,,,4,0.027520300005562603,,,103724,5659,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,52,,,5,0.035415499994996935,,,103724,5659,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,100000,52,,,,,0.035415499994996935,5,103724,5659,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,52,,,1,0.0315480999997817,,,102351,10836,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,52,,,2,0.030059300013817847,,,102351,10836,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,52,,,3,0.023274799998034723,,,102351,10836,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,52,,,4,0.04459289999795146,,,102351,10836,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,52,,,5,0.034082799989846535,,,102351,10836,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,100000,52,,,,,0.0315480999997817,5,102351,10836,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,500,,,1,0.06428579999192152,,,146335,70378,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,500,,,2,0.05572490001213737,,,146335,70378,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,500,,,3,0.05164849999709986,,,146335,70378,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,500,,,4,0.041255200005252846,,,146335,70378,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,500,,,5,0.045278599995072,,,146335,70378,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,100000,500,,,,,0.05164849999709986,5,146335,70378,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,500,,,1,0.1139234000002034,,,126891,670416,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,500,,,2,0.11877980000281241,,,126891,670416,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,500,,,3,0.10579410000354983,,,126891,670416,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,500,,,4,0.12161460000788793,,,126891,670416,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,500,,,5,0.12051259999861941,,,126891,670416,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,100000,500,,,,,0.11877980000281241,5,126891,670416,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,5000,,,1,0.29729170000064187,,,531068,660984,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,5000,,,2,0.32009379999362864,,,531068,660984,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,5000,,,3,0.22683860000688583,,,531068,660984,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,5000,,,4,0.23823639999318402,,,531068,660984,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,5000,,,5,0.28292709999368526,,,531068,660984,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,100000,5000,,,,,0.28292709999368526,5,531068,660984,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,5000,,,1,6.422780499997316,,,336991,37682447,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,5000,,,2,4.554378900007578,,,336991,37682447,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,5000,,,3,5.439690599989262,,,336991,37682447,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,5000,,,4,6.405222100001993,,,336991,37682447,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,5000,,,5,6.871295799996005,,,336991,37682447,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,100000,5000,,,,,6.405222100001993,5,336991,37682447,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10000,,,1,0.4406292000057874,,,873016,1192641,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10000,,,2,0.5108694999944419,,,873016,1192641,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10000,,,3,0.665529100006097,,,873016,1192641,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10000,,,4,0.497622400012915,,,873016,1192641,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,10000,,,5,0.38753610001003835,,,873016,1192641,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,100000,10000,,,,,0.497622400012915,5,873016,1192641,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10000,,,1,16.32579469999473,,,518642,115859532,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10000,,,2,18.861383499999647,,,518642,115859532,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10000,,,3,17.622156100012944,,,518642,115859532,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10000,,,4,15.07358949999616,,,518642,115859532,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,10000,,,5,17.155116800000542,,,518642,115859532,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,100000,10000,,,,,17.155116800000542,5,518642,115859532,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,2068,,,1,0.10808459999680053,,,289975,290331,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,2068,,,2,0.1349047999974573,,,289975,290331,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,2068,,,3,0.12861129999510013,,,289975,290331,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,2068,,,4,0.23938420000195038,,,289975,290331,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,100000,2068,,,5,0.13419120000617113,,,289975,290331,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,100000,2068,,,,,0.13419120000617113,5,289975,290331,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,2068,,,1,1.05757750000339,,,206519,8360820,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,2068,,,2,1.292106100008823,,,206519,8360820,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,2068,,,3,1.2407689000101527,,,206519,8360820,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,2068,,,4,1.3400052999932086,,,206519,8360820,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,100000,2068,,,5,1.1047638000018196,,,206519,8360820,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,100000,2068,,,,,1.2407689000101527,5,206519,8360820,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,10,,,1,0.07392490000347607,,,285348,841,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,10,,,2,0.06745780000346713,,,285348,841,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,10,,,3,0.06283310000435449,,,285348,841,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,10,,,4,0.05498890001035761,,,285348,841,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,10,,,5,0.05698139999003615,,,285348,841,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,284807,10,,,,,0.06283310000435449,5,285348,841,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,10,,,1,0.06269540000357665,,,285194,704,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,10,,,2,0.06764540000585839,,,285194,704,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,10,,,3,0.06296729999303352,,,285194,704,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,10,,,4,0.06087869999464601,,,285194,704,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,10,,,5,0.057621999992989004,,,285194,704,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,284807,10,,,,,0.06269540000357665,5,285194,704,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,50,,,1,0.06276620000426192,,,289274,6745,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,50,,,2,0.06668720000016037,,,289274,6745,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,50,,,3,0.06288250000216067,,,289274,6745,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,50,,,4,0.14673770000808872,,,289274,6745,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,50,,,5,0.0752896000049077,,,289274,6745,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,284807,50,,,,,0.06668720000016037,5,289274,6745,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,50,,,1,0.08130259999597911,,,287670,13240,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,50,,,2,0.07416299999749754,,,287670,13240,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,50,,,3,0.06465539999771863,,,287670,13240,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,50,,,4,0.0702272000053199,,,287670,13240,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,50,,,5,0.07879369999864139,,,287670,13240,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,284807,50,,,,,0.07416299999749754,5,287670,13240,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,52,,,1,0.06978380000509787,,,289510,7138,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,52,,,2,0.0645609999919543,,,289510,7138,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,52,,,3,0.0641509999986738,,,289510,7138,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,52,,,4,0.10535949999757577,,,289510,7138,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,52,,,5,0.08347269998921547,,,289510,7138,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,284807,52,,,,,0.06978380000509787,5,289510,7138,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,52,,,1,0.0716588000068441,,,287791,14177,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,52,,,2,0.089848699994036,,,287791,14177,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,52,,,3,0.10523980000289157,,,287791,14177,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,52,,,4,0.07553329999791458,,,287791,14177,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,52,,,5,0.08986899998853914,,,287791,14177,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,284807,52,,,,,0.089848699994036,5,287791,14177,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,500,,,1,0.10045420000096783,,,344101,89375,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,500,,,2,0.10161569999763742,,,344101,89375,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,500,,,3,0.10417589999269694,,,344101,89375,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,500,,,4,0.09082670000498183,,,344101,89375,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,500,,,5,0.07418569999572355,,,344101,89375,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,284807,500,,,,,0.10045420000096783,5,344101,89375,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,500,,,1,0.14933420000306796,,,319334,881619,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,500,,,2,0.20724309999786783,,,319334,881619,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,500,,,3,0.224833000000217,,,319334,881619,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,500,,,4,0.278463800001191,,,319334,881619,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,500,,,5,0.2020801000035135,,,319334,881619,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,284807,500,,,,,0.20724309999786783,5,319334,881619,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,5000,,,1,0.30429970000113826,,,797069,781268,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,5000,,,2,0.26255440000386443,,,797069,781268,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,5000,,,3,0.2576181999902474,,,797069,781268,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,5000,,,4,0.2595407999906456,,,797069,781268,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,5000,,,5,0.28079889999935403,,,797069,781268,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,284807,5000,,,,,0.26255440000386443,5,797069,781268,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,5000,,,1,6.9839489000005415,,,567648,48647614,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,5000,,,2,8.345130600006087,,,567648,48647614,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,5000,,,3,6.916530699993018,,,567648,48647614,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,5000,,,4,6.625583200002438,,,567648,48647614,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,5000,,,5,7.333865499997046,,,567648,48647614,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,284807,5000,,,,,6.9839489000005415,5,567648,48647614,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,28480,,,1,1.2258132999995723,,,2691001,3708387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,28480,,,2,1.0703856999898562,,,2691001,3708387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,28480,,,3,1.0995274000015343,,,2691001,3708387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,28480,,,4,1.114122300001327,,,2691001,3708387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,28480,,,5,1.132028000007267,,,2691001,3708387,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,284807,28480,,,,,1.114122300001327,5,2691001,3708387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,28480,,,1,158.0974731000024,,,1575087,889041247,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,28480,,,2,152.44858219999878,,,1575087,889041247,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,28480,,,3,156.95291939999152,,,1575087,889041247,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,28480,,,4,154.2206712000043,,,1575087,889041247,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,28480,,,5,174.985102000006,,,1575087,889041247,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,284807,28480,,,,,156.95291939999152,5,1575087,889041247,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,2068,,,1,0.1913774000131525,,,524274,364006,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,2068,,,2,0.1801127000071574,,,524274,364006,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,2068,,,3,0.1647464999987278,,,524274,364006,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,2068,,,4,0.24279570000362583,,,524274,364006,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C1,284807,2068,,,5,0.14961999999650288,,,524274,364006,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C1,284807,2068,,,,,0.1801127000071574,5,524274,364006,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,2068,,,1,1.1983959999924991,,,419297,11371558,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,2068,,,2,1.468226600001799,,,419297,11371558,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,2068,,,3,1.2771217999979854,,,419297,11371558,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,2068,,,4,1.4913417999923695,,,419297,11371558,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C1,284807,2068,,,5,1.6951281000074232,,,419297,11371558,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C1,284807,2068,,,,,1.468226600001799,5,419297,11371558,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,10,,,1,0.090319000009913,,,285342,825,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,10,,,2,0.055121100012911484,,,285342,825,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,10,,,3,0.05817090001073666,,,285342,825,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,10,,,4,0.06440190000284929,,,285342,825,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,10,,,5,0.06128840000019409,,,285342,825,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,284807,10,,,,,0.06128840000019409,5,285342,825,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,10,,,1,0.06776839999656659,,,285202,680,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,10,,,2,0.06737210000574123,,,285202,680,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,10,,,3,0.0650346000038553,,,285202,680,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,10,,,4,0.06988080000155605,,,285202,680,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,10,,,5,0.08959659999527503,,,285202,680,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,284807,10,,,,,0.06776839999656659,5,285202,680,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,50,,,1,0.08018829999491572,,,288962,6282,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,50,,,2,0.07016509999812115,,,288962,6282,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,50,,,3,0.055034799996064976,,,288962,6282,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,50,,,4,0.05655369999294635,,,288962,6282,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,50,,,5,0.059258799999952316,,,288962,6282,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,284807,50,,,,,0.059258799999952316,5,288962,6282,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,50,,,1,0.05953930001123808,,,287447,11874,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,50,,,2,0.06159769999794662,,,287447,11874,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,50,,,3,0.06076369999209419,,,287447,11874,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,50,,,4,0.09324060000653844,,,287447,11874,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,50,,,5,0.07312590000219643,,,287447,11874,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,284807,50,,,,,0.06159769999794662,5,287447,11874,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,52,,,1,0.059411399997770786,,,289165,6617,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,52,,,2,0.07276060000003781,,,289165,6617,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,52,,,3,0.12618219999421854,,,289165,6617,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,52,,,4,0.05565679998835549,,,289165,6617,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,52,,,5,0.05925199999182951,,,289165,6617,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,284807,52,,,,,0.059411399997770786,5,289165,6617,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,52,,,1,0.09272999998938758,,,287560,12735,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,52,,,2,0.06684680000762455,,,287560,12735,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,52,,,3,0.07886019999568816,,,287560,12735,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,52,,,4,0.06710919999750331,,,287560,12735,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,52,,,5,0.09930549999990035,,,287560,12735,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,284807,52,,,,,0.07886019999568816,5,287560,12735,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,500,,,1,0.0869061999983387,,,339052,82000,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,500,,,2,0.07779939999454655,,,339052,82000,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,500,,,3,0.13163129999884404,,,339052,82000,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,500,,,4,0.11805269999604207,,,339052,82000,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,500,,,5,0.10450669999409001,,,339052,82000,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,284807,500,,,,,0.10450669999409001,5,339052,82000,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,500,,,1,0.18447969999397174,,,316482,807722,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,500,,,2,0.1998887000081595,,,316482,807722,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,500,,,3,0.159073000002536,,,316482,807722,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,500,,,4,0.14761519999592565,,,316482,807722,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,500,,,5,0.17132890000357293,,,316482,807722,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,284807,500,,,,,0.17132890000357293,5,316482,807722,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,5000,,,1,0.3105274000117788,,,820199,815387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,5000,,,2,0.26893120000022464,,,820199,815387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,5000,,,3,0.26858209999045357,,,820199,815387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,5000,,,4,0.26400170000852086,,,820199,815387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,5000,,,5,0.33981520000088494,,,820199,815387,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,284807,5000,,,,,0.26893120000022464,5,820199,815387,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,5000,,,1,8.22839990000648,,,581085,50049218,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,5000,,,2,7.210638500007917,,,581085,50049218,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,5000,,,3,7.057504399999743,,,581085,50049218,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,5000,,,4,7.462125999998534,,,581085,50049218,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,5000,,,5,7.129647199995816,,,581085,50049218,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,284807,5000,,,,,7.210638500007917,5,581085,50049218,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,28480,,,1,1.249628900011885,,,2769411,3820711,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,28480,,,2,1.2922257999889553,,,2769411,3820711,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,28480,,,3,1.3748166000004858,,,2769411,3820711,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,28480,,,4,1.4659085999883246,,,2769411,3820711,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,28480,,,5,1.1919102999963798,,,2769411,3820711,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,284807,28480,,,,,1.2922257999889553,5,2769411,3820711,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,28480,,,1,163.72347840000293,,,1619189,936263882,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,28480,,,2,155.65041730001394,,,1619189,936263882,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,28480,,,3,161.16292650000833,,,1619189,936263882,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,28480,,,4,164.309039499989,,,1619189,936263882,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,28480,,,5,154.7075768000068,,,1619189,936263882,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,284807,28480,,,,,161.16292650000833,5,1619189,936263882,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,2068,,,1,0.15047300000151154,,,514992,349575,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,2068,,,2,0.1503969000041252,,,514992,349575,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,2068,,,3,0.1733937000099104,,,514992,349575,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,2068,,,4,0.16961450000235345,,,514992,349575,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Size-K Heap,,C2,284807,2068,,,5,0.1731350000045495,,,514992,349575,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Size-K Heap,,C2,284807,2068,,,,,0.16961450000235345,5,514992,349575,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,2068,,,1,1.1119373999972595,,,414487,10533104,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,2068,,,2,1.253684900002554,,,414487,10533104,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,2068,,,3,1.406569100014167,,,414487,10533104,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,2068,,,4,1.5292957000056049,,,414487,10533104,,True,unstable,False,,,,,,,,,,
+run,D,topk,,Bounded Insertion Buffer,,C2,284807,2068,,,5,1.1843932000047062,,,414487,10533104,,True,unstable,False,,,,,,,,,,
+median,D,topk,,Bounded Insertion Buffer,,C2,284807,2068,,,,,1.253684900002554,5,414487,10533104,,True,unstable,False,,,,,,,,,,
+memory,D,topk,,Size-K Heap,,C1,100000,52,,,,,,,,,888,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C1,100000,52,,,,,,,,,1832,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Size-K Heap,,C1,100000,2068,,,,,,,,,33144,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C1,100000,2068,,,,,,,,,34088,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Size-K Heap,,C1,284807,52,,,,,,,,,888,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C1,284807,52,,,,,,,,,1832,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Size-K Heap,,C1,284807,2068,,,,,,,,,33144,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C1,284807,2068,,,,,,,,,34088,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Size-K Heap,,C2,100000,52,,,,,,,,,888,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C2,100000,52,,,,,,,,,1832,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Size-K Heap,,C2,100000,2068,,,,,,,,,33144,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C2,100000,2068,,,,,,,,,34088,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Size-K Heap,,C2,284807,52,,,,,,,,,888,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C2,284807,52,,,,,,,,,1832,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Size-K Heap,,C2,284807,2068,,,,,,,,,33144,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+memory,D,topk,,Bounded Insertion Buffer,,C2,284807,2068,,,,,,,,,34088,True,,,,,,,,,,,,"tracemalloc, separate from timing"
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10,,,1,3.221048100007465,,,1963659,5214511,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10,,,2,3.8852244000008795,,,1963659,5214511,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10,,,3,4.1395943999814335,,,1963659,5214511,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10,,,4,3.374496700009331,,,1963659,5214511,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10,,,5,3.7422742000198923,,,1963659,5214511,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10,,,,,3.7422742000198923,5,1963659,5214511,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,50,,,1,7.2500563999929,,,1963659,5214551,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,50,,,2,2.980866000027163,,,1963659,5214551,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,50,,,3,4.405008299974725,,,1963659,5214551,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,50,,,4,3.4571790999907535,,,1963659,5214551,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,50,,,5,2.7508700999896973,,,1963659,5214551,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,50,,,,,3.4571790999907535,5,1963659,5214551,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,52,,,1,2.661015600024257,,,1963659,5214553,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,52,,,2,2.7535861999785993,,,1963659,5214553,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,52,,,3,2.5087433999869972,,,1963659,5214553,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,52,,,4,2.9591555999941193,,,1963659,5214553,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,52,,,5,3.0705873999977484,,,1963659,5214553,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,52,,,,,2.7535861999785993,5,1963659,5214553,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,500,,,1,2.296024400013266,,,1963659,5215001,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,500,,,2,2.2765582999854814,,,1963659,5215001,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,500,,,3,2.445708299987018,,,1963659,5215001,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,500,,,4,2.742715500004124,,,1963659,5215001,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,500,,,5,2.2628915999957826,,,1963659,5215001,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,500,,,,,2.296024400013266,5,1963659,5215001,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,5000,,,1,2.762659200001508,,,1963659,5219501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,5000,,,2,2.506520399998408,,,1963659,5219501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,5000,,,3,3.059073799988255,,,1963659,5219501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,5000,,,4,2.759510500007309,,,1963659,5219501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,5000,,,5,2.402267800003756,,,1963659,5219501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,5000,,,,,2.759510500007309,5,1963659,5219501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10000,,,1,2.648439899989171,,,1963659,5224501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10000,,,2,2.741417299985187,,,1963659,5224501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10000,,,3,2.9615919000061695,,,1963659,5224501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10000,,,4,2.5991511000029277,,,1963659,5224501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10000,,,5,2.9989970000169706,,,1963659,5224501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,10000,,,,,2.741417299985187,5,1963659,5224501,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,2068,,,1,3.300376800005324,,,1963659,5216569,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,2068,,,2,3.864815599983558,,,1963659,5216569,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,2068,,,3,3.0983135999995284,,,1963659,5216569,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,2068,,,4,2.6151670000108425,,,1963659,5216569,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,2068,,,5,2.6206112999934703,,,1963659,5216569,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,100000,2068,,,,,3.0983135999995284,5,1963659,5216569,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10,,,1,2.834912099991925,,,1937351,5139802,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10,,,2,2.7986302000063006,,,1937351,5139802,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10,,,3,3.5095756000082474,,,1937351,5139802,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10,,,4,2.7901780999964103,,,1937351,5139802,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10,,,5,3.1248123999976087,,,1937351,5139802,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10,,,,,2.834912099991925,5,1937351,5139802,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,50,,,1,2.4258740000077523,,,1937351,5139842,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,50,,,2,2.6891694999940228,,,1937351,5139842,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,50,,,3,2.8047984000004362,,,1937351,5139842,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,50,,,4,2.56073739999556,,,1937351,5139842,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,50,,,5,2.4562169999990147,,,1937351,5139842,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,50,,,,,2.56073739999556,5,1937351,5139842,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,52,,,1,2.51236299998709,,,1937351,5139844,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,52,,,2,2.4913494999927934,,,1937351,5139844,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,52,,,3,2.635624199989252,,,1937351,5139844,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,52,,,4,2.8902926000009757,,,1937351,5139844,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,52,,,5,3.083115399989765,,,1937351,5139844,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,52,,,,,2.635624199989252,5,1937351,5139844,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,500,,,1,3.9333919000055175,,,1937351,5140292,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,500,,,2,5.055756299989298,,,1937351,5140292,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,500,,,3,6.636565699998755,,,1937351,5140292,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,500,,,4,5.033385999995517,,,1937351,5140292,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,500,,,5,3.4232937000051606,,,1937351,5140292,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,500,,,,,5.033385999995517,5,1937351,5140292,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,5000,,,1,3.282369099993957,,,1937351,5144792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,5000,,,2,2.6632742999936454,,,1937351,5144792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,5000,,,3,3.177264899975853,,,1937351,5144792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,5000,,,4,3.041050500003621,,,1937351,5144792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,5000,,,5,2.827570800000103,,,1937351,5144792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,5000,,,,,3.041050500003621,5,1937351,5144792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10000,,,1,2.891065500007244,,,1937351,5149792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10000,,,2,2.1901333999994677,,,1937351,5149792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10000,,,3,2.7301376999821514,,,1937351,5149792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10000,,,4,2.9414715000020806,,,1937351,5149792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10000,,,5,3.2474536999943666,,,1937351,5149792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,10000,,,,,2.891065500007244,5,1937351,5149792,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,2068,,,1,2.9241411999973934,,,1937351,5141860,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,2068,,,2,2.383939299994381,,,1937351,5141860,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,2068,,,3,3.344765700021526,,,1937351,5141860,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,2068,,,4,2.856134000001475,,,1937351,5141860,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,2068,,,5,3.201415400020778,,,1937351,5141860,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,100000,2068,,,,,2.9241411999973934,5,1937351,5141860,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,10,,,1,7.238311900000554,,,5986668,16040575,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,10,,,2,7.998971799999708,,,5986668,16040575,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,10,,,3,9.49076679997961,,,5986668,16040575,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,10,,,4,10.936365700006718,,,5986668,16040575,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,10,,,5,8.231299300008686,,,5986668,16040575,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,10,,,,,8.231299300008686,5,5986668,16040575,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,50,,,1,8.206134000007296,,,5986668,16040615,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,50,,,2,9.014861300005578,,,5986668,16040615,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,50,,,3,55.34881789999781,,,5986668,16040615,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,50,,,4,9.275868099997751,,,5986668,16040615,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,50,,,5,9.297140500013484,,,5986668,16040615,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,50,,,,,9.275868099997751,5,5986668,16040615,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,52,,,1,9.792134999996051,,,5986668,16040617,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,52,,,2,8.416652099986095,,,5986668,16040617,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,52,,,3,10.339340399979847,,,5986668,16040617,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,52,,,4,9.57642249998753,,,5986668,16040617,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,52,,,5,12.303753999993205,,,5986668,16040617,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,52,,,,,9.792134999996051,5,5986668,16040617,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,500,,,1,8.375572899996769,,,5986668,16041065,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,500,,,2,7.734479299979284,,,5986668,16041065,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,500,,,3,8.685477600025479,,,5986668,16041065,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,500,,,4,10.11009789997479,,,5986668,16041065,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,500,,,5,8.577602600009413,,,5986668,16041065,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,500,,,,,8.577602600009413,5,5986668,16041065,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,5000,,,1,8.957207200000994,,,5986668,16045565,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,5000,,,2,7.457600900001125,,,5986668,16045565,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,5000,,,3,7.807272899983218,,,5986668,16045565,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,5000,,,4,7.505880100012291,,,5986668,16045565,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,5000,,,5,7.567793299996993,,,5986668,16045565,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,5000,,,,,7.567793299996993,5,5986668,16045565,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,28480,,,1,8.847603100002743,,,5986668,16069045,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,28480,,,2,8.297566799999913,,,5986668,16069045,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,28480,,,3,7.401792499993462,,,5986668,16069045,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,28480,,,4,11.194025500008138,,,5986668,16069045,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,28480,,,5,10.85502779998933,,,5986668,16069045,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,28480,,,,,8.847603100002743,5,5986668,16069045,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,2068,,,1,11.265072099980898,,,5986668,16042633,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,2068,,,2,11.820979999989504,,,5986668,16042633,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,2068,,,3,10.414736000006087,,,5986668,16042633,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,2068,,,4,13.510520600015298,,,5986668,16042633,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,2068,,,5,11.702380699978676,,,5986668,16042633,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C1,284807,2068,,,,,11.702380699978676,5,5986668,16042633,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,10,,,1,10.171179199998733,,,5994686,16067212,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,10,,,2,11.40933190000942,,,5994686,16067212,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,10,,,3,10.85168709998834,,,5994686,16067212,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,10,,,4,11.563808899983997,,,5994686,16067212,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,10,,,5,11.723830100003397,,,5994686,16067212,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,10,,,,,11.40933190000942,5,5994686,16067212,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,50,,,1,10.882742400019197,,,5994686,16067252,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,50,,,2,11.106965000013588,,,5994686,16067252,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,50,,,3,9.637057600019034,,,5994686,16067252,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,50,,,4,9.856872800010024,,,5994686,16067252,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,50,,,5,8.865345400001388,,,5994686,16067252,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,50,,,,,9.856872800010024,5,5994686,16067252,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,52,,,1,9.794927400012966,,,5994686,16067254,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,52,,,2,7.120435200020438,,,5994686,16067254,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,52,,,3,6.848293800023384,,,5994686,16067254,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,52,,,4,16.143818899989128,,,5994686,16067254,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+interrupted,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,52,,,,,,,,,,,unstable,False,,,,,,,,,,"deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output; timeout during a session with documented standby events; excluded pending uninterrupted awake recheck, without inferring algorithm failure"
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,500,,,1,13.164951899991138,,,5994686,16067702,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,500,,,2,11.483966900006635,,,5994686,16067702,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,500,,,3,10.405163799994625,,,5994686,16067702,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,500,,,4,10.375659699988319,,,5994686,16067702,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,500,,,5,9.843878199986648,,,5994686,16067702,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,500,,,,,10.405163799994625,5,5994686,16067702,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,5000,,,1,9.350699400005396,,,5994686,16072202,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,5000,,,2,9.99654140000348,,,5994686,16072202,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,5000,,,3,10.910347299999557,,,5994686,16072202,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,5000,,,4,9.455045200011227,,,5994686,16072202,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,5000,,,5,9.370343499991577,,,5994686,16072202,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,5000,,,,,9.455045200011227,5,5994686,16072202,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,28480,,,1,9.426379900018219,,,5994686,16095682,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,28480,,,2,8.748661700024968,,,5994686,16095682,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,28480,,,3,8.940382000000682,,,5994686,16095682,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,28480,,,4,9.583051499997964,,,5994686,16095682,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,28480,,,5,8.784906500019133,,,5994686,16095682,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,28480,,,,,8.940382000000682,5,5994686,16095682,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,2068,,,1,10.002447999984724,,,5994686,16069270,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,2068,,,2,8.976203300000634,,,5994686,16069270,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,2068,,,3,9.961741599981906,,,5994686,16069270,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,2068,,,4,8.867219399980968,,,5994686,16069270,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,2068,,,5,9.647099900001194,,,5994686,16069270,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,2068,,,,,9.647099900001194,5,5994686,16069270,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+run,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,52,,,5,8.353611099999398,,,5994686,16067254,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output
+median,D,topk,,Full Sort (Hardened Quick Sort),,C2,284807,52,,,,,8.353611099999398,5,5994686,16067254,,True,unstable,False,,,,,,,,,,deep-hardening revision; source hashes/environment in outputs/revision/campaign.json; includes actual K-prefix output

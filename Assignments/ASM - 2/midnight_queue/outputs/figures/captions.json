@@ -1,0 +1,17 @@
+{
+  "07_band_distribution.png": "Risk-band counts and fraud density on the full file. Fraud-labelled records are a subset of all records; empty bands are explicitly noted. Class is used only for evaluation after scoring.",
+  "08_fraud_capture.png": "Full-file fraud capture versus queue capacity. The minimum K reaching 50% capture is 2,068; K=52 captures no frauds. The curve is a step function; Class is never a ranking key.",
+  "01_time_vs_n_C2.png": "Sorting cost grows very differently on shuffled input. C2 uses a seeded shuffle. Timing points are medians of five completed runs; missing points are DNF and are never interpolated. Counts use the documented comparison/move convention.",
+  "03_comparisons_vs_n_C2.png": "Comparison counts reveal the work behind the clock. C2 uses a seeded shuffle. Timing points are medians of five completed runs; missing points are DNF and are never interpolated. Counts use the documented comparison/move convention.",
+  "04_moves_vs_n_C2.png": "Record movement separates the sorting strategies. C2 uses a seeded shuffle. Timing points are medians of five completed runs; missing points are DNF and are never interpolated. Counts use the documented comparison/move convention.",
+  "05_time_nlogn_vs_n_C2.png": "Normalising by n log n tests the expected growth. C2 uses a seeded shuffle. Timing points are medians of five completed runs; missing points are DNF and are never interpolated. Counts use the documented comparison/move convention.",
+  "06_time_n2_vs_n_C2.png": "Quadratic normalisation exposes insertion sort. C2 uses a seeded shuffle. Timing points are medians of five completed runs; missing points are DNF and are never interpolated. Counts use the documented comparison/move convention.",
+  "02_time_by_condition_n10000.png": "Five-run median execution time by input condition at n=10,000. Grouped bars use a log time axis and identify the actual contenders.",
+  "report_C_tournament.png": "Tournament: C2 growth in time, comparisons and moves; condition comparison at n=10,000; time normalised by n log\u2082 n and n\u00b2. The shared legend applies to every panel. DNF points are absent.",
+  "09_topk_cost.png": "Cost of producing an ordered Top-K queue, including final publication. Five-run medians at both required sizes and C1/C2; the dotted guide marks K=52. Full sort is measured separately at each K, including its prefix copy; DNF is not plotted as zero.",
+  "report_D_topk.png": "Cost of producing an ordered Top-K queue, including final publication. Five-run medians at both required sizes and C1/C2; the dotted guide marks K=52. Full sort is measured separately at each K, including its prefix copy; DNF is not plotted as zero.",
+  "10_livefeed_1h.png": "Median cumulative time at each publication over five complete 60-minute-window simulations. Log time reveals all strategies. Any explicit DNF has an annotation and no fabricated trajectory.",
+  "11_livefeed_10min.png": "Median cumulative time at each publication over five complete 10-minute-window simulations. Log time reveals all strategies. Any explicit DNF has an annotation and no fabricated trajectory.",
+  "report_E_livefeed.png": "Median cumulative publication cost over five simulations at each window width. The time axis is logarithmic. Only complete five-run strategies have curves; any DNF is explicitly annotated.",
+  "12_c5_inversions.png": "Exact C5 inversion counts for the required sizes. Only floor(0.01n) records are displaced; insertion sort still pays for every inversion."
+}

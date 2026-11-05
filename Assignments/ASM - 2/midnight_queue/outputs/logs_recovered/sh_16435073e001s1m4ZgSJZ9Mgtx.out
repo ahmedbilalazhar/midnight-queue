@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    from midnight_queue.config import CONFIG,DEFAULT_DATA_PATH; from midnight_queue.data import load_dataset,sample_records; from midnight_queue.conditions import build_conditions; from midnight_queue.records import Counters,TriageOrder; from midnight_queue.topk import TOPK_ALGORITHMS; from midnight_queue.reference import reference_topk; ds=load_dataset(DEFAULT_DATA_PATH,verify_checksum=False); c=build_conditions(sample_records(ds.records,1000,CONFIG.seed),CONFIG.seed)['C1']; recs=c.records; print('loaded'); [print(name, len(out:=alg(list(recs),52,TriageOrder(ct:=Counters()),ct)), out==reference_topk(recs,52), ct.comparisons, ct.moves) for name,alg in TOPK_ALGORITHMS.items()]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Desktop\University\3. Algo\2. Assignments\ASM - 2\midnight_queue\src\midnight_queue\records.py", line 62, in __init__
+    self.mode = OrderMode(mode)
+                ~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\enum.py", line 707, in __call__
+    return cls.__new__(cls, value)
+           ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Python314\Lib\enum.py", line 1192, in __new__
+    raise ve_exc
+ValueError: Counters(comparisons=0, moves=0) is not a valid OrderMode
+loaded

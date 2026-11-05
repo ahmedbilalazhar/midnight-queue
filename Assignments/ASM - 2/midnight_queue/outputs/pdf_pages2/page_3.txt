@@ -1,0 +1,80 @@
+23I-2581 · DS-B · The Midnight Queue
+page 3
+D. The Shift Queue (Top-K)
+Three ways to produce the ordered K-queue: (a) hardened full sort then prefix, (b) the size-K heap (the root is the worst retained record), and (c) the bounded sorted buffer
+with binary-search insertion and explicit shifting; its first K records are sorted once with our merge sort. Full-sort cost is independent of K and is measured once per input;
+prefix extraction is negligible. The fraud curve uses Class only after the queue is built. The figure covers both required sizes and both C1 and C2.
+Fig. D1. Median cost of a complete ordered K-queue, log–log (s vs K); C1 and C2 at n=100,000 and 284,807. DNF is omitted, not interpolated.
+n
+K
+Full sort
+Size-K heap
+Buffer
+100,000
+52
+1.20 s
+0.035 s
+0.032 s
+100,000
+2,068
+1.20 s
+0.134 s
+1.24 s
+100,000
+10,000
+1.20 s
+0.498 s
+17.16 s
+284,807
+52
+3.56 s
+0.059 s
+0.079 s
+284,807
+2,068
+3.56 s
+0.170 s
+1.25 s
+284,807
+28,480
+3.56 s
+1.29 s
+2.69 min
+Table D1 / Fig. D2. C2 queue cost at K=52, K=2,068 and K=n/10; fraud capture vs K over all 492 frauds. Class is never a sort key.
+Fraud capture. The K=52 queue contains 0 of 492 frauds (0.0%). At K=500 it captures 63 (12.8%); at K=2,068 it captures 246 (50.0%); at K=5,000, 361 (73.4%); at
+K=10,000, 405 (82.3%). Producing the half-fraud queue costs the times in Table D1. Across the 28 measured cells the buffer is fastest in only three: both 100,000-record
+K=52 cells and full-size C1/K=10 by 0.14 ms. The heap is fastest in the other 25, and the full sort never wins for K≤n/10. The ethical/operational clash is explicit: a 52-case
+shift queue is cheap, but under this fixed scoring rule it surfaces no fraud; meeting the 50%-capture objective needs K≈2,068.
+E. The Live Feed
+The file is split into consecutive Time windows from the first transaction. After every window the committed queue is the top K of everything seen so far. Strategy A re-ranks
+the whole prefix; B offers only new records to a maintained size-K heap; C Merge-Sorts the new window and merges it into the current K-list. Every published queue is
+checked against an independent reference. Reported time is the complete 48-hour simulation; memory is a separate tracemalloc run. The 10-minute re-rank exceeded the
+300 s watchdog on its first repetition, so it is a genuine DNF with no median or memory row; the other two strategies completed five runs.
+Fig. E1. Median cumulative time vs window number over five complete simulations, K=52; left: 1-hour windows; right: 10-minute windows. A: re-rank, B: maintained heap, C: sort window + merge. A is absent on the right
+because the 10-minute re-rank is a genuine DNF, not a missing point.
+Window
+A: re-rank
+B: heap
+C: merge
+60 min
+1.34 min
+0.084 s
+2.32 s
+10 min
+DNF
+0.169 s
+2.06 s
+Window
+A peak
+B peak
+C peak
+60 min
+6.69 MiB
+31.6 KiB
+4.43 MiB
+10 min
+-
+210.5 KiB
+2.56 MiB
+Table E1 (left). Median total simulation time; Table E2 (right). Peak extra memory from a separate run. A's 10-minute cell is DNF (over 300 s), so it has neither a median nor a memory row. The window split is shared input built
+before tracing; B keeps only K records, while C keeps the current window plus K.

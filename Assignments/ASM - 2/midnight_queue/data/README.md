@@ -1,0 +1,1 @@
+The dataset is stored as creditcard.csv.gz because the uncompressed CSV exceeds GitHub's file size limit. Extract it to creditcard.csv in this directory before running the project. For example, from this directory: python -c "import gzip, shutil; shutil.copyfileobj(gzip.open('creditcard.csv.gz', 'rb'), open('creditcard.csv', 'wb'))"

@@ -1,0 +1,181 @@
+D. The Shift Queue (Top-K)
+Three custom ways produce the same ordered queue: hardened full sort plus the K-prefix, a size-K heap with its worst retained case at the root, and a bounded
+binary-search insertion buffer. The heap is a min-heap of priority (band, Amount, -Time, -txn_id), equivalently a max-heap under the best-first comparator. The
+full sort is now measured at every K, including its actual prefix copy. Heap/buffer comparison loops are unchanged; their earlier five-run measurements remain
+identified by provenance. The grid is K={10,50,52,500,2068,5000,n/10}, both required sizes and C1/C2. Class is evaluated only after ranking.
+101
+102
+103
+104
+Queue capacity K (transactions; log scale)
+10−1
+100
+101
+Median time (s; log scale)
+C1 · n = 100,000
+101
+102
+103
+104
+Queue capacity K (transactions; log scale)
+10−1
+100
+101
+Median time (s; log scale)
+C2 · n = 100,000
+101
+102
+103
+104
+Queue capacity K (transactions; log scale)
+10−1
+100
+101
+102
+Median time (s; log scale)
+C1 · n = 284,807
+101
+102
+103
+104
+Queue capacity K (transactions; log scale)
+10−1
+100
+101
+102
+Median time (s; log scale)
+C2 · n = 284,807
+Full Sort (Hardened Quick Sort)
+Size-K Heap
+Bounded Insertion Buffer
+Fig. D1. Median cost of a complete ordered K-queue, log–log (s vs K); C1 and C2 at n=100,000 and 284,807. DNF is omitted, not interpolated.
+n
+K
+Full sort
+Size-K heap
+Buffer
+100,000
+52
+2.64 s
+0.035 s
+0.032 s
+100,000
+2,068
+2.92 s
+0.134 s
+1.24 s
+100,000
+10,000
+2.89 s
+0.498 s
+17.16 s
+284,807
+52
+8.35 s
+0.059 s
+0.079 s
+284,807
+2,068
+9.65 s
+0.170 s
+1.25 s
+284,807
+28,480
+8.94 s
+1.29 s
+2.69 min
+100
+101
+102
+103
+104
+105
+Queue capacity K (transactions; log scale)
+0%
+20%
+40%
+60%
+80%
+100%
+All fraud labels captured (%)
+HALF OF ALL FRAUDS
+K = 2,068
+A fast queue is only useful if it surfaces the right cases
+Full-file triage queue
+50% capture target
+Shift capacity K=52
+Table D1 / Fig. D2. C2 queue cost at K=52, K=2,068 and K=n/10; fraud capture vs K over all 492 frauds. Class is never a sort key.
+Fraud capture. K=52 captures 0 of 492 frauds; the minimum half-capture queue is K=2,068. K=500 captures 63, K=5,000 captures 361, and K=10,000 captures
+405. Over 28 measured grid cells, the size-K heap wins 25; its worst regret is 1.12x. The buffer wins only C1/100k/K=52, C2/100k/K=52, C1/full/K=10; full sort
+wins no measured cell. A small computationally cheap queue can still miss every fraud: capacity and ranking quality must be justified separately.
+E. The Live Feed
+Consecutive Time windows start at the first transaction. After each window, each strategy publishes the top K of all records seen: A re-ranks the prefix, B updates
+its maintained heap, C sorts the new window and merges its ranked candidates. Every publication is verified after its timer stops. All strategies were remeasured
+in this revision. Simulation totals and curves now use the same sum of algorithm-only window times; five individual totals are retained. Memory is measured
+separately.
+0
+10
+20
+30
+40
+50
+Published window (count)
+10−2
+10−1
+100
+101
+102
+Cumulative time (s; log scale)
+60-minute windows · K = 52
+A · Re-rank all records
+B · Maintained size-K heap
+C · Sort window + merge
+0
+50
+100
+150
+200
+250
+300
+Published window (count)
+10−2
+10−1
+100
+101
+Cumulative time (s; log scale)
+A · DNF (>300 s watchdog)
+10-minute windows · K = 52
+B · Maintained size-K heap
+C · Sort window + merge
+Fig. E1. Median cumulative algorithm time at each publication across five completed simulations; left: 60-minute windows, right: 10-minute windows, K=52. Only completed five-run strategies
+have curves. The vertical axes use logarithmic seconds so all completed strategies remain visible.
+Window
+A: re-rank
+B: heap
+C: merge
+60 min
+2.84 min
+0.284 s
+6.36 s
+10 min
+DNF
+0.538 s
+9.61 s
+Window
+A peak
+B peak
+C peak
+60 min
+6.69 MiB
+31.6 KiB
+4.43 MiB
+10 min
+-
+210.6 KiB
+2.57 MiB
+Table E1: median of five algorithm-only simulation totals. Table E2: peak extra memory in a separate trace. Shared windows are prepared before tracing. Retained measurement rows add O(w)
+bookkeeping to the streaming heap’s O(K) algorithmic state. A timed-out strategy has no median.
+23I-2581 ꞏDS-B
+/
+THE MIDNIGHT QUEUE
+3 / 5

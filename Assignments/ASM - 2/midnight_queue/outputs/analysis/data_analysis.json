@@ -1,0 +1,207 @@
+{
+  "profile": {
+    "rows": 284807,
+    "fraud_count": 492,
+    "band_counts": {
+      "0": 0,
+      "1": 0,
+      "2": 21156,
+      "3": 107410,
+      "4": 113116,
+      "5": 32084,
+      "6": 6006,
+      "7": 2797,
+      "8": 1376,
+      "9": 862
+    },
+    "distinct_amounts": 32767,
+    "top10_amount_share": 0.16291032172664296,
+    "top10_amounts": [
+      {
+        "amount": 1.0,
+        "count": 13688
+      },
+      {
+        "amount": 1.98,
+        "count": 6044
+      },
+      {
+        "amount": 0.89,
+        "count": 4872
+      },
+      {
+        "amount": 9.99,
+        "count": 4747
+      },
+      {
+        "amount": 15.0,
+        "count": 3280
+      },
+      {
+        "amount": 0.76,
+        "count": 2998
+      },
+      {
+        "amount": 10.0,
+        "count": 2950
+      },
+      {
+        "amount": 1.29,
+        "count": 2892
+      },
+      {
+        "amount": 1.79,
+        "count": 2623
+      },
+      {
+        "amount": 0.99,
+        "count": 2304
+      }
+    ],
+    "fraud_by_band": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 13,
+      "4": 30,
+      "5": 23,
+      "6": 56,
+      "7": 97,
+      "8": 112,
+      "9": 161
+    },
+    "sha256": "76274b691b16a6c49d3f159c883398e03ccd6d1ee12d9d8ee38f4b4b98551a89",
+    "source_path": "C:\\Users\\hp\\Desktop\\University\\3. Algo\\2. Assignments\\ASM - 2\\midnight_queue\\data\\creditcard.csv",
+    "expected_rows": 284807,
+    "expected_frauds": 492
+  },
+  "raw_order_evidence": {
+    "time_sorted": true,
+    "triage_adjacent_share": 0.5062849799512651,
+    "band_adjacent_share": 0.6739815874665562,
+    "triage_inversions": 20302980941,
+    "n": 284807,
+    "max_possible_inversions": 40557371221
+  },
+  "fraud_capture": {
+    "total_frauds": 492,
+    "half_threshold": 246,
+    "k_half": 2068,
+    "points": {
+      "10": {
+        "frauds": 0,
+        "fraction": 0.0
+      },
+      "50": {
+        "frauds": 0,
+        "fraction": 0.0
+      },
+      "52": {
+        "frauds": 0,
+        "fraction": 0.0
+      },
+      "500": {
+        "frauds": 63,
+        "fraction": 0.12804878048780488
+      },
+      "5000": {
+        "frauds": 361,
+        "fraction": 0.733739837398374
+      },
+      "10000": {
+        "frauds": 405,
+        "fraction": 0.823170731707317
+      },
+      "50000": {
+        "frauds": 453,
+        "fraction": 0.9207317073170732
+      },
+      "100000": {
+        "frauds": 461,
+        "fraction": 0.9369918699186992
+      },
+      "284807": {
+        "frauds": 492,
+        "fraction": 1.0
+      },
+      "2068": {
+        "frauds": 246,
+        "fraction": 0.5
+      }
+    }
+  },
+  "c6_band_analysis": {
+    "1000": {
+      "band_sizes": {
+        "2": 84,
+        "3": 371,
+        "4": 397,
+        "5": 107,
+        "6": 24,
+        "7": 8,
+        "8": 5,
+        "9": 4
+      },
+      "predicted_comparisons_group_formula": 156718,
+      "predicted_comparisons_exact_sequence": 158620,
+      "n": 1000
+    },
+    "10000": {
+      "band_sizes": {
+        "2": 719,
+        "3": 3809,
+        "4": 3964,
+        "5": 1094,
+        "6": 225,
+        "7": 98,
+        "8": 59,
+        "9": 32
+      },
+      "predicted_comparisons_group_formula": 15995154,
+      "predicted_comparisons_exact_sequence": 16023019,
+      "n": 10000
+    },
+    "100000": {
+      "band_sizes": {
+        "2": 7399,
+        "3": 37639,
+        "4": 39769,
+        "5": 11246,
+        "6": 2152,
+        "7": 995,
+        "8": 488,
+        "9": 312
+      },
+      "predicted_comparisons_group_formula": 1592671008,
+      "predicted_comparisons_exact_sequence": null,
+      "n": 100000
+    },
+    "284807": {
+      "band_sizes": {
+        "2": 21156,
+        "3": 107410,
+        "4": 113116,
+        "5": 32084,
+        "6": 6006,
+        "7": 2797,
+        "8": 1376,
+        "9": 862
+      },
+      "predicted_comparisons_group_formula": 12927671903,
+      "predicted_comparisons_exact_sequence": null,
+      "n": 284807
+    }
+  },
+  "inversions_c5": {
+    "1000": 3007,
+    "10000": 325988,
+    "100000": 34333390,
+    "284807": 272954546
+  },
+  "sizes_sampled": [
+    "1000",
+    "10000",
+    "100000",
+    "284807"
+  ]
+}

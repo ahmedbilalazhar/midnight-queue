@@ -1,0 +1,4 @@
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT 1 0 0 1 40 760 Tm /F2+0 12 Tf 14.4 TL (ARIAL: Design and Analysis of Algorithms \001 Assignment 2 \001 Roll 23I-2581 \001 K = 52 \002 \003\(n log n\) \004 2\005) Tj T* ET
+BT 1 0 0 1 40 730 Tm /F3+0 12 Tf 14.4 TL (DEJAVU: Design and Analysis of Algorithms \001 Assignment 2 \001 Roll 23I-2581 \001 K = 52 \002 \003\(n log n\) \004 2\005) Tj T* ET
+ 

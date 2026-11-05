@@ -1,0 +1,17 @@
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+
+[data]
+kagglehub>=0.3
+
+[dev]
+pytest>=8
+reportlab>=4
+pypdf>=5
+pymupdf>=1.24
+Pillow>=10
+psutil>=5.9
+nbformat>=5
+nbconvert>=7
+jupyter>=1

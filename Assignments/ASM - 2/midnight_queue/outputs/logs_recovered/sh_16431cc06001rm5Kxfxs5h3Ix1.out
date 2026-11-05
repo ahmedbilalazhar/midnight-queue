@@ -1,0 +1,22 @@
+..F....................                                                  [100%]
+================================== FAILURES ===================================
+_______________ test_c5_moves_exactly_one_percent_of_positions ________________
+
+make_txn = <function make_txn.<locals>._make at 0x000002AE1921FCC0>
+
+    def test_c5_moves_exactly_one_percent_of_positions(make_txn):
+        n = 1000
+        c = build_conditions(_records(make_txn, n), 232581)
+        before = c["C3"].records
+        after = c["C5"].records
+        changed = sum(1 for a, b in zip(before, after) if a != b)
+        assert changed == 10
+>       assert sorted(t.txn_id for t in after) == [t.txn_id for t in before]
+E       assert [1, 2, 3, 4, 5, 6, ...] == [27, 527, 297... 67, 567, ...]
+E         
+E         At index 0 diff: 1 != 27
+E         Use -v to get more diff
+
+tests\test_conditions.py:51: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_conditions.py::test_c5_moves_exactly_one_percent_of_positions

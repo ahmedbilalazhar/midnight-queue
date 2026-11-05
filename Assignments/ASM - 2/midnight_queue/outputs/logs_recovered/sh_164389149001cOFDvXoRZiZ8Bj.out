@@ -1,0 +1,1 @@
+{"algorithm": "Merge Sort", "mode": "triage", "n": 1000, "elapsed_s": 0.019023799992282875, "peak_extra_bytes": null, "comparisons": 8682, "moves": 19952, "correct": true, "output_ids_digest": "fe9b252525dc13cc0e8158a4871e2ca7"}

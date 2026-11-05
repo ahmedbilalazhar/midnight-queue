@@ -1,0 +1,63 @@
+23I-2581 · DS-B · The Midnight Queue
+page 1
+The Midnight Queue — Ranking Suspicious Transactions at Scale
+Design and Analysis of Algorithms · Assignment 2 · Roll 23I-2581 · Section DS-B · seed 232581 · K = 52
+Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz (4 physical / 8 logical cores), 31.8 GiB RAM, Windows-11-10.0.26200-SP0; Python 3.14.0, NumPy 2.4.3, pandas 3.0.1.
+All timed values are medians of five completed runs. The Kaggle ULB file has 284,807 rows and 492 fraud labels; it is not redistributed.
+Headline. The raw file is Time-ordered but is not triaged: only 50.6% of adjacent pairs are in triage order, with 20.30 billion inversions. Bands 2–9 occur; 426 of 492 frauds lie
+in bands 6–9 and no fraud lies below band 3. The smallest queue capturing half of all frauds is K = 2,068. The full sort, the K=52 shift queue and the live refresh are compared
+on measured time, comparisons, moves and peak extra memory; DNF is reported as DNF, never as zero.
+A. Know Your Data
+Band
+All
+Frauds
+Band
+All
+Frauds
+0
+0
+0
+5
+32,084
+23
+1
+0
+0
+6
+6,006
+56
+2
+21,156
+0
+7
+2,797
+97
+3
+107,410
+13
+8
+1,376
+112
+4
+113,116
+30
+9
+862
+161
+Table A1 / Fig. A1. Band counts (all rows) and fraud labels; the histogram repeats the same data on a log count axis. Units: transactions per band. Class is read only after scoring.
+Amount ties. There are 32,767 distinct Amount values; the ten most frequent hold 16.29% of rows. The mode is 1.00 (13,688 rows), so Amount alone is not a tie-breaker; the
+complete four-field triage key is necessary. Frauds by band are 13, 30, 23, 56, 97, 112 and 161 in bands 3–9.
+Which Section 3.4 properties does the raw file already have? Its Time column is non-decreasing and its rows are in txn_id order, so it is exactly C1 (and supplies C6's
+input sequence). It is not C3: only 50.6% of adjacent pairs are in triage order versus 67.4% for band alone, with 20.303B triage inversions. C2 and C5 require seeded
+construction; C4 is the exact reverse of C3; C6 changes the comparator to band alone.
+B. Build the Contenders
+The package src/midnight_queue/ contains Insertion Sort (in-place shifting), top-down stable Merge Sort, Naive Quick Sort (last-pivot Lomuto, iterative stack), Hardened
+Quick Sort (median-of-three plus three-way partition), bottom-up Heap Sort, a size-K heap selector (the root is the worst retained case: a min-heap on the score with the
+descending comparator reversed), a bounded insertion buffer with binary search and explicit shifting, and all three live-feed strategies. No built-in or NumPy sort appears
+inside a contender; sorted() is confined to the labelled reference/verification code and to deterministic input preparation. A key comparison is one call to the central
+TriageOrder.cmp; a move is one record assignment (a swap is three). Timers exclude CSV I/O, risk scoring, condition construction, input copying and verification.
+Correctness and the C6 clash. The automated suite has 37 passing tests, including empty input, one record, all-equal keys, duplicate-heavy input, every condition and size,
+Class perturbation, Top-K boundaries and live-feed publication. C1–C5 use a total key and are checked for exact sequence equality with the reference. C6 is defined by the
+PDF as band alone, so it has huge ties; a literal C6 result is checked as a permutation with non-increasing bands and no access to Amount, Time, txn_id or Class. Exact
+sequence equality is impossible there without adding an illegal secondary key. This is the disclosed specification clash; the official change request was not supplied, so no
+change is invented. Conditions are C1 arrival, C2 seeded shuffle, C3 pre-ranked, C4 reverse-ranked, C5 with floor(0.01n) records deranged, C6 band-only.

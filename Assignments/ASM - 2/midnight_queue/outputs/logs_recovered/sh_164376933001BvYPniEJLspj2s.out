@@ -1,0 +1,31 @@
+Loading and validating the full dataset...
+Loaded 284,807 rows / 492 frauds; sha256=76274b691b16a6c4...
+  cached C1 n=1,000 (0.0 MB)
+  cached C2 n=1,000 (0.0 MB)
+  cached C3 n=1,000 (0.0 MB)
+  cached C4 n=1,000 (0.0 MB)
+  cached C5 n=1,000 (0.0 MB)
+  cached C6 n=1,000 (0.0 MB)
+n=1,000: frauds=3, C5 inversions=3,007, changed=10
+  cached C1 n=10,000 (0.5 MB)
+  cached C2 n=10,000 (0.5 MB)
+  cached C3 n=10,000 (0.5 MB)
+  cached C4 n=10,000 (0.5 MB)
+  cached C5 n=10,000 (0.5 MB)
+  cached C6 n=10,000 (0.5 MB)
+n=10,000: frauds=20, C5 inversions=325,988, changed=100
+  cached C1 n=100,000 (4.6 MB)
+  cached C2 n=100,000 (4.6 MB)
+  cached C3 n=100,000 (4.6 MB)
+  cached C4 n=100,000 (4.6 MB)
+  cached C5 n=100,000 (4.6 MB)
+  cached C6 n=100,000 (4.6 MB)
+n=100,000: frauds=171, C5 inversions=34,333,390, changed=1000
+  cached C1 n=284,807 (13.0 MB)
+  cached C2 n=284,807 (13.0 MB)
+  cached C3 n=284,807 (13.0 MB)
+  cached C4 n=284,807 (13.0 MB)
+  cached C5 n=284,807 (13.0 MB)
+  cached C6 n=284,807 (13.0 MB)
+n=284,807: frauds=492, C5 inversions=272,954,546, changed=2848
+Preparation complete in 63.6s

@@ -1,0 +1,16 @@
+{
+  "os": "Windows-11-10.0.26200-SP0",
+  "system": "Windows",
+  "release": "11",
+  "machine": "AMD64",
+  "cpu": "Intel(R) Core(TM) i7-10610U CPU @ 1.80GHz",
+  "physical_cores": 4,
+  "logical_cpus": 8,
+  "max_cpu_mhz": 2304.0,
+  "memory_total_bytes": 34122080256,
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Python314\\python.exe",
+  "numpy": "2.4.3",
+  "pandas": "3.0.1",
+  "project_root": "C:\\Users\\hp\\Desktop\\University\\3. Algo\\2. Assignments\\ASM - 2\\midnight_queue"
+}

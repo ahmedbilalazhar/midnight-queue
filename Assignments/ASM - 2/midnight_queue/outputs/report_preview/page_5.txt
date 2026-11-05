@@ -1,0 +1,244 @@
+Appendix: prediction log
+Each prediction was written before its round; outcomes were updated from the measured medians. Full rationales are in prediction_
+log.csv. W/L = predicted or actual fastest / slowest. Abbreviations: IS insertion, MS merge, NQ naive quick, HQ hardened quick, HS heap,
+SH size-K heap, BB bounded buffer, FS full sort, RR re-rank, MG merge, HB maintained heap. Original forecasts and their timestamps
+are preserved; outcomes now use revised measurements. A vertical bar joins censored DNFs: their relative speeds are unknown. The
+revised campaign’s prospective C forecasts are stored separately in outputs/revision/predictions.csv.
+Tournament
+Pred W/L
+Actual W/L
+Outcome
+C1-1k
+HQ / IS
+NQ / IS
+slowest correct
+C2-1k
+HQ / IS
+NQ / IS
+slowest correct
+C3-1k
+IS / NQ
+IS / NQ
+both correct
+C4-1k
+HQ / IS
+MS / IS
+slowest correct
+C5-1k
+IS / NQ
+IS / NQ
+both correct
+C6-1k
+HQ / NQ
+HQ / NQ
+both correct
+C1-10k
+HQ / IS
+MS / IS
+slowest correct
+C2-10k
+HQ / IS
+NQ / IS
+slowest correct
+C3-10k
+IS / NQ
+IS / NQ
+both correct
+C4-10k
+HQ / IS
+MS / NQ
+both wrong
+C5-10k
+HQ / NQ
+IS / NQ
+slowest correct
+C6-10k
+HQ / NQ
+HQ / IS
+fastest correct
+C1-100k
+HQ / IS
+NQ / IS
+slowest correct
+C2-100k
+HQ / IS
+NQ / IS
+slowest correct
+C3-100k
+IS / NQ
+IS / NQ
+both correct
+C4-100k
+HQ / IS
+HS / IS|NQ
+loss censored
+C5-100k
+HQ / NQ
+MS / IS
+both wrong
+C6-100k
+HQ / NQ
+HQ / IS|NQ
+win OK; censored
+C1-full
+HQ / IS
+HQ / IS
+both correct
+C2-full
+HQ / IS
+MS / IS
+slowest correct
+C3-full
+IS / NQ
+IS / NQ
+both correct
+C4-full
+HQ / IS
+MS / IS|NQ
+loss censored
+C5-full
+HQ / NQ
+MS / IS
+both wrong
+C6-full
+HQ / NQ
+HQ / IS|NQ
+win OK; censored
+D/E/F row
+Pred
+Actual
+Outcome
+M5 crossover
+SH / BB
+—
+see M5
+C1-100k/K10
+SH / BB
+SH / FS
+fastest correct
+C1-100k/K50
+SH / BB
+SH / FS
+fastest correct
+C1-100k/K52
+SH / BB
+BB / FS
+both wrong
+C1-100k/K500
+SH / BB
+SH / FS
+fastest correct
+C1-100k/K5000
+SH / BB
+SH / BB
+both correct
+C1-100k/K10000
+FS / BB
+SH / BB
+slowest correct
+C1-100k/K2068
+SH / BB
+SH / FS
+fastest correct
+C2-100k/K10
+SH / BB
+SH / FS
+fastest correct
+C2-100k/K50
+SH / BB
+SH / FS
+fastest correct
+C2-100k/K52
+SH / BB
+BB / FS
+both wrong
+C2-100k/K500
+SH / BB
+SH / FS
+fastest correct
+C2-100k/K5000
+SH / BB
+SH / BB
+both correct
+C2-100k/K10000
+FS / BB
+SH / BB
+slowest correct
+C2-100k/K2068
+SH / BB
+SH / FS
+fastest correct
+C1-full/K10
+SH / BB
+BB / FS
+both wrong
+C1-full/K50
+SH / BB
+SH / FS
+fastest correct
+C1-full/K52
+SH / BB
+SH / FS
+fastest correct
+C1-full/K500
+SH / BB
+SH / FS
+fastest correct
+C1-full/K5000
+SH / BB
+SH / FS
+fastest correct
+C1-full/K28480
+FS / BB
+SH / BB
+slowest correct
+C1-full/K2068
+SH / BB
+SH / FS
+fastest correct
+C2-full/K10
+SH / BB
+SH / FS
+fastest correct
+C2-full/K50
+SH / BB
+SH / FS
+fastest correct
+C2-full/K52
+SH / BB
+SH / FS
+fastest correct
+C2-full/K500
+SH / BB
+SH / FS
+fastest correct
+C2-full/K5000
+SH / BB
+SH / FS
+fastest correct
+C2-full/K28480
+FS / BB
+SH / BB
+slowest correct
+C2-full/K2068
+SH / BB
+SH / FS
+fastest correct
+live/3600
+HB / RR
+HB / RR
+both correct
+live/600
+HB / RR
+HB / RR
+both correct
+Table P1. Original forecasts with revised outcomes: 24 C rounds and 31 D/E/F rows. M5 is the crossover forecast discussed in M5. DNFs have no measured times and are not ordered among
+themselves.
+Artifacts. results.csv contains 4,876 rows: 4,545 run/window rows, 25 simulation totals, 189 medians, 5 live summaries, 51 memory
+observations, 16 DNFs, 15 labelled quadratic projections, 7 interrupted attempts, 17 single console demonstrations and 6 excluded
+historical observations. The 55 original forecasts remain in prediction_log.csv. The executed notebook demonstrates scoring, ranking
+correctness and fraud capture; README.md supplies reproduction commands.
+23I-2581 ꞏDS-B
+/
+THE MIDNIGHT QUEUE
+5 / 5

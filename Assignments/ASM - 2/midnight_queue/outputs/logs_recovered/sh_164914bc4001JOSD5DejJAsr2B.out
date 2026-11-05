@@ -1,0 +1,22 @@
+
+=== C1 n=284,807 ===
+  Naive Quick Sort: rep 1 6.9125s cmp=6,601,882 moves=9,212,013 correct=True
+  Naive Quick Sort: rep 2 4.3313s cmp=6,601,882 moves=9,212,013 correct=True
+  Naive Quick Sort: rep 3 4.3306s cmp=6,601,882 moves=9,212,013 correct=True
+  Naive Quick Sort: rep 4 6.0222s cmp=6,601,882 moves=9,212,013 correct=True
+  Naive Quick Sort: rep 5 7.5530s cmp=6,601,882 moves=9,212,013 correct=True
+
+=== C2 n=284,807 ===
+  Naive Quick Sort: rep 1 4.6182s cmp=6,275,653 moves=9,225,912 correct=True
+  Naive Quick Sort: rep 2 4.8254s cmp=6,275,653 moves=9,225,912 correct=True
+  Naive Quick Sort: rep 3 4.1623s cmp=6,275,653 moves=9,225,912 correct=True
+  Naive Quick Sort: rep 4 4.2303s cmp=6,275,653 moves=9,225,912 correct=True
+  Naive Quick Sort: rep 5 5.0131s cmp=6,275,653 moves=9,225,912 correct=True
+
+=== C5 n=284,807 ===
+  Naive Quick Sort: rep 1 64.0776s cmp=159,638,283 moves=2,900,496 correct=True
+  Naive Quick Sort: rep 2 113.0651s cmp=159,638,283 moves=2,900,496 correct=True
+  Naive Quick Sort: rep 3 121.9432s cmp=159,638,283 moves=2,900,496 correct=True
+  Naive Quick Sort: rep 4 143.7373s cmp=159,638,283 moves=2,900,496 correct=True
+  Naive Quick Sort: rep 5 155.2141s cmp=159,638,283 moves=2,900,496 correct=True
+  Naive Quick Sort: memory FAILED worker failed (1): 

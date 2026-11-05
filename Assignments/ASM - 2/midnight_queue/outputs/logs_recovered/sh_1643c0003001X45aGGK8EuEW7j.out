@@ -1,0 +1,43 @@
+      prediction_id   predicted_fastest predicted_slowest      actual_fastest   actual_slowest         outcome
+tournament-C1-n1000 Hardened Quick Sort    Insertion Sort Hardened Quick Sort   Insertion Sort    both correct
+tournament-C2-n1000 Hardened Quick Sort    Insertion Sort          Merge Sort   Insertion Sort slowest correct
+tournament-C3-n1000      Insertion Sort  Naive Quick Sort      Insertion Sort Naive Quick Sort    both correct
+tournament-C4-n1000 Hardened Quick Sort    Insertion Sort Hardened Quick Sort   Insertion Sort    both correct
+tournament-C5-n1000      Insertion Sort  Naive Quick Sort      Insertion Sort Naive Quick Sort    both correct
+tournament-C6-n1000 Hardened Quick Sort  Naive Quick Sort Hardened Quick Sort   Insertion Sort fastest correct
+record_type
+median     30
+memory     30
+run       150
+dtype: int64
+condition    n           algorithm  peak_extra_bytes
+       C1 1000          Merge Sort            8912.0
+       C1 1000 Hardened Quick Sort              64.0
+       C1 1000           Heap Sort               0.0
+       C1 1000      Insertion Sort               0.0
+       C1 1000    Naive Quick Sort              64.0
+       C2 1000          Merge Sort            8912.0
+       C2 1000 Hardened Quick Sort              64.0
+       C2 1000           Heap Sort               0.0
+       C2 1000      Insertion Sort               0.0
+       C2 1000    Naive Quick Sort              64.0
+       C3 1000          Merge Sort            8912.0
+       C3 1000 Hardened Quick Sort              64.0
+       C3 1000           Heap Sort               0.0
+       C3 1000      Insertion Sort               0.0
+       C3 1000    Naive Quick Sort              32.0
+       C4 1000          Merge Sort            8912.0
+       C4 1000 Hardened Quick Sort              64.0
+       C4 1000           Heap Sort               0.0
+       C4 1000      Insertion Sort               0.0
+       C4 1000    Naive Quick Sort              32.0
+       C5 1000          Merge Sort            8912.0
+       C5 1000 Hardened Quick Sort              64.0
+       C5 1000           Heap Sort               0.0
+       C5 1000      Insertion Sort               0.0
+       C5 1000    Naive Quick Sort              32.0
+       C6 1000          Merge Sort            8912.0
+       C6 1000 Hardened Quick Sort              32.0
+       C6 1000           Heap Sort               0.0
+       C6 1000      Insertion Sort               0.0
+       C6 1000    Naive Quick Sort              32.0

@@ -1,0 +1,226 @@
+{
+  "config": {
+    "roll_display": "23I-2581",
+    "seed": 232581,
+    "section": "DS-B",
+    "k": 52,
+    "sizes": [
+      1000,
+      10000,
+      100000,
+      284807
+    ]
+  },
+  "dataset": {
+    "path": "C:\\Users\\hp\\Desktop\\University\\3. Algo\\2. Assignments\\ASM - 2\\midnight_queue\\data\\creditcard.csv",
+    "sha256": "76274b691b16a6c49d3f159c883398e03ccd6d1ee12d9d8ee38f4b4b98551a89",
+    "n": 284807,
+    "frauds": 492
+  },
+  "sizes": {
+    "1000": {
+      "n": 1000,
+      "sample_frauds": 3,
+      "c5_inversions": 3007,
+      "c5_changed_positions": 10,
+      "c5_expected_changed": 10,
+      "band_counts_c6": {
+        "0": 0,
+        "1": 0,
+        "2": 84,
+        "3": 371,
+        "4": 397,
+        "5": 107,
+        "6": 24,
+        "7": 8,
+        "8": 5,
+        "9": 4
+      },
+      "conditions": {
+        "C1": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C1_n1000.pkl",
+          "n": 1000
+        },
+        "C2": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C2_n1000.pkl",
+          "n": 1000
+        },
+        "C3": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C3_n1000.pkl",
+          "n": 1000
+        },
+        "C4": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C4_n1000.pkl",
+          "n": 1000
+        },
+        "C5": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C5_n1000.pkl",
+          "n": 1000
+        },
+        "C6": {
+          "mode": "band",
+          "cache_file": "outputs\\cache\\C6_n1000.pkl",
+          "n": 1000
+        }
+      }
+    },
+    "10000": {
+      "n": 10000,
+      "sample_frauds": 20,
+      "c5_inversions": 325988,
+      "c5_changed_positions": 100,
+      "c5_expected_changed": 100,
+      "band_counts_c6": {
+        "0": 0,
+        "1": 0,
+        "2": 719,
+        "3": 3809,
+        "4": 3964,
+        "5": 1094,
+        "6": 225,
+        "7": 98,
+        "8": 59,
+        "9": 32
+      },
+      "conditions": {
+        "C1": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C1_n10000.pkl",
+          "n": 10000
+        },
+        "C2": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C2_n10000.pkl",
+          "n": 10000
+        },
+        "C3": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C3_n10000.pkl",
+          "n": 10000
+        },
+        "C4": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C4_n10000.pkl",
+          "n": 10000
+        },
+        "C5": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C5_n10000.pkl",
+          "n": 10000
+        },
+        "C6": {
+          "mode": "band",
+          "cache_file": "outputs\\cache\\C6_n10000.pkl",
+          "n": 10000
+        }
+      }
+    },
+    "100000": {
+      "n": 100000,
+      "sample_frauds": 171,
+      "c5_inversions": 34333390,
+      "c5_changed_positions": 1000,
+      "c5_expected_changed": 1000,
+      "band_counts_c6": {
+        "0": 0,
+        "1": 0,
+        "2": 7399,
+        "3": 37639,
+        "4": 39769,
+        "5": 11246,
+        "6": 2152,
+        "7": 995,
+        "8": 488,
+        "9": 312
+      },
+      "conditions": {
+        "C1": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C1_n100000.pkl",
+          "n": 100000
+        },
+        "C2": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C2_n100000.pkl",
+          "n": 100000
+        },
+        "C3": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C3_n100000.pkl",
+          "n": 100000
+        },
+        "C4": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C4_n100000.pkl",
+          "n": 100000
+        },
+        "C5": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C5_n100000.pkl",
+          "n": 100000
+        },
+        "C6": {
+          "mode": "band",
+          "cache_file": "outputs\\cache\\C6_n100000.pkl",
+          "n": 100000
+        }
+      }
+    },
+    "284807": {
+      "n": 284807,
+      "sample_frauds": 492,
+      "c5_inversions": 272954546,
+      "c5_changed_positions": 2848,
+      "c5_expected_changed": 2848,
+      "band_counts_c6": {
+        "0": 0,
+        "1": 0,
+        "2": 21156,
+        "3": 107410,
+        "4": 113116,
+        "5": 32084,
+        "6": 6006,
+        "7": 2797,
+        "8": 1376,
+        "9": 862
+      },
+      "conditions": {
+        "C1": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C1_n284807.pkl",
+          "n": 284807
+        },
+        "C2": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C2_n284807.pkl",
+          "n": 284807
+        },
+        "C3": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C3_n284807.pkl",
+          "n": 284807
+        },
+        "C4": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C4_n284807.pkl",
+          "n": 284807
+        },
+        "C5": {
+          "mode": "triage",
+          "cache_file": "outputs\\cache\\C5_n284807.pkl",
+          "n": 284807
+        },
+        "C6": {
+          "mode": "band",
+          "cache_file": "outputs\\cache\\C6_n284807.pkl",
+          "n": 284807
+        }
+      }
+    }
+  }
+}
